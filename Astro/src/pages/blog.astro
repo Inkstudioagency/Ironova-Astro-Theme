@@ -1,0 +1,141 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CtaSection from "../components/CtaSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { blogUrl, byPublishDate, getBlogPosts, img } from "../lib/strapi";
+
+const posts = await getBlogPosts();
+const list0 = byPublishDate(posts).slice(0, 1);
+const list1 = byPublishDate(posts).slice(1);
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c02072" title="Blog - Ironova" description="Read Ironova insights on industrial equipment, engineering, material handling and maintenance, with practical guides to plan and run smarter operations.">
+  <div class="page-wrapper">
+    <Navbar variant="without-border" instance="65746988-d5b5-9ae6-aaaa-61892e89f396" />
+    <main class="main">
+      <section class="section is-black">
+        <div class="container">
+          <div class="blog-hero">
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;f254c34b-75bf-738f-bfb1-f656629b87b1&quot;],[]]]" class="breadcrumb">
+              <a href="/" class="font-extra-small is-soft is-link">Home</a>
+              <p class="font-extra-small is-soft">/</p>
+              <p class="font-extra-small">Blog</p>
+            </div>
+            <div class="blog-hero-grid">
+              <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;f254c34b-75bf-738f-bfb1-f656629b87b3&quot;],[]]]" class="section-heading is-large is-blog-hero">Ideas That Move Industry Forward</h1>
+              <div class="blog-hero-content">
+                <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;f254c34b-75bf-738f-bfb1-f656629b87b5&quot;],[]]]" class="font-normal is-lead">Explore practical insights on industrial equipment, engineering, material handling, and smarter ways to manage industrial operations.</p>
+                <a href="#latest-insights" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;2d90b69d-1eaf-5018-b5a0-a3f8a6dd6eb0&quot;],[]]]" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">Explore Insights</div>
+                    <div class="footer-link-text is-two">Explore Insights</div>
+                  </div>
+                  <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;f80fb7fd-9ff5-ca1f-4a9b-2a24fe4b06d4&quot;],[]]]" class="w-dyn-list">
+              {list0.length > 0 ? (
+                <div role="list" class="w-dyn-items">
+                {list0.map((item) => (
+                  <div role="listitem" class="w-dyn-item">
+                  <div class="blog-featured">
+                    <a href={blogUrl(item)} class="blog-featured-image w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="1707" height="1173" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                      <div class="demo">#</div>
+                    </a>
+                    <div class="blog-featured-body">
+                      <div class="blog-featured-top">
+                        <div class="blog-featured-meta">
+                          <div class="blog-tag">
+                            <p class:list={["font-regular is-medium is-upper", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</p>
+                          </div>
+                          <p class="font-extra-small">Editor&#x27;s Pick</p>
+                        </div>
+                        <div class="blog-featured-text">
+                          <a href={blogUrl(item)} class="blog-title-link w-inline-block">
+                            <h2 class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.title) }]}>{item.title}</h2>
+                            <div class="demo">#</div>
+                          </a>
+                          <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                        </div>
+                      </div>
+                      <a href={blogUrl(item)} class="blog-button w-inline-block">
+                        <div class="blog-button-item">
+                          <div>Read Article</div>
+                          <div class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow-icon-small arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow-icon-small arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                        <div class="button-animated-line"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  ))}
+              </div>
+                ) : (
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+                )}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="latest-insights" class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="blog-section-body">
+              <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02072&quot;,&quot;f254c34b-75bf-738f-bfb1-f656629b87bc&quot;],[]]]" class="section-heading">Explore Our Latest Insights</h2>
+              <div class="w-dyn-list">
+                {list1.length > 0 ? (
+                  <div role="list" class="blog-list w-dyn-items">
+                  {list1.map((item) => (
+                    <div role="listitem" class="w-dyn-item">
+                    <div to-top-2="" class="blog-card">
+                      <a href={blogUrl(item)} class="blog-image-link blog w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="1707" height="1173" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                        <div class="blog-image-overlay">
+                          <div class="blog-read-tag">
+                            <p class="font-regular is-medium is-upper">Read article</p><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="none" class="slider-arrow-icon slider-arrow-icon">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="blog-card-content">
+                        <div class="blog-meta">
+                          <p class:list={["font-extra-small is-brand", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</p>
+                          <div class="blog-meta-dot"></div>
+                          <p class:list={["font-extra-small", { "w-dyn-bind-empty": !(item.readTime) }]}>{item.readTime}</p>
+                        </div>
+                        <a href={blogUrl(item)} class="blog-title-link w-inline-block">
+                          <div class:list={["font-medium is-faq", { "w-dyn-bind-empty": !(item.title) }]}>{item.title}</div>
+                          <div class="demo">#</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                    ))}
+                </div>
+                  ) : (
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+                  )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c02072" instance="d5d01b29-1326-c04f-b45c-b463d243c8fc" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

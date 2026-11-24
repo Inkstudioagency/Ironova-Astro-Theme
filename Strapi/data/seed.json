@@ -1,0 +1,1497 @@
+{
+  "services": [
+    {
+      "name": "Engineering & Design",
+      "slug": "engineering-design",
+      "number": "04//",
+      "stage": "Engineering & Design",
+      "order": 1,
+      "shortDescription": "Translate project requirements into practical layouts, equipment specifications, and implementation plans.",
+      "mainImage": "rectangle-16-9-.webp",
+      "focusAreas": [
+        {
+          "title": "Application assessment",
+          "text": "Understand the task, loads, cycles and operating environment before choosing a direction."
+        },
+        {
+          "title": "Equipment planning",
+          "text": "Match equipment options to the workflow, available space and project goals"
+        },
+        {
+          "title": "Technical coordination",
+          "text": "Align specifications, layouts and interfaces so every stage connects"
+        }
+      ],
+      "introLabel": "Engineering that moves you forward",
+      "introText": "Every successful industrial project kicks off with a solid grasp of what you need. At Ironova, we dive into your requirements, check out the technical stuff, and come up with practical design ideas that keep things running smoothly.",
+      "points": [
+        {
+          "label": "Application-Focused Planning"
+        },
+        {
+          "label": "Practical Design Concepts"
+        },
+        {
+          "label": "Clear Technical Coordination"
+        }
+      ],
+      "skillsHeading": "Technical Skills for Real-World Needs",
+      "skillsText": "From early-stage planning to equipment integration, explore engineering support designed around your operational needs.",
+      "skills": [
+        {
+          "title": "Concept Development",
+          "text": "Turn initial ideas and operational challenges into structured concepts that help define project direction"
+        },
+        {
+          "title": "Equipment Layout Planning",
+          "text": "Explore equipment positioning and workflow arrangements that support better use of available space"
+        },
+        {
+          "title": "Technical Design Support",
+          "text": "Review design requirements, equipment specifications, and technical considerations before implementation."
+        },
+        {
+          "title": "System Integration Planning",
+          "text": "Consider how equipment and connected systems can work together within your existing operation"
+        }
+      ],
+      "skillsImage": "rectangle-5-5-.webp",
+      "approachHeading": "Every Detail Starts With Your Requirements",
+      "approachText": "We take a structured approach to understanding your operation, assessing design considerations, and exploring solutions that align with your project scope.",
+      "steps": [
+        {
+          "title": "Understand the Application",
+          "text": "We review your objectives, operating environment, space requirements, and technical priorities"
+        },
+        {
+          "title": "Evaluate the Requirements",
+          "text": "We consider equipment needs, workflow constraints, integration requirements, and practical limitations"
+        },
+        {
+          "title": "Develop the Concept",
+          "text": "We outline a suitable design direction based on the agreed requirements and project objectives"
+        },
+        {
+          "title": "Prepare for Implementation",
+          "text": "We help clarify the next steps, technical considerations, and coordination needed to move the project forward."
+        }
+      ],
+      "approachImage": "rectangle-5-6-.webp",
+      "seo": {
+        "metaTitle": "Engineering & Design Services - Ironova",
+        "metaDescription": "Ironova engineering and design turns project requirements into practical layouts, equipment specifications and clear implementation plans for industrial teams."
+      }
+    },
+    {
+      "name": "Manufacturing & Assembly",
+      "slug": "manufacturing-assembly",
+      "number": "03//",
+      "stage": "Build Stage",
+      "order": 2,
+      "shortDescription": "Coordinate components and assemblies around the intended application and project requirements.",
+      "mainImage": "rectangle-16-5-.webp",
+      "focusAreas": [
+        {
+          "title": "Component integration",
+          "text": "Combine mechanical, electrical and control parts into one working assembly."
+        },
+        {
+          "title": "Assembly coordination",
+          "text": "Plan build stages, suppliers and timing so assembly stays on track"
+        },
+        {
+          "title": "Quality-focused workflows",
+          "text": "Check fit, function and finish at each stage of the build"
+        }
+      ],
+      "introLabel": "Builds that match the application",
+      "introText": "Reliable equipment starts with a build that is planned around how it will be used. At Ironova, we coordinate components, assemblies and suppliers so every part of the build supports your operation from day one.",
+      "points": [
+        {
+          "label": "Application-Led Assembly"
+        },
+        {
+          "label": "Coordinated Component Sourcing"
+        },
+        {
+          "label": "Quality-Focused Workflows"
+        }
+      ],
+      "skillsHeading": "Assembly Support for Real-World Builds",
+      "skillsText": "From component selection to final assembly checks, explore build support shaped around your project requirements.",
+      "skills": [
+        {
+          "title": "Component Integration",
+          "text": "Bring motors, controls, structures and safety parts together into one coordinated build plan"
+        },
+        {
+          "title": "Sub-Assembly Coordination",
+          "text": "Organise sub-assemblies and supplier deliveries so the build moves forward without gaps"
+        },
+        {
+          "title": "Build Documentation",
+          "text": "Keep drawings, part lists and build notes aligned so every stage is easy to review."
+        },
+        {
+          "title": "Pre-Delivery Checks",
+          "text": "Review fit, function and finish before equipment leaves the workshop"
+        }
+      ],
+      "skillsImage": "rectangle-5-5-.webp",
+      "approachHeading": "Every Build Starts With a Clear Plan",
+      "approachText": "We take a structured approach to planning components, coordinating assemblies, and checking quality so each build matches the intended application.",
+      "steps": [
+        {
+          "title": "Review the Build Scope",
+          "text": "We confirm drawings, specifications, components, and the performance the equipment needs to deliver"
+        },
+        {
+          "title": "Coordinate the Components",
+          "text": "We align parts, sub-assemblies, and supplier deliveries so the build moves forward without delays"
+        },
+        {
+          "title": "Assemble in Stages",
+          "text": "We build in clear stages with checks at each step so issues are found early and fixed quickly"
+        },
+        {
+          "title": "Check Before Delivery",
+          "text": "We review fit, function, and finish so equipment leaves the workshop ready for installation."
+        }
+      ],
+      "approachImage": "rectangle-5-6-.webp",
+      "seo": {
+        "metaTitle": "Manufacturing & Assembly Services - Ironova",
+        "metaDescription": "Ironova coordinates components and assemblies around your application and project requirements, with quality-focused workflows from build to delivery stage."
+      }
+    },
+    {
+      "name": "Installation & Commissioning",
+      "slug": "installation-commissioning",
+      "number": "02//",
+      "stage": "Deployment Stage",
+      "order": 3,
+      "shortDescription": "Plan the transition from delivered equipment to an operational system with clear project coordination.",
+      "mainImage": "rectangle-16-7-.webp",
+      "focusAreas": [
+        {
+          "title": "Site preparation",
+          "text": "Prepare access, foundations and utilities before installation begins."
+        },
+        {
+          "title": "Installation planning",
+          "text": "Plan lifting, positioning and connections around your site and schedule"
+        },
+        {
+          "title": "Operational handover",
+          "text": "Hand over a tested system with clear documentation for your team"
+        }
+      ],
+      "introLabel": "From delivery to a working system",
+      "introText": "A smooth start-up depends on careful planning before equipment arrives on site. At Ironova, we prepare the site, plan each installation step and run commissioning checks so your system moves into operation with fewer surprises.",
+      "points": [
+        {
+          "label": "Site-Ready Preparation"
+        },
+        {
+          "label": "Structured Installation Planning"
+        },
+        {
+          "label": "Clear Operational Handover"
+        }
+      ],
+      "skillsHeading": "Installation Support for Real-World Sites",
+      "skillsText": "From site preparation to final handover, explore installation support planned around your operation and schedule.",
+      "skills": [
+        {
+          "title": "Site Preparation",
+          "text": "Check access, foundations, utilities and space so the site is ready before equipment arrives"
+        },
+        {
+          "title": "Installation Planning",
+          "text": "Sequence lifting, positioning and connection work to keep installation safe and on schedule"
+        },
+        {
+          "title": "Commissioning Checks",
+          "text": "Test equipment, controls and safety functions against the agreed requirements before start-up."
+        },
+        {
+          "title": "Operational Handover",
+          "text": "Share documentation and walk your team through operation so the system is ready for daily use"
+        }
+      ],
+      "skillsImage": "rectangle-5-5-.webp",
+      "approachHeading": "Every Start-Up Begins With Site Planning",
+      "approachText": "We take a structured approach to preparing the site, sequencing installation work, and testing systems so your equipment starts up safely and on time.",
+      "steps": [
+        {
+          "title": "Survey the Site",
+          "text": "We check access, foundations, utilities, and available space before any equipment arrives on site"
+        },
+        {
+          "title": "Plan the Installation",
+          "text": "We sequence lifting, positioning, and connection work to keep the installation safe and on schedule"
+        },
+        {
+          "title": "Run Commissioning Checks",
+          "text": "We test equipment, controls, and safety functions against the agreed requirements before start-up"
+        },
+        {
+          "title": "Hand Over the System",
+          "text": "We share documentation and guide your team through operation so the system is ready for daily use."
+        }
+      ],
+      "approachImage": "rectangle-5-6-.webp",
+      "seo": {
+        "metaTitle": "Installation & Commissioning Services - Ironova",
+        "metaDescription": "Ironova plans site preparation, installation and commissioning so delivered industrial equipment moves smoothly into a reliable, fully operational system."
+      }
+    },
+    {
+      "name": "Maintenance & Support",
+      "slug": "maintenance-support",
+      "number": "01//",
+      "stage": "Lifecycle Stage",
+      "order": 4,
+      "shortDescription": "Help teams plan equipment care and respond to maintenance needs throughout the operating lifecycle.",
+      "mainImage": "rectangle-16-8-.webp",
+      "focusAreas": [
+        {
+          "title": "Preventive maintenance",
+          "text": "Plan inspections and servicing that fit around your operating schedule."
+        },
+        {
+          "title": "Troubleshooting support",
+          "text": "Find the cause of faults and plan repairs that get equipment running again"
+        },
+        {
+          "title": "Parts coordination",
+          "text": "Keep critical spares and parts supply ready for every maintenance task"
+        }
+      ],
+      "introLabel": "Support that keeps equipment running",
+      "introText": "Reliable operations depend on equipment that is cared for long after installation. At Ironova, we plan preventive maintenance, respond to issues quickly and coordinate parts so your equipment keeps performing across its full lifecycle.",
+      "points": [
+        {
+          "label": "Planned Preventive Care"
+        },
+        {
+          "label": "Responsive Troubleshooting"
+        },
+        {
+          "label": "Coordinated Parts Supply"
+        }
+      ],
+      "skillsHeading": "Maintenance Support for Real-World Operations",
+      "skillsText": "From routine inspections to urgent repairs, explore lifecycle support built around your equipment and uptime goals.",
+      "skills": [
+        {
+          "title": "Preventive Maintenance Plans",
+          "text": "Schedule inspections and servicing around your operation to reduce unplanned downtime"
+        },
+        {
+          "title": "Troubleshooting Support",
+          "text": "Diagnose faults and plan repairs quickly so equipment returns to service sooner"
+        },
+        {
+          "title": "Parts Coordination",
+          "text": "Identify critical spares and coordinate parts supply so replacements are ready when needed."
+        },
+        {
+          "title": "Performance Reviews",
+          "text": "Review equipment condition and history to plan upgrades and improvements over time"
+        }
+      ],
+      "skillsImage": "rectangle-5-5-.webp",
+      "approachHeading": "Every Service Plan Starts With Your Equipment",
+      "approachText": "We take a structured approach to reviewing equipment condition, planning preventive care, and responding to issues so your operation keeps running reliably.",
+      "steps": [
+        {
+          "title": "Assess Equipment Condition",
+          "text": "We review equipment history, usage, and current condition to understand what needs attention first"
+        },
+        {
+          "title": "Plan Preventive Care",
+          "text": "We schedule inspections and servicing around your operation to reduce the risk of unplanned downtime"
+        },
+        {
+          "title": "Respond to Issues",
+          "text": "We diagnose faults, coordinate parts, and plan repairs so equipment returns to service sooner"
+        },
+        {
+          "title": "Review and Improve",
+          "text": "We track performance over time and suggest upgrades that help your equipment last longer."
+        }
+      ],
+      "approachImage": "rectangle-5-6-.webp",
+      "seo": {
+        "metaTitle": "Maintenance & Support Services - Ironova",
+        "metaDescription": "Ironova helps industrial teams plan preventive maintenance, troubleshoot issues and coordinate parts to keep equipment reliable across its full lifecycle."
+      }
+    },
+    {
+      "name": "Equipment Integration",
+      "slug": "equipment-integration",
+      "number": "05//",
+      "stage": "Equipment Integration",
+      "order": 5,
+      "shortDescription": "Industrial equipment operates as part of a larger system. We assist in pinpointing integration needs and aligning equipment, workflows, and technical aspects with the intended application.",
+      "mainImage": "rectangle-16-6-.webp",
+      "focusAreas": [
+        {
+          "title": "Workflow coordination",
+          "text": "Map how materials, people and equipment move between each stage of the process."
+        },
+        {
+          "title": "Component & System Planning",
+          "text": "Plan interfaces and supporting components so equipment connects as one system"
+        },
+        {
+          "title": "Technical alignment",
+          "text": "Align specifications, controls and safety requirements across every connection"
+        }
+      ],
+      "introLabel": "Systems that work as one",
+      "introText": "Industrial equipment rarely works on its own, it is part of a larger system. At Ironova, we pinpoint integration needs early and align equipment, workflows and technical details so your operation runs as one connected process.",
+      "points": [
+        {
+          "label": "Connected Workflow Planning"
+        },
+        {
+          "label": "Component & System Alignment"
+        },
+        {
+          "label": "Clear Technical Coordination"
+        }
+      ],
+      "skillsHeading": "Integration Support for Real-World Systems",
+      "skillsText": "From mapping connections to final system checks, explore integration support shaped around your existing operation.",
+      "skills": [
+        {
+          "title": "Integration Assessment",
+          "text": "Review existing equipment, controls and workflows to define what needs to connect and how"
+        },
+        {
+          "title": "Workflow Coordination",
+          "text": "Align handover points, material flow and timing so equipment works together across each stage"
+        },
+        {
+          "title": "Component & System Planning",
+          "text": "Plan interfaces, controls and supporting components so new and existing equipment connect cleanly."
+        },
+        {
+          "title": "System Testing Support",
+          "text": "Check that connected equipment, controls and safety functions work together before full operation"
+        }
+      ],
+      "skillsImage": "rectangle-5-5-.webp",
+      "approachHeading": "Every Connection Starts With Your System",
+      "approachText": "We take a structured approach to mapping your current setup, planning interfaces, and testing connections so new and existing equipment work as one.",
+      "steps": [
+        {
+          "title": "Map the Current System",
+          "text": "We review existing equipment, controls, and workflows to see how each part of the operation connects"
+        },
+        {
+          "title": "Define Integration Needs",
+          "text": "We identify interfaces, handover points, and technical requirements that the new equipment must meet"
+        },
+        {
+          "title": "Plan the Connections",
+          "text": "We plan controls, components, and timing so new and existing equipment link together cleanly"
+        },
+        {
+          "title": "Test the Full System",
+          "text": "We check that connected equipment, controls, and safety functions work together before full operation."
+        }
+      ],
+      "approachImage": "rectangle-5-6-.webp",
+      "seo": {
+        "metaTitle": "Equipment Integration Services - Ironova",
+        "metaDescription": "Ironova helps industrial teams identify integration needs and align equipment, workflows and technical requirements so every system works together as planned."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": "Material Handling Optimization",
+      "slug": "material-handling-optimization",
+      "number": "01//",
+      "order": 1,
+      "featured": true,
+      "category": "Logistics",
+      "shortDescription": "A project concept focused on improving material flow through equipment selection and workflow planning.",
+      "mainImage": "project-image.webp",
+      "application": "Material movement",
+      "focus": "Workflow coordination",
+      "scope": "Equipment planning",
+      "scopeItems": [
+        {
+          "label": "Equipment Selection"
+        },
+        {
+          "label": "Technical Planning"
+        },
+        {
+          "label": "Scope Alignment"
+        }
+      ],
+      "heroTitle": "Streamlining Material Flow for Better Operations",
+      "heroText": "Discover how a well-planned material handling solution enhances goods movement, supports warehouse workflows, and fosters a more organized operation.",
+      "projectType": "Material Handling",
+      "service": "Engineering & Design",
+      "briefFocus": "Operational Flow & Material Movement",
+      "overviewText": "Efficient warehouse operations rely on the smooth movement of materials between receiving, storage, and dispatch. This project aims to assess workflow needs and identify equipment solutions to enhance these connections.",
+      "overviewImage": "rectangle-33.webp",
+      "challengeHeading": "Making Every Movement Count",
+      "challengeText": "Warehouse workflows can become difficult to manage when material movement, storage arrangements, and equipment capabilities are not properly aligned. The goal was to understand these operational needs and identify opportunities for a more consistent workflow.",
+      "challenges": [
+        {
+          "title": "Workflow Coordination",
+          "text": "Connecting material movement across different operational stages"
+        },
+        {
+          "title": "Space Utilization",
+          "text": "Considering facility layout and available working areas."
+        },
+        {
+          "title": "Equipment Planning",
+          "text": "Identifying equipment options suited to operational requirements"
+        }
+      ],
+      "challengeImage": "rectangle-5-1-.webp",
+      "approachHeading": "A Handy Plan That Fits the Operation.",
+      "approachText": "We break down project requirements into clear priorities, helping align equipment decisions with the facility's workflow and day-to-day needs.",
+      "steps": [
+        {
+          "title": "Assess the Workflow",
+          "text": "Review material movement, operational priorities, and the key requirements of the facility"
+        },
+        {
+          "title": "Plan Equipment Needs",
+          "text": "Explore suitable material handling options based on the workflow, layout, and intended application"
+        },
+        {
+          "title": "Coordinate the Solution",
+          "text": "Align equipment requirements and implementation considerations within a clear project scope"
+        },
+        {
+          "title": "Consider Long-Term Operations",
+          "text": "Consider accessibility, maintenance, and future operational changes in planning."
+        }
+      ],
+      "approachImage": "rectangle-5-2-.webp",
+      "outcomeHeading": "A Clearer Path Toward Efficient Operations",
+      "stats": [
+        {
+          "label": "Faster Material Flow",
+          "value": "30%"
+        },
+        {
+          "label": "Improved Workflow Efficiency",
+          "value": "25%"
+        },
+        {
+          "label": "Better Space Utilization",
+          "value": "20%"
+        },
+        {
+          "label": "Reduced Handling Delays",
+          "value": "35%"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Material Handling Optimization Project - Ironova",
+        "metaDescription": "See how Ironova streamlines material flow across receiving, storage and dispatch with equipment selection, technical planning and workflow coordination."
+      }
+    },
+    {
+      "name": "Production Equipment Integration",
+      "slug": "production-equipment-integration",
+      "number": "02//",
+      "order": 2,
+      "featured": false,
+      "category": "Manufacturing",
+      "shortDescription": "A project concept exploring how production equipment and related systems can be planned to work together.",
+      "mainImage": "project-image-1-.webp",
+      "application": "Manufacturing",
+      "focus": "Equipment integration",
+      "scope": "Technical coordination",
+      "scopeItems": [
+        {
+          "label": "Equipment Integration"
+        },
+        {
+          "label": "Engineering Planning"
+        },
+        {
+          "label": "Production Workflow"
+        }
+      ],
+      "heroTitle": "Connecting Production Stages Into One Workflow",
+      "heroText": "See how coordinated equipment positioning and integration planning help production stages work together with fewer interruptions.",
+      "projectType": "Equipment Integration",
+      "service": "Engineering & Design",
+      "briefFocus": "Production Workflow & Line Coordination",
+      "overviewText": "Production lines run best when every stage hands work to the next without delays, so this project focused on positioning equipment and planning integration to keep the line moving.",
+      "overviewImage": "rectangle-33.webp",
+      "challengeHeading": "Linking Every Stage of the Line",
+      "challengeText": "Production equipment added over time can leave gaps between stages, creating waiting time and manual handling. The goal was to understand how each stage connects and plan an integrated layout.",
+      "challenges": [
+        {
+          "title": "Stage Coordination",
+          "text": "Aligning handover points between production stages"
+        },
+        {
+          "title": "Equipment Positioning",
+          "text": "Placing equipment to shorten movement between stations."
+        },
+        {
+          "title": "Control Integration",
+          "text": "Planning how equipment controls communicate across the line"
+        }
+      ],
+      "challengeImage": "rectangle-5-1-.webp",
+      "approachHeading": "A Practical Plan for a Connected Line.",
+      "approachText": "We map each production stage, then plan equipment positions and connections so the line can operate as one coordinated system.",
+      "steps": [
+        {
+          "title": "Map the Production Flow",
+          "text": "Document each stage, its inputs and outputs, and where work currently slows down"
+        },
+        {
+          "title": "Plan Equipment Positions",
+          "text": "Arrange equipment to reduce travel distance and handling between stations"
+        },
+        {
+          "title": "Coordinate Integration",
+          "text": "Define how equipment, controls and safety systems connect across the line"
+        },
+        {
+          "title": "Prepare for Rollout",
+          "text": "Plan a phased rollout that keeps production running during changes."
+        }
+      ],
+      "approachImage": "rectangle-5-2-.webp",
+      "outcomeHeading": "A Smoother Line With Fewer Interruptions",
+      "stats": [
+        {
+          "label": "Shorter Handover Time",
+          "value": "28%"
+        },
+        {
+          "label": "Higher Line Throughput",
+          "value": "18%"
+        },
+        {
+          "label": "Less Manual Handling",
+          "value": "32%"
+        },
+        {
+          "label": "Fewer Line Stoppages",
+          "value": "24%"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Production Equipment Integration - Ironova",
+        "metaDescription": "Explore how Ironova plans production equipment integration around workflow, equipment positioning and coordination between operational stages on the line."
+      }
+    },
+    {
+      "name": "Industrial Equipment Upgrade",
+      "slug": "industrial-equipment-upgrade",
+      "number": "03//",
+      "order": 3,
+      "featured": false,
+      "category": "Manufacturing",
+      "shortDescription": "A project concept centered on reviewing existing equipment needs and planning a suitable upgrade approach.",
+      "mainImage": "project-image-2-.webp",
+      "application": "Industrial operations",
+      "focus": "Equipment improvement",
+      "scope": "Upgrade planning",
+      "scopeItems": [
+        {
+          "label": "Lifting Systems"
+        },
+        {
+          "label": "Application Assessment"
+        },
+        {
+          "label": "Technical Coordination"
+        }
+      ],
+      "heroTitle": "Upgrading Lifting Equipment for Safer Handling",
+      "heroText": "Learn how a structured review of load handling, workspace conditions and integration needs shaped a practical lifting equipment upgrade.",
+      "projectType": "Equipment Upgrade",
+      "service": "Engineering & Design",
+      "briefFocus": "Load Handling & Workspace Safety",
+      "overviewText": "Ageing lifting equipment can limit capacity and slow everyday handling tasks, so this project reviewed load requirements and workspace conditions to plan a safer, more capable upgrade.",
+      "overviewImage": "rectangle-33.webp",
+      "challengeHeading": "Lifting More With Less Risk",
+      "challengeText": "Existing lifting systems no longer matched the loads and pace of the operation, and the workspace layout added handling risks. The goal was to define upgrade requirements that improve capacity and safety.",
+      "challenges": [
+        {
+          "title": "Load Assessment",
+          "text": "Reviewing weights, lift heights and handling frequency"
+        },
+        {
+          "title": "Workspace Conditions",
+          "text": "Checking clearances, access routes and floor conditions."
+        },
+        {
+          "title": "Integration Needs",
+          "text": "Planning how new lifting equipment fits existing processes"
+        }
+      ],
+      "challengeImage": "rectangle-5-1-.webp",
+      "approachHeading": "A Clear Plan for a Safer Upgrade.",
+      "approachText": "We review how loads are handled today, then define upgrade options that improve capacity and safety without disrupting daily work.",
+      "steps": [
+        {
+          "title": "Review Current Lifting",
+          "text": "Assess existing equipment, loads and the way lifting tasks are performed today"
+        },
+        {
+          "title": "Define Upgrade Needs",
+          "text": "Set capacity, reach and safety requirements for the new equipment"
+        },
+        {
+          "title": "Select the Equipment",
+          "text": "Compare suitable lifting options against the defined requirements"
+        },
+        {
+          "title": "Plan the Changeover",
+          "text": "Schedule installation and training to keep work moving during the upgrade."
+        }
+      ],
+      "approachImage": "rectangle-5-2-.webp",
+      "outcomeHeading": "Safer Lifting With Room to Grow",
+      "stats": [
+        {
+          "label": "Higher Lifting Capacity",
+          "value": "40%"
+        },
+        {
+          "label": "Faster Handling Cycles",
+          "value": "22%"
+        },
+        {
+          "label": "Fewer Manual Lifts",
+          "value": "35%"
+        },
+        {
+          "label": "Improved Safety Checks",
+          "value": "30%"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Industrial Equipment Upgrade Project - Ironova",
+        "metaDescription": "Learn how Ironova reviews load-handling requirements, workspace conditions and integration needs to plan a practical industrial equipment and lifting upgrade."
+      }
+    },
+    {
+      "name": "Construction Equipment Planning",
+      "slug": "construction-equipment-planning",
+      "number": "04//",
+      "order": 4,
+      "featured": false,
+      "category": "Construction",
+      "shortDescription": "An equipment planning project addressing site requirements, material movement, and the practical demands of construction operations.",
+      "mainImage": "project-image-3-.webp",
+      "application": "Construction",
+      "focus": "Site requirements",
+      "scope": "Equipment planning",
+      "scopeItems": [
+        {
+          "label": "Equipment Selection"
+        },
+        {
+          "label": "Site Requirements"
+        },
+        {
+          "label": "Project Planning"
+        }
+      ],
+      "heroTitle": "Planning Equipment Around Real Site Demands",
+      "heroText": "Explore how equipment planning built around site requirements and material movement supports safer, more efficient construction operations.",
+      "projectType": "Equipment Planning",
+      "service": "Engineering & Design",
+      "briefFocus": "Site Requirements & Material Movement",
+      "overviewText": "Construction sites change every day, and equipment must keep up with shifting layouts and tasks, so this project planned equipment around site access, material movement and the practical demands of the build.",
+      "overviewImage": "rectangle-33.webp",
+      "challengeHeading": "Keeping Equipment in Step With the Site",
+      "challengeText": "Changing site layouts and tight access made it hard to keep the right equipment in the right place. The goal was to plan equipment that supports material movement across every stage of the build.",
+      "challenges": [
+        {
+          "title": "Site Access",
+          "text": "Planning routes for deliveries and equipment movement"
+        },
+        {
+          "title": "Material Movement",
+          "text": "Moving materials safely between storage and work areas."
+        },
+        {
+          "title": "Equipment Scheduling",
+          "text": "Matching equipment availability to each build stage"
+        }
+      ],
+      "challengeImage": "rectangle-5-1-.webp",
+      "approachHeading": "A Site Plan That Moves With the Build.",
+      "approachText": "We study the site and build sequence, then plan equipment that supports access, material flow and safety at every stage.",
+      "steps": [
+        {
+          "title": "Survey the Site",
+          "text": "Review access points, ground conditions and storage areas on site"
+        },
+        {
+          "title": "Plan Material Routes",
+          "text": "Define how materials move from delivery to each work area"
+        },
+        {
+          "title": "Match the Equipment",
+          "text": "Select equipment suited to loads, reach and site conditions"
+        },
+        {
+          "title": "Schedule by Stage",
+          "text": "Align equipment use with the construction programme and site changes."
+        }
+      ],
+      "approachImage": "rectangle-5-2-.webp",
+      "outcomeHeading": "Better Flow Across Every Build Stage",
+      "stats": [
+        {
+          "label": "Faster Site Deliveries",
+          "value": "26%"
+        },
+        {
+          "label": "Better Equipment Use",
+          "value": "30%"
+        },
+        {
+          "label": "Less Idle Time",
+          "value": "22%"
+        },
+        {
+          "label": "Fewer Access Conflicts",
+          "value": "34%"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Construction Equipment Planning - Ironova",
+        "metaDescription": "Discover how Ironova plans construction equipment around site requirements, material movement and the practical demands of day-to-day construction operations."
+      }
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Picking the Right Industrial Gear for Your Business",
+      "slug": "picking-right-industrial-gear-for-your-business",
+      "category": "Equipment & Engineering",
+      "type": "Guide",
+      "publishDate": "2026-10-24",
+      "readTime": "6 Min Read",
+      "shortDescription": "The right equipment can make a meaningful difference in operational flow, workplace efficiency, and long-term maintenance. Learn which factors to consider before making your next equipment decision.",
+      "mainImage": "rectangle-16-10-.webp",
+      "introText": "Selecting industrial equipment involves more than comparing specifications or choosing the most powerful option. The right solution should fit your application, support your workflow, and meet the demands of your working environment.",
+      "introParagraph": "Whether you're planning a new facility, upgrading existing equipment, or improving material movement, a structured evaluation can help you make a more informed decision.",
+      "contentImage": "industry-6.webp",
+      "sections": [
+        {
+          "tocTitle": "Know Your Operational Needs",
+          "content": "<h2>Understand Your Operational Needs</h2><p>Start by defining what the equipment needs to accomplish. Consider the materials involved, expected workload, operating conditions, and how the equipment will fit into your existing processes.</p><p>A clear understanding of the application makes it easier to narrow down suitable options and avoid investing in capabilities you don't need.</p><h3>Key Considerations</h3><ul><li>Intended application and daily workload</li><li>Required capacity and operating conditions</li><li>Compatibility with existing processes</li></ul>"
+        },
+        {
+          "tocTitle": "Review Equipment Specs",
+          "content": "<h2>Evaluate Equipment Specifications</h2><p>Specifications provide an important starting point for comparing equipment. However, each specification should be evaluated in relation to your actual requirements rather than in isolation.</p><p>Review capacity, operating range, dimensions, power requirements, and compatibility with other systems. When necessary, consult a qualified technical professional to confirm that the equipment is appropriate for the intended application.</p><h3>Key Considerations</h3><ul><li>Capacity and operating range</li><li>Dimensions and power requirements</li><li>Compatibility with other systems</li></ul>"
+        },
+        {
+          "tocTitle": "Think About Your Workspace",
+          "content": "<h2>Consider Your Workspace</h2><p>Equipment must work within the realities of your facility. Available floor space, access routes, ceiling height, surrounding machinery, and material movement can all influence the right choice.</p><p>Assessing the workspace early helps identify potential constraints before installation or implementation begins.</p><h3>Key Considerations</h3><ul><li>Available installation space</li><li>Access for operators and maintenance</li><li>Connection with existing workflows</li></ul>"
+        },
+        {
+          "tocTitle": "Maintenance and Support Plan",
+          "content": "<h2>Plan for Maintenance and Support</h2><p>Equipment selection should account for what happens after installation. Maintenance requirements, spare parts availability, technical documentation, and access to qualified support can affect long-term operational planning.</p><p>Understanding these factors early helps teams prepare for routine servicing and manage equipment responsibilities more effectively.</p><h3>Key Considerations</h3><ul><li>Recommended inspection and service intervals</li><li>Availability of replacement parts</li><li>Technical support and maintenance documentation</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Picking the Right Industrial Gear - Ironova",
+        "metaDescription": "Learn which factors Ironova recommends weighing before your next industrial equipment decision, from operational flow and efficiency to long-term maintenance."
+      }
+    },
+    {
+      "title": "From Project Requirements to Practical Engineering Solutions",
+      "slug": "project-requirements-to-practical-engineering-solutions",
+      "category": "Engineering & Design",
+      "type": "Guide",
+      "publishDate": "2026-10-20",
+      "readTime": "5 Min Read",
+      "shortDescription": "How clear requirements turn into layouts, specifications and implementation plans your team can act on.",
+      "mainImage": "rectangle-27-1-.webp",
+      "introText": "Good engineering starts with clear requirements. When loads, site conditions, and performance targets are well defined, they can be turned into layouts and specifications that teams can confidently act on.",
+      "introParagraph": "This step-by-step approach connects early project needs with practical solutions, from first discussions through to implementation.",
+      "contentImage": "rectangle-16-8--2.webp",
+      "sections": [
+        {
+          "tocTitle": "Capture the Requirements",
+          "content": "<h2>Capture the Requirements</h2><p>List loads, throughput targets, site conditions, and constraints before design work begins. Input from operations and maintenance teams adds practical detail.</p><p>A shared requirements list becomes the reference point for every design decision that follows.</p><h3>Key Considerations</h3><ul><li>Loads and throughput targets</li><li>Site conditions and constraints</li><li>Operations and maintenance input</li></ul>"
+        },
+        {
+          "tocTitle": "Develop the Concept",
+          "content": "<h2>Develop the Concept</h2><p>With requirements in place, concept layouts explore how equipment, routes, and work areas can fit together. Several options are often compared before one is chosen.</p><p>Reviewing concepts with the wider team helps confirm the chosen direction before detailed work begins.</p><h3>Key Considerations</h3><ul><li>Layout options for equipment and routes</li><li>Comparison of concept options</li><li>Team review before detailed design</li></ul>"
+        },
+        {
+          "tocTitle": "Define the Specifications",
+          "content": "<h2>Define the Specifications</h2><p>Detailed specifications translate the concept into clear technical requirements for equipment, structures, and controls. They guide supplier selection and quotations.</p><p>Precise specifications reduce ambiguity and make it easier to compare offers on equal terms.</p><h3>Key Considerations</h3><ul><li>Equipment capacity and performance</li><li>Structural and installation needs</li><li>Control and safety requirements</li></ul>"
+        },
+        {
+          "tocTitle": "Plan the Implementation",
+          "content": "<h2>Plan the Implementation</h2><p>An implementation plan sets out the sequence of procurement, installation, testing, and handover. It aligns suppliers, contractors, and internal teams around one schedule.</p><p>A clear plan keeps the project on track and helps the new solution start delivering value sooner.</p><h3>Key Considerations</h3><ul><li>Procurement and delivery sequence</li><li>Installation and testing stages</li><li>Handover and training</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "From Requirements to Engineering Solutions - Ironova",
+        "metaDescription": "See how Ironova turns project requirements into practical layouts, equipment specifications and implementation plans that industrial teams can act on."
+      }
+    },
+    {
+      "title": "Preparing Industrial Equipment for Long-Term Performance",
+      "slug": "preparing-industrial-equipment-long-term-performance",
+      "category": "Maintenance & Safety",
+      "type": "Checklist",
+      "publishDate": "2026-10-17",
+      "readTime": "6 Min Read",
+      "shortDescription": "Simple habits that help industrial equipment stay safe, efficient and reliable for years.",
+      "mainImage": "rectangle-27-8-.webp",
+      "introText": "Reliable equipment is rarely an accident. It is the result of steady habits: regular inspections, clear records, and maintenance that is planned rather than reactive. These habits protect both people and output.",
+      "introParagraph": "A few simple routines, applied consistently, can extend service life and keep industrial equipment safe and efficient for years.",
+      "contentImage": "1f72125142afeca6791ddb577444dde55c0cb511.webp",
+      "sections": [
+        {
+          "tocTitle": "Inspect Regularly",
+          "content": "<h2>Inspect Equipment Regularly</h2><p>Short, routine inspections catch wear, leaks, and loose components before they become failures. Daily checks by operators work best when paired with scheduled technical inspections.</p><p>Simple checklists make inspections faster and help teams apply the same standard every time.</p><h3>Key Considerations</h3><ul><li>Daily operator pre-use checks</li><li>Scheduled technical inspections</li><li>Clear inspection checklists</li></ul>"
+        },
+        {
+          "tocTitle": "Keep Good Records",
+          "content": "<h2>Keep Accurate Service Records</h2><p>Logging inspections, repairs, and part replacements builds a history for every machine. Over time, these records reveal patterns that are hard to see day to day.</p><p>Good records also support planning, budgeting, and decisions about when equipment should be replaced.</p><h3>Key Considerations</h3><ul><li>Inspection and repair logs</li><li>Part replacement history</li><li>Recurring fault patterns</li></ul>"
+        },
+        {
+          "tocTitle": "Train Your Operators",
+          "content": "<h2>Train and Support Operators</h2><p>Operators are often the first to notice changes in how equipment sounds, moves, or performs. Training helps them use equipment correctly and report issues early.</p><p>Clear reporting routes make it easy for small concerns to reach the maintenance team quickly.</p><h3>Key Considerations</h3><ul><li>Correct operating procedures</li><li>Early warning signs to look for</li><li>Simple issue reporting process</li></ul>"
+        },
+        {
+          "tocTitle": "Plan for the Long Term",
+          "content": "<h2>Plan for the Long Term</h2><p>Long-term performance depends on planning beyond the next repair. Spare parts, component life, and future upgrades all belong in the maintenance strategy.</p><p>Looking ahead helps teams avoid unplanned downtime and spread costs more evenly over time.</p><h3>Key Considerations</h3><ul><li>Critical spare parts on hand</li><li>Component replacement schedule</li><li>Future upgrade planning</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Long-Term Equipment Performance - Ironova",
+        "metaDescription": "Ironova shares simple inspection, record keeping and maintenance habits that help industrial equipment stay safe, efficient and reliable for many years."
+      }
+    },
+    {
+      "title": "What to Consider Before Upgrading Industrial Equipment",
+      "slug": "what-to-consider-before-upgrading-industrial-equipment",
+      "category": "Industry Insights",
+      "type": "Guide",
+      "publishDate": "2026-10-13",
+      "readTime": "6 Min Read",
+      "shortDescription": "Key questions to answer before replacing or upgrading equipment in an existing facility.",
+      "mainImage": "rectangle-16-7--2.webp",
+      "introText": "Upgrading equipment can unlock better performance, but only when the new solution addresses the real limits of the current setup. A careful review before replacement helps avoid trading one problem for another.",
+      "introParagraph": "From performance gaps to integration and downtime, a few key questions can guide a more confident upgrade decision.",
+      "contentImage": "rectangle-27.webp",
+      "sections": [
+        {
+          "tocTitle": "Review Current Performance",
+          "content": "<h2>Review Current Performance</h2><p>Begin by understanding where existing equipment falls short. Look at output, reliability, maintenance history, and any safety concerns raised by operators.</p><p>Clear evidence of the current gaps makes it easier to define what the upgrade must improve.</p><h3>Key Considerations</h3><ul><li>Output and capacity limits</li><li>Breakdown and maintenance history</li><li>Operator safety feedback</li></ul>"
+        },
+        {
+          "tocTitle": "Define Upgrade Goals",
+          "content": "<h2>Define the Upgrade Goals</h2><p>An upgrade should have measurable goals, such as higher throughput, lower energy use, or reduced manual handling. These goals guide every later decision.</p><p>Agreeing on priorities early helps compare options fairly and keeps the project focused on the results that matter most.</p><h3>Key Considerations</h3><ul><li>Target throughput and capacity</li><li>Energy and running cost goals</li><li>Reduced manual handling</li></ul>"
+        },
+        {
+          "tocTitle": "Plan the Integration",
+          "content": "<h2>Plan the Integration</h2><p>New equipment must connect with existing systems, utilities, and workflows. Check power supply, controls, footprint, and how materials will move to and from the equipment.</p><p>Identifying integration needs early reduces surprises during installation and commissioning.</p><h3>Key Considerations</h3><ul><li>Power and utility requirements</li><li>Control system compatibility</li><li>Footprint and access routes</li></ul>"
+        },
+        {
+          "tocTitle": "Manage the Changeover",
+          "content": "<h2>Manage the Changeover</h2><p>Replacing equipment often means working around live operations. Planning removal, installation, and testing carefully helps limit downtime.</p><p>Clear scheduling and operator training ensure the new equipment is productive as soon as possible.</p><h3>Key Considerations</h3><ul><li>Installation schedule and downtime</li><li>Testing and commissioning steps</li><li>Operator training before go-live</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Before Upgrading Industrial Equipment - Ironova",
+        "metaDescription": "Ironova outlines the key questions to answer before upgrading industrial equipment, from current performance gaps to integration with existing systems."
+      }
+    },
+    {
+      "title": "Improving Material Flow Across Your Facility",
+      "slug": "improving-material-flow-across-your-facility",
+      "category": "Material Handling",
+      "type": "Guide",
+      "publishDate": "2026-09-22",
+      "readTime": "7 Min Read",
+      "shortDescription": "Practical ways to reduce bottlenecks and move materials more smoothly between work areas.",
+      "mainImage": "rectangle-27-2-.webp",
+      "introText": "Materials that wait, double back, or travel too far quietly slow down the whole operation. Improving material flow starts with understanding how goods actually move through your facility today.",
+      "introParagraph": "With a clear picture of the current flow, small layout and equipment changes can deliver noticeable gains in speed and consistency.",
+      "contentImage": "rectangle-16-7--2.webp",
+      "sections": [
+        {
+          "tocTitle": "Map the Current Flow",
+          "content": "<h2>Map the Current Material Flow</h2><p>Follow materials from receiving through storage, production, and dispatch. Note where items wait, where routes cross, and where handling is repeated.</p><p>A simple flow map often reveals bottlenecks that are easy to overlook during daily operations.</p><h3>Key Considerations</h3><ul><li>Receiving and storage points</li><li>Transfer points between areas</li><li>Waiting and double handling</li></ul>"
+        },
+        {
+          "tocTitle": "Find the Bottlenecks",
+          "content": "<h2>Identify the Bottlenecks</h2><p>Bottlenecks appear where capacity, space, or equipment cannot keep up with demand. They often show up as queues, idle operators, or materials stored in walkways.</p><p>Measuring wait times and throughput at each stage helps prioritise where improvements will have the biggest impact.</p><h3>Key Considerations</h3><ul><li>Queues and waiting points</li><li>Throughput at each stage</li><li>Materials stored in walkways</li></ul>"
+        },
+        {
+          "tocTitle": "Improve the Layout",
+          "content": "<h2>Improve the Layout</h2><p>Shorter, clearer routes reduce travel time and handling. Reviewing how work areas are arranged can create a more direct path from one stage to the next.</p><p>Even small changes, such as moving storage closer to point of use, can make material movement noticeably smoother.</p><h3>Key Considerations</h3><ul><li>Shorter travel distances</li><li>Clear and separated routes</li><li>Storage close to point of use</li></ul>"
+        },
+        {
+          "tocTitle": "Choose Supporting Equipment",
+          "content": "<h2>Choose Supporting Equipment</h2><p>Conveyors, lifting aids, and handling equipment help materials move consistently between stages. The right choice depends on loads, distances, and volumes.</p><p>Selecting equipment that suits the improved layout helps keep material flowing as demand grows.</p><h3>Key Considerations</h3><ul><li>Load size and handling volume</li><li>Distance between work areas</li><li>Room for future growth</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Improving Material Flow - Ironova",
+        "metaDescription": "Ironova shares practical ways to map material movement, remove bottlenecks and improve flow between receiving, storage, production and dispatch areas."
+      }
+    },
+    {
+      "title": "Understanding Equipment Capacity and Application Requirements",
+      "slug": "understanding-equipment-capacity-application-requirements",
+      "category": "Industrial Equipment",
+      "type": "Guide",
+      "publishDate": "2026-09-18",
+      "readTime": "4 Min Read",
+      "shortDescription": "How load ratings, duty cycles and site conditions shape the right equipment choice.",
+      "mainImage": "rectangle-27-5-.webp",
+      "introText": "Equipment capacity is only meaningful when it is matched to the real demands of the application. Ratings on a datasheet need to be read alongside load sizes, duty cycles, and the conditions on site.",
+      "introParagraph": "Understanding how these factors relate helps teams choose equipment that performs safely and reliably over its full service life.",
+      "contentImage": "industry-5-1-.webp",
+      "sections": [
+        {
+          "tocTitle": "Know the Load",
+          "content": "<h2>Know the Loads You Handle</h2><p>Start with the loads themselves. Record typical and maximum weights, dimensions, and how often each load is moved, lifted, or processed during a normal shift.</p><p>Accurate load data makes capacity ratings easier to compare and helps avoid both under-sized and over-sized equipment.</p><h3>Key Considerations</h3><ul><li>Typical and maximum load weights</li><li>Load dimensions and handling method</li><li>Handling frequency per shift</li></ul>"
+        },
+        {
+          "tocTitle": "Read the Ratings",
+          "content": "<h2>Read Capacity Ratings Carefully</h2><p>Capacity ratings are based on specific conditions. Factors such as reach, lift height, and load position can reduce the usable capacity in day-to-day operation.</p><p>Review how ratings change across the working range and confirm figures with the manufacturer when the application is close to the limit.</p><h3>Key Considerations</h3><ul><li>Rated capacity across the working range</li><li>Reach, lift height and load position</li><li>Safety margin for daily operation</li></ul>"
+        },
+        {
+          "tocTitle": "Consider the Duty Cycle",
+          "content": "<h2>Consider the Duty Cycle</h2><p>How often equipment runs matters as much as how much it can carry. Continuous or high-frequency use places more demand on motors, structures, and components.</p><p>Matching the duty classification to real usage supports reliable performance and predictable maintenance.</p><h3>Key Considerations</h3><ul><li>Operating hours per day</li><li>Number of cycles per hour</li><li>Peak versus average demand</li></ul>"
+        },
+        {
+          "tocTitle": "Check Site Conditions",
+          "content": "<h2>Check the Site Conditions</h2><p>Temperature, dust, moisture, and floor conditions all affect how equipment performs. The environment can influence material choices, protection ratings, and maintenance needs.</p><p>Reviewing these conditions early helps ensure the selected equipment suits the space it will operate in.</p><h3>Key Considerations</h3><ul><li>Temperature and humidity range</li><li>Dust, moisture and corrosion exposure</li><li>Floor strength and surface condition</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Equipment Capacity and Requirements - Ironova",
+        "metaDescription": "Learn how Ironova reviews load ratings, duty cycles and site conditions to match industrial equipment capacity with real application requirements."
+      }
+    },
+    {
+      "title": "Why Early Project Planning Makes a Difference",
+      "slug": "why-early-project-planning-makes-a-difference",
+      "category": "Engineering & Design",
+      "type": "Guide",
+      "publishDate": "2026-09-14",
+      "readTime": "5 Min Read",
+      "shortDescription": "Why defining scope, timelines and requirements early leads to smoother equipment projects.",
+      "mainImage": "rectangle-27-6-.webp",
+      "introText": "Most equipment projects succeed or struggle long before installation day. The decisions made during early planning shape the budget, the schedule, and how smoothly the new equipment fits into daily operations.",
+      "introParagraph": "Taking time to define scope, align stakeholders, and map out the timeline helps teams avoid costly changes once work is underway.",
+      "contentImage": "industry-7.webp",
+      "sections": [
+        {
+          "tocTitle": "Define the Project Scope",
+          "content": "<h2>Define the Project Scope Early</h2><p>A clear scope sets the boundaries of the project. Outline what the equipment must achieve, which areas of the facility are affected, and what success looks like once the work is complete.</p><p>When the scope is agreed early, it becomes much easier to evaluate options and keep later decisions consistent.</p><h3>Key Considerations</h3><ul><li>Project goals and expected outcomes</li><li>Areas and processes affected</li><li>Budget range and key constraints</li></ul>"
+        },
+        {
+          "tocTitle": "Bring the Team Together",
+          "content": "<h2>Align Everyone Involved</h2><p>Equipment projects touch engineering, operations, maintenance, and suppliers. Bringing these groups together early helps surface requirements that might otherwise be missed.</p><p>Shared planning sessions reduce misunderstandings and make sure decisions are made with the full picture in view.</p><h3>Key Considerations</h3><ul><li>Key stakeholders and decision makers</li><li>Regular planning and review meetings</li><li>Shared project goals and priorities</li></ul>"
+        },
+        {
+          "tocTitle": "Build a Realistic Timeline",
+          "content": "<h2>Build a Realistic Timeline</h2><p>Lead times, approvals, site preparation, and installation windows all affect the schedule. A realistic timeline accounts for each stage and leaves room for the unexpected.</p><p>Planning around production schedules helps keep operations running while the project moves forward.</p><h3>Key Considerations</h3><ul><li>Equipment lead times and deliveries</li><li>Site preparation and approvals</li><li>Installation and commissioning windows</li></ul>"
+        },
+        {
+          "tocTitle": "Prepare for Handover",
+          "content": "<h2>Prepare for a Smooth Handover</h2><p>The project does not end when equipment is installed. Training, documentation, and maintenance planning help teams take ownership and run the equipment with confidence.</p><p>Including handover in the early plan avoids last-minute gaps once the equipment goes live.</p><h3>Key Considerations</h3><ul><li>Operator training sessions</li><li>Technical documentation and manuals</li><li>Initial maintenance schedule</li></ul>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Why Early Project Planning Matters - Ironova",
+        "metaDescription": "Ironova explains why defining scope, timelines and requirements early leads to smoother industrial equipment projects with fewer delays and changes."
+      }
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Electric Pallet Truck",
+      "slug": "electric-pallet-truck",
+      "order": 1,
+      "category": "Material Handling Equipment",
+      "shortDescription": "A powered solution for moving palletized goods across suitable warehouse and facility environments.",
+      "mainImage": "frame-29.webp",
+      "gallery": [
+        "15a448514fdffc7d5af1c1edeefa59a1ed845f65-1-.webp",
+        "c826dd6990c9964de6ecabd9cb62e264619b2e6b-1-.webp",
+        "47fd7e3a444264ecd5dd883c3701befc9eefdc01-1-.webp"
+      ],
+      "application": "Pallet Transportation",
+      "industry": "Warehousing & Logistics",
+      "overviewText": "An electric pallet truck is a breeze for operators to move pallet loads around with a little powered assistance. It's a great pick for all kinds of warehouse and internal logistics tasks.",
+      "overviewParagraph": "Whether you're moving goods between storage areas, replenishing workstations, or supporting dispatch operations, selecting the right model starts with understanding your load requirements, travel distances, and working environment.",
+      "keyBenefits": "<h3>Key Benefits</h3><ul><li><strong>Powered Movement</strong></li></ul><p>Helps reduce the physical effort required for suitable pallet transportation tasks.</p><ul><li><strong>Efficient Handling</strong></li></ul><p>Supports the movement of goods across designated warehouse routes.</p><ul><li><strong>Space-Conscious Operation</strong></li></ul><p>Selected models can suit facilities with limited maneuvering space.</p><ul><li><strong>Flexible Applications</strong></li></ul><p>Useful for compatible material movement tasks across storage and distribution operations.</p>",
+      "features": [
+        {
+          "title": "Powered Drive",
+          "text": "Supports controlled travel across suitable operating surfaces."
+        },
+        {
+          "title": "Electric Lifting",
+          "text": "Lifts pallet loads within the model's capacity and range."
+        },
+        {
+          "title": "Operator Controls",
+          "text": "Controls for travel and lifting functions vary by equipment configuration."
+        },
+        {
+          "title": "Compact Maneuverability",
+          "text": "Some models can navigate narrow aisles and tight spaces."
+        },
+        {
+          "title": "Rechargeable Battery",
+          "text": "Battery operation allows for repeated tasks with proper charging."
+        },
+        {
+          "title": "Integrated Safety Features",
+          "text": "Features may include emergency stops, brakes, and operator protection."
+        }
+      ],
+      "everydayTasks": "<h2>A Practical Fit for Everyday Handling Tasks</h2><p>Electric pallet trucks can support a range of material movement activities when the equipment is matched to the load and environment.</p><ul><li>Warehousing &amp; Storage</li><li>Distribution Centers</li><li>Manufacturing Facilities</li><li>Retail &amp; Wholesale</li></ul>",
+      "specsIntro": "<h2>Understand the Details Before You Choose.</h2><p>Equipment specifications vary by manufacturer and model. Confirm the following details when evaluating a suitable electric pallet truck.</p>",
+      "specs": [
+        {
+          "label": "Load Capacity",
+          "value": "2,000 kg"
+        },
+        {
+          "label": "Lift Height",
+          "value": "200 mm"
+        },
+        {
+          "label": "Fork Length",
+          "value": "1,150 mm (1,000 / 1,220 mm optional)"
+        },
+        {
+          "label": "Overall Width",
+          "value": "685 mm"
+        },
+        {
+          "label": "Battery Type",
+          "value": "Lithium-ion, 24V / 105Ah"
+        },
+        {
+          "label": "Operating Time",
+          "value": "Up to 6–8 hours (standard duty cycle)"
+        },
+        {
+          "label": "Charging Time",
+          "value": "2–3 hours (full charge)"
+        },
+        {
+          "label": "Turning Radius",
+          "value": "1,450 mm"
+        },
+        {
+          "label": "Travel Speed",
+          "value": "5.0 / 5.5 km/h (laden / unladen)"
+        },
+        {
+          "label": "Braking System",
+          "value": "Electromagnetic brake with regenerative braking and emergency reverse"
+        }
+      ],
+      "faqTitle": "Common Questions About Electric Pallet Trucks.",
+      "seo": null
+    },
+    {
+      "name": "Overhead Crane System",
+      "slug": "overhead-crane-system",
+      "order": 2,
+      "category": "Lifting Systems",
+      "shortDescription": "A lifting solution for handling suitable loads within industrial facilities, subject to site conditions and engineering requirements.",
+      "mainImage": "frame-34-2-.webp",
+      "gallery": [
+        "15a448514fdffc7d5af1c1edeefa59a1ed845f65-1-.webp",
+        "c826dd6990c9964de6ecabd9cb62e264619b2e6b-1-.webp",
+        "47fd7e3a444264ecd5dd883c3701befc9eefdc01-1-.webp"
+      ],
+      "application": "Heavy Load Lifting",
+      "industry": "Manufacturing & Fabrication",
+      "overviewText": "An overhead crane system lifts and moves heavy loads above the working floor, keeping aisles clear and making the most of the available space in industrial facilities.",
+      "overviewParagraph": "Whether you're handling raw materials, positioning heavy components, or loading finished goods, choosing the right crane starts with understanding your loads, span, lift height, and building structure.",
+      "keyBenefits": "<h3>Key Benefits</h3><ul><li><strong>Overhead Load Handling</strong></li></ul><p>Moves suitable loads above the floor to keep working areas clear.</p><ul><li><strong>Precise Positioning</strong></li></ul><p>Supports controlled lifting and placement of heavy components.</p><ul><li><strong>Efficient Use of Space</strong></li></ul><p>Uses overhead space so floor areas remain available for operations.</p><ul><li><strong>Reduced Manual Lifting</strong></li></ul><p>Helps limit manual handling for loads within the system's capacity.</p>",
+      "features": [
+        {
+          "title": "Powered Hoist",
+          "text": "Raises and lowers loads within the hoist's rated capacity."
+        },
+        {
+          "title": "Bridge & Trolley Travel",
+          "text": "Moves loads along the span and runway of the crane."
+        },
+        {
+          "title": "Pendant or Radio Control",
+          "text": "Control options vary by crane configuration and application."
+        },
+        {
+          "title": "Variable Speed Control",
+          "text": "Some systems allow smooth starts, stops, and fine positioning."
+        },
+        {
+          "title": "Limit Switches",
+          "text": "Help prevent over-travel of the hoist, trolley, and bridge."
+        },
+        {
+          "title": "Integrated Safety Features",
+          "text": "Features may include overload protection, brakes, and emergency stops."
+        }
+      ],
+      "everydayTasks": "<h2>A Practical Fit for Everyday Lifting Tasks</h2><p>Overhead crane systems can support a range of lifting tasks when the equipment is matched to the load, span, and building structure.</p><ul><li>Steel &amp; Metal Fabrication</li><li>Machine Shops</li><li>Assembly Plants</li><li>Maintenance Workshops</li></ul>",
+      "specsIntro": "<h2>Understand the Details Before You Choose.</h2><p>Equipment specifications vary by manufacturer and model. Confirm the following details when evaluating a suitable overhead crane system.</p>",
+      "specs": [
+        {
+          "label": "Rated Capacity",
+          "value": "5,000 kg"
+        },
+        {
+          "label": "Span",
+          "value": "12 m"
+        },
+        {
+          "label": "Lift Height",
+          "value": "8 m"
+        },
+        {
+          "label": "Hoist Type",
+          "value": "Electric wire rope hoist"
+        },
+        {
+          "label": "Hoisting Speed",
+          "value": "5 / 0.8 m/min (dual speed)"
+        },
+        {
+          "label": "Trolley Speed",
+          "value": "20 m/min"
+        },
+        {
+          "label": "Bridge Speed",
+          "value": "32 m/min"
+        },
+        {
+          "label": "Control Method",
+          "value": "Pendant and radio remote control"
+        },
+        {
+          "label": "Power Supply",
+          "value": "400V / 3-phase / 50Hz"
+        },
+        {
+          "label": "Safety Features",
+          "value": "Overload limiter, upper and lower limit switches, and emergency stop"
+        }
+      ],
+      "faqTitle": "Common Questions About Overhead Crane Systems.",
+      "seo": null
+    },
+    {
+      "name": "Belt Conveyor System",
+      "slug": "belt-conveyor-system",
+      "order": 3,
+      "category": "Conveyor Systems",
+      "shortDescription": "A conveyor solution for supporting continuous material movement between designated points within an operational process.",
+      "mainImage": "frame-34-3-.webp",
+      "gallery": [
+        "15a448514fdffc7d5af1c1edeefa59a1ed845f65-1-.webp",
+        "c826dd6990c9964de6ecabd9cb62e264619b2e6b-1-.webp",
+        "47fd7e3a444264ecd5dd883c3701befc9eefdc01-1-.webp"
+      ],
+      "application": "Continuous Material Flow",
+      "industry": "Manufacturing & Distribution",
+      "overviewText": "A belt conveyor system keeps materials moving steadily between workstations, helping production and distribution teams reduce manual handling and maintain a consistent flow.",
+      "overviewParagraph": "Whether you're linking production stages, supporting packing lines, or moving goods to dispatch, selecting the right conveyor starts with understanding your products, throughput, route, and available space.",
+      "keyBenefits": "<h3>Key Benefits</h3><ul><li><strong>Continuous Movement</strong></li></ul><p>Keeps suitable products moving between designated points without manual carrying.</p><ul><li><strong>Consistent Throughput</strong></li></ul><p>Supports a steady flow of materials across production and packing stages.</p><ul><li><strong>Reduced Handling</strong></li></ul><p>Helps limit repetitive lifting and carrying tasks for operators.</p><ul><li><strong>Flexible Layouts</strong></li></ul><p>Can be configured with curves, inclines, and transfers to suit the facility.</p>",
+      "features": [
+        {
+          "title": "Motorized Drive",
+          "text": "Moves the belt at a controlled speed suited to the application."
+        },
+        {
+          "title": "Adjustable Speed",
+          "text": "Speed control lets the conveyor match upstream and downstream processes."
+        },
+        {
+          "title": "Modular Sections",
+          "text": "Straight, curved, and incline sections can be combined for the route."
+        },
+        {
+          "title": "Belt Options",
+          "text": "Belt materials vary for different products and environments."
+        },
+        {
+          "title": "Side Guides",
+          "text": "Help keep products aligned and on the belt during transport."
+        },
+        {
+          "title": "Integrated Safety Features",
+          "text": "Features may include emergency stops, guarding, and pull-cord switches."
+        }
+      ],
+      "everydayTasks": "<h2>A Practical Fit for Everyday Material Flow</h2><p>Belt conveyor systems can support a range of material movement activities when the equipment is matched to the product and process.</p><ul><li>Production Lines</li><li>Packing &amp; Sorting Areas</li><li>Distribution Centers</li><li>Food &amp; Beverage Processing</li></ul>",
+      "specsIntro": "<h2>Understand the Details Before You Choose.</h2><p>Equipment specifications vary by manufacturer and model. Confirm the following details when evaluating a suitable belt conveyor system.</p>",
+      "specs": [
+        {
+          "label": "Load Capacity",
+          "value": "50 kg per metre"
+        },
+        {
+          "label": "Belt Width",
+          "value": "600 mm"
+        },
+        {
+          "label": "Conveyor Length",
+          "value": "10 m (modular extensions available)"
+        },
+        {
+          "label": "Belt Speed",
+          "value": "5–30 m/min (variable)"
+        },
+        {
+          "label": "Belt Material",
+          "value": "PVC food-grade or rubber"
+        },
+        {
+          "label": "Drive Type",
+          "value": "Geared motor, end or centre drive"
+        },
+        {
+          "label": "Motor Power",
+          "value": "0.75 kW"
+        },
+        {
+          "label": "Frame Material",
+          "value": "Powder-coated steel or stainless steel"
+        },
+        {
+          "label": "Working Height",
+          "value": "750–950 mm (adjustable)"
+        },
+        {
+          "label": "Safety Features",
+          "value": "Emergency stop buttons, guarding, and pull-cord switch"
+        }
+      ],
+      "faqTitle": "Common Questions About Belt Conveyor Systems.",
+      "seo": null
+    },
+    {
+      "name": "Industrial Air Compressor",
+      "slug": "industrial-air-compressor",
+      "order": 4,
+      "category": "Industrial Machinery",
+      "shortDescription": "Compressed-air equipment used to support compatible pneumatic tools, machinery, and industrial processes.",
+      "mainImage": "frame-33.webp",
+      "gallery": [
+        "15a448514fdffc7d5af1c1edeefa59a1ed845f65-1-.webp",
+        "c826dd6990c9964de6ecabd9cb62e264619b2e6b-1-.webp",
+        "47fd7e3a444264ecd5dd883c3701befc9eefdc01-1-.webp"
+      ],
+      "application": "Compressed Air Supply",
+      "industry": "Manufacturing & Maintenance",
+      "overviewText": "An industrial air compressor supplies reliable compressed air to tools and machinery, supporting everyday production, assembly, and maintenance tasks across the facility.",
+      "overviewParagraph": "Whether you're powering pneumatic tools, running automated equipment, or supporting cleaning and finishing work, selecting the right compressor starts with understanding your air demand, pressure, duty cycle, and installation space.",
+      "keyBenefits": "<h3>Key Benefits</h3><ul><li><strong>Reliable Air Supply</strong></li></ul><p>Provides compressed air for compatible tools, machines, and processes.</p><ul><li><strong>Energy-Conscious Operation</strong></li></ul><p>Selected models offer variable speed drives to match air demand.</p><ul><li><strong>Multiple Applications</strong></li></ul><p>Supports a wide range of pneumatic tasks across the facility.</p><ul><li><strong>Lower Downtime</strong></li></ul><p>Planned servicing helps keep air supply consistent for daily operations.</p>",
+      "features": [
+        {
+          "title": "Rotary Screw Design",
+          "text": "Delivers continuous air output for demanding duty cycles."
+        },
+        {
+          "title": "Variable Speed Drive",
+          "text": "Adjusts motor speed to match changing air demand."
+        },
+        {
+          "title": "Digital Controller",
+          "text": "Displays pressure, temperature, and service information."
+        },
+        {
+          "title": "Integrated Air Treatment",
+          "text": "Some models include dryers and filters for cleaner air."
+        },
+        {
+          "title": "Low-Noise Enclosure",
+          "text": "Acoustic enclosures help reduce noise in the workspace."
+        },
+        {
+          "title": "Integrated Safety Features",
+          "text": "Features may include pressure relief valves, thermal protection, and emergency stops."
+        }
+      ],
+      "everydayTasks": "<h2>A Practical Fit for Everyday Air Supply Tasks</h2><p>Industrial air compressors can support a range of pneumatic tasks when the equipment is matched to the air demand and working environment.</p><ul><li>Manufacturing Plants</li><li>Assembly Lines</li><li>Maintenance Workshops</li><li>Packaging Facilities</li></ul>",
+      "specsIntro": "<h2>Understand the Details Before You Choose.</h2><p>Equipment specifications vary by manufacturer and model. Confirm the following details when evaluating a suitable industrial air compressor.</p>",
+      "specs": [
+        {
+          "label": "Free Air Delivery",
+          "value": "3.2 m³/min"
+        },
+        {
+          "label": "Working Pressure",
+          "value": "8 bar"
+        },
+        {
+          "label": "Motor Power",
+          "value": "22 kW"
+        },
+        {
+          "label": "Compressor Type",
+          "value": "Oil-injected rotary screw"
+        },
+        {
+          "label": "Drive Type",
+          "value": "Variable speed drive"
+        },
+        {
+          "label": "Air Receiver",
+          "value": "500 L"
+        },
+        {
+          "label": "Cooling Method",
+          "value": "Air cooled"
+        },
+        {
+          "label": "Noise Level",
+          "value": "68 dB(A)"
+        },
+        {
+          "label": "Power Supply",
+          "value": "400V / 3-phase / 50Hz"
+        },
+        {
+          "label": "Control System",
+          "value": "Digital controller with remote monitoring"
+        }
+      ],
+      "faqTitle": "Common Questions About Industrial Air Compressors.",
+      "seo": null
+    }
+  ],
+  "media": {
+    "rectangle-16-9-.webp": {
+      "alt": "Precision industrial machine with red cabling inside an engineering workshop"
+    },
+    "rectangle-5-5-.webp": {
+      "alt": ""
+    },
+    "rectangle-5-6-.webp": {
+      "alt": ""
+    },
+    "rectangle-16-5-.webp": {
+      "alt": "Automated assembly equipment working on a component in a clean facility"
+    },
+    "rectangle-16-7-.webp": {
+      "alt": "Industrial connector and cabling being prepared for equipment installation"
+    },
+    "rectangle-16-8-.webp": {
+      "alt": "Engineer in a hard hat and safety vest reviewing maintenance plans on site"
+    },
+    "rectangle-16-6-.webp": {
+      "alt": "Industrial equipment connected with red cabling for system integration"
+    },
+    "project-image.webp": {
+      "alt": "Industrial facility with material handling equipment"
+    },
+    "rectangle-33.webp": {
+      "alt": ""
+    },
+    "rectangle-5-1-.webp": {
+      "alt": ""
+    },
+    "rectangle-5-2-.webp": {
+      "alt": ""
+    },
+    "project-image-1-.webp": {
+      "alt": "Production equipment working together inside a manufacturing plant"
+    },
+    "project-image-2-.webp": {
+      "alt": "Industrial lifting equipment being reviewed for an upgrade"
+    },
+    "project-image-3-.webp": {
+      "alt": "Construction site equipment planned around material movement"
+    },
+    "rectangle-16-10-.webp": {
+      "alt": "Precision industrial machine with red cabling inside an engineering workshop"
+    },
+    "industry-6.webp": {
+      "alt": ""
+    },
+    "rectangle-27-1-.webp": {
+      "alt": "Automated assembly equipment working on a component in a clean facility"
+    },
+    "rectangle-16-8--2.webp": {
+      "alt": ""
+    },
+    "rectangle-27-8-.webp": {
+      "alt": "Engineer in a hard hat and safety vest reviewing maintenance plans on site"
+    },
+    "1f72125142afeca6791ddb577444dde55c0cb511.webp": {
+      "alt": ""
+    },
+    "rectangle-16-7--2.webp": {
+      "alt": "Industrial connector and cabling being prepared for equipment installation"
+    },
+    "rectangle-27.webp": {
+      "alt": ""
+    },
+    "rectangle-27-2-.webp": {
+      "alt": "Belt conveyor system on a production line"
+    },
+    "rectangle-27-5-.webp": {
+      "alt": "Overhead crane lifting system in an industrial facility"
+    },
+    "industry-5-1-.webp": {
+      "alt": ""
+    },
+    "rectangle-27-6-.webp": {
+      "alt": "Industrial air compressor unit"
+    },
+    "industry-7.webp": {
+      "alt": ""
+    },
+    "frame-29.webp": {
+      "alt": "Electric Pallet Truck"
+    },
+    "15a448514fdffc7d5af1c1edeefa59a1ed845f65-1-.webp": {
+      "alt": "Electric Pallet Truck"
+    },
+    "c826dd6990c9964de6ecabd9cb62e264619b2e6b-1-.webp": {
+      "alt": "Electric Pallet Truck"
+    },
+    "47fd7e3a444264ecd5dd883c3701befc9eefdc01-1-.webp": {
+      "alt": "Electric Pallet Truck"
+    },
+    "frame-34-2-.webp": {
+      "alt": "Overhead Crane System"
+    },
+    "frame-34-3-.webp": {
+      "alt": "Belt Conveyor System"
+    },
+    "frame-33.webp": {
+      "alt": "Industrial Air Compressor"
+    }
+  }
+}

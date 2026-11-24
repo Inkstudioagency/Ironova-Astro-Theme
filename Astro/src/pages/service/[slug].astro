@@ -1,0 +1,327 @@
+---
+/** CMS template page: one page per Strapi `service` entry. */
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import CtaSection from "../../components/CtaSection.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getServices, img } from "../../lib/strapi";
+
+export async function getStaticPaths() {
+  const entries = await getServices();
+  return entries.map((entry) => ({ params: { slug: entry.slug } }));
+}
+
+// Resolve the entry at render time (not via getStaticPaths props) so content
+// edits made in Strapi show up immediately while running `astro dev`.
+const entry = (await getServices()).find((e) => e.slug === Astro.params.slug);
+if (!entry) return Astro.redirect("/404");
+
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c02065" title={entry.seo?.metaTitle || `${entry.name} - Ironova`} description={entry.seo?.metaDescription || entry.shortDescription} image={img(entry.mainImage).src || undefined}>
+  <div class="page-wrapper">
+    <Navbar variant="bg-onyx" instance="200c8d62-bbf6-b60e-8458-37b47f4814f0" />
+    <main class="main">
+      <section class="section is-night-dark">
+        <div class="container">
+          <div class="detail-hero">
+            <div class="detail-hero-text">
+              <div class="detail-hero-top">
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;74e671fa-5909-85e7-3130-a35dd0fbe07f&quot;],[]]]" class="breadcrumb">
+                  <a href="/" class="font-extra-small is-soft is-link">Home</a>
+                  <div class="font-extra-small is-soft">/</div>
+                  <a href="/service" class="font-extra-small is-soft is-link">Service</a>
+                  <div class="font-extra-small is-soft">/</div>
+                  <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(entry.name) }]}>{entry.name}</div>
+                </div>
+                <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;74e671fa-5909-85e7-3130-a35dd0fbe081&quot;],[]]]" class:list={["section-heading is-large is-detail", { "w-dyn-bind-empty": !(entry.name) }]}>{entry.name}</h1>
+              </div>
+              <div class="detail-hero-bottom">
+                <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;74e671fa-5909-85e7-3130-a35dd0fbe084&quot;],[]]]" class:list={["font-normal is-lead", { "w-dyn-bind-empty": !(entry.shortDescription) }]}>{entry.shortDescription}</p>
+                <a href="/contact-v1" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;8a68364e-7301-7521-08e4-558a908d231c&quot;],[]]]" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">Request a Quote</div>
+                    <div class="footer-link-text is-two">Request a Quote</div>
+                  </div>
+                  <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;74e671fa-5909-85e7-3130-a35dd0fbe089&quot;],[]]]" class="detail-hero-media"><img {...img(entry.mainImage, "")} loading="lazy" width="1764" height="1576" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.mainImage) }]}></div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="detail-intro">
+              <div class="detail-intro-head">
+                <div to-top-0="" class:list={["font-extra-small", { "w-dyn-bind-empty": !(entry.introLabel) }]}>{entry.introLabel}</div>
+                <div to-top-2="" class="detail-intro-text">
+                  <div class:list={["detail-intro-span rebuild-text", { "w-dyn-bind-empty": !(entry.introText) }]}>{entry.introText}</div>
+                </div>
+              </div>
+              <div class="detail-points">
+                <div to-top-0="" class="detail-point">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 18.6667L14.6667 21.3333L20 16"></path>
+                      <path stroke-linejoin="round" stroke-width="1.5" stroke="currentColor" d="M10.667 5.33325L10.667 6.66655C10.667 7.92364 10.667 8.55219 11.0575 8.94272C11.448 9.33325 12.0766 9.33325 13.3337 9.33325H18.667C19.9241 9.33325 20.5526 9.33325 20.9431 8.94273C21.3337 8.5522 21.3337 7.92367 21.3337 6.66659V5.33325"></path>
+                      <path fill="currentColor" d="M19.2663 5.33341L18.2862 5.53235C18.3801 5.99433 18.7837 6.32808 19.2551 6.33335L19.2663 5.33341ZM12.733 5.33341L12.7441 6.33335C13.2155 6.32808 13.6191 5.99433 13.713 5.53235L12.733 5.33341ZM21.333 5.35651L21.3631 4.35696C21.3569 4.35677 21.3505 4.35664 21.3442 4.35657L21.333 5.35651ZM10.6663 5.35651L10.6552 4.35657C10.6488 4.35664 10.6425 4.35677 10.6362 4.35696L10.6663 5.35651ZM19.2663 5.33341L20.2463 5.13448C19.8447 3.15612 18.0973 1.66675 15.9997 1.66675V2.66675V3.66675C17.1273 3.66675 18.0702 4.46772 18.2862 5.53235L19.2663 5.33341ZM15.9997 2.66675V1.66675C13.9021 1.66675 12.1545 3.15612 11.753 5.13448L12.733 5.33341L13.713 5.53235C13.9291 4.46772 14.8719 3.66675 15.9997 3.66675V2.66675ZM26.6663 13.3334H27.6663C27.6663 11.4761 27.6685 9.98246 27.511 8.81108C27.3497 7.61094 27.0045 6.60044 26.2019 5.79788L25.4947 6.50499L24.7877 7.21209C25.1567 7.58111 25.3973 8.09921 25.5289 9.07757C25.6642 10.0847 25.6663 11.4195 25.6663 13.3334H26.6663ZM26.6663 21.3334H27.6663V13.3334H26.6663H25.6663V21.3334H26.6663ZM26.6663 21.3334H25.6663C25.6663 23.2473 25.6642 24.5821 25.5289 25.5893C25.3973 26.5677 25.1567 27.0857 24.7877 27.4547L25.4947 28.1618L26.2019 28.869C27.0045 28.0663 27.3497 27.0559 27.511 25.8558C27.6685 24.6843 27.6663 23.1907 27.6663 21.3334H26.6663ZM18.6663 29.3334V30.3334C20.5237 30.3334 22.0173 30.3355 23.1887 30.1781C24.3889 30.0167 25.3993 29.6715 26.2019 28.869L25.4947 28.1618L24.7877 27.4547C24.4186 27.8238 23.9006 28.0643 22.9222 28.1959C21.915 28.3313 20.5802 28.3334 18.6663 28.3334V29.3334ZM21.333 5.35651L21.3029 6.35606C23.3891 6.41892 24.2402 6.66464 24.7877 7.21209L25.4947 6.50499L26.2019 5.79788C25.0391 4.63519 23.4194 4.41892 21.3631 4.35696L21.333 5.35651ZM13.333 29.3334V30.3334H18.6663V29.3334V28.3334H13.333V29.3334ZM13.333 29.3334V28.3334C11.4191 28.3334 10.0843 28.3313 9.07717 28.1959C8.0988 28.0643 7.5807 27.8238 7.21169 27.4547L6.50458 28.1618L5.79748 28.869C6.60004 29.6715 7.61053 30.0167 8.81068 30.1781C9.98205 30.3355 11.4757 30.3334 13.333 30.3334V29.3334ZM5.33301 21.3334H4.33301C4.33301 23.1907 4.33089 24.6843 4.48837 25.8558C4.64973 27.0559 4.99492 28.0663 5.79748 28.869L6.50458 28.1618L7.21169 27.4547C6.84268 27.0857 6.60208 26.5677 6.47054 25.5893C6.33513 24.5821 6.33301 23.2473 6.33301 21.3334H5.33301ZM5.33301 13.3334H6.33301C6.33301 11.4195 6.33513 10.0847 6.47054 9.07757C6.60208 8.09921 6.84268 7.58111 7.21169 7.21209L6.50458 6.50499L5.79748 5.79788C4.99492 6.60044 4.64973 7.61094 4.48837 8.81108C4.33089 9.98246 4.33301 11.4761 4.33301 13.3334H5.33301ZM10.6663 5.35651L10.6362 4.35696C8.57996 4.41892 6.96017 4.63519 5.79748 5.79788L6.50458 6.50499L7.21169 7.21209C7.75914 6.66464 8.61021 6.41892 10.6965 6.35606L10.6663 5.35651ZM5.33301 13.3334H4.33301V21.3334H5.33301H6.33301V13.3334H5.33301ZM10.6663 5.35651L10.6775 6.35645L12.7441 6.33335L12.733 5.33341L12.7218 4.33348L10.6552 4.35657L10.6663 5.35651ZM21.333 5.35651L21.3442 4.35657L19.2774 4.33348L19.2663 5.33341L19.2551 6.33335L21.3218 6.35645L21.333 5.35651Z"></path>
+                    </svg></div>
+                  <div class:list={["font-medium is-about", { "w-dyn-bind-empty": !(entry.points[0]?.label) }]}>{entry.points[0]?.label}</div>
+                </div>
+                <div to-top-2="" class="detail-point">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M3.33301 12.6667H17.9997"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M23.333 12.6667H28.6663"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M12.667 28.6667V12.6667"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.667 8.66659V3.33325"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M22.6663 22.6666C19.9997 22.6666 17.333 24.8297 17.333 28.6666H13.9997C8.97135 28.6666 6.45721 28.6666 4.8951 27.1045C3.33301 25.5425 3.33301 23.0282 3.33301 17.9999V13.9999C3.33301 8.9716 3.33301 6.45745 4.8951 4.89535C6.45721 3.33325 8.97135 3.33325 13.9997 3.33325H17.9997C23.0279 3.33325 25.5422 3.33325 27.1042 4.89535C28.6663 6.45745 28.6663 8.9716 28.6663 13.9999V23.7909C28.6663 26.4837 26.4834 28.6666 23.7906 28.6666"></path>
+                    </svg></div>
+                  <div class:list={["font-medium is-about", { "w-dyn-bind-empty": !(entry.points[1]?.label) }]}>{entry.points[1]?.label}</div>
+                </div>
+                <div to-top-4="" class="detail-point">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-width="1.5" stroke="currentColor" d="M12 6.66675C12 8.87588 10.2091 10.6667 8 10.6667C5.79087 10.6667 4 8.87588 4 6.66675C4 4.45761 5.79087 2.66675 8 2.66675C10.2091 2.66675 12 4.45761 12 6.66675Z"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M28 6.66675C28 8.87588 26.2092 10.6667 24 10.6667C21.7908 10.6667 20 8.87588 20 6.66675C20 4.45761 21.7908 2.66675 24 2.66675C26.2092 2.66675 28 4.45761 28 6.66675Z"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M12 25.3333C12 27.5425 10.2091 29.3333 8 29.3333C5.79087 29.3333 4 27.5425 4 25.3333C4 23.1241 5.79087 21.3333 8 21.3333C10.2091 21.3333 12 23.1241 12 25.3333Z"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M8 10.6667V21.3334"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M8 16.0001H18.6667C20.5335 16.0001 21.4669 16.0001 22.18 15.6367C22.8072 15.3171 23.3171 14.8073 23.6367 14.1801C24 13.467 24 12.5336 24 10.6667"></path>
+                    </svg></div>
+                  <div class:list={["font-medium is-about", { "w-dyn-bind-empty": !(entry.points[2]?.label) }]}>{entry.points[2]?.label}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="detail-split">
+              <div to-top-0="" class="detail-split-media"><img {...img(entry.skillsImage, "")} loading="lazy" width="1860" height="1976" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.skillsImage) }]}></div>
+              <div class="detail-split-content">
+                <div class="detail-head">
+                  <div class="detail-head-top expertise">
+                    <div to-top-0="" class="font-extra-small">What We Do</div>
+                    <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;e5fe8c7d-8fbd-0873-d990-b49b2099acb7&quot;],[]]]" class:list={["section-heading", { "w-dyn-bind-empty": !(entry.skillsHeading) }]}>{entry.skillsHeading}</h2>
+                  </div>
+                  <p to-top-2="" class:list={["font-normal is-intro", { "w-dyn-bind-empty": !(entry.skillsText) }]}>{entry.skillsText}</p>
+                </div>
+                <div to-top-4="" class="detail-acc-list">
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.skills[0]?.title) }]}>{entry.skills[0]?.title}</div>
+                    <div class="detail-acc-body is-open">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.skills[0]?.text) }]}>{entry.skills[0]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.skills[1]?.title) }]}>{entry.skills[1]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.skills[1]?.text) }]}>{entry.skills[1]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.skills[2]?.title) }]}>{entry.skills[2]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.skills[2]?.text) }]}>{entry.skills[2]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.skills[3]?.title) }]}>{entry.skills[3]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.skills[3]?.text) }]}>{entry.skills[3]?.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-divider"></div>
+            <div class="detail-split">
+              <div class="detail-split-content">
+                <div class="detail-head">
+                  <div class="detail-head-top expertise">
+                    <div to-top-0="" class="font-extra-small">Our Approach</div>
+                    <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;e5fe8c7d-8fbd-0873-d990-b49b2099acdb&quot;],[]]]" class:list={["section-heading", { "w-dyn-bind-empty": !(entry.approachHeading) }]}>{entry.approachHeading}</h2>
+                  </div>
+                  <p to-top-2="" class:list={["font-normal is-intro", { "w-dyn-bind-empty": !(entry.approachText) }]}>{entry.approachText}</p>
+                </div>
+                <div to-top-4="" class="detail-acc-list">
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[0]?.title) }]}>{entry.steps[0]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[0]?.text) }]}>{entry.steps[0]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[1]?.title) }]}>{entry.steps[1]?.title}</div>
+                    <div class="detail-acc-body is-open">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[1]?.text) }]}>{entry.steps[1]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[2]?.title) }]}>{entry.steps[2]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[2]?.text) }]}>{entry.steps[2]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[3]?.title) }]}>{entry.steps[3]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[3]?.text) }]}>{entry.steps[3]?.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div to-top-0="" class="detail-split-media is-tall"><img {...img(entry.approachImage, "")} loading="lazy" width="1860" height="1976" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.approachImage) }]}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="page-section-head is-full">
+              <div to-top-0="" class="font-extra-small">What This Service Covers</div>
+              <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02065&quot;,&quot;eca7a5b1-b86f-f6ba-5493-c86a306a8539&quot;],[]]]" class="section-heading">Three Areas of Focus</h2>
+            </div>
+            <div class="difference-grid is-joined-cover">
+              <div to-top-0="" class="difference-card is-feature is-outline">
+                <div class="difference-card-top">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-width="1.5" stroke="currentColor" d="M22.6977 4.04461L21.4249 3.70549C17.825 2.74632 16.025 2.26674 14.607 3.08082C13.189 3.8949 12.7066 5.68473 11.742 9.26438L10.3779 14.3268C9.41327 17.9064 8.93098 19.6962 9.74967 21.1062C10.5684 22.5164 12.3684 22.9958 15.9683 23.955L17.2411 24.2942C20.841 25.2533 22.641 25.7329 24.059 24.9189C25.477 24.1048 25.9594 22.3149 26.9239 18.7353L28.2881 13.6729C29.2527 10.0932 29.735 8.30341 28.9163 6.89338C28.0977 5.48336 26.2977 5.00377 22.6977 4.04461Z"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M22.4716 9.91067C22.4716 10.9961 21.5867 11.876 20.4951 11.876C19.4035 11.876 18.5186 10.9961 18.5186 9.91067C18.5186 8.82523 19.4035 7.94531 20.4951 7.94531C21.5867 7.94531 22.4716 8.82523 22.4716 9.91067Z"></path>
+                      <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M16.0003 27.9285L14.7306 28.2743C11.139 29.2523 9.34329 29.7413 7.92858 28.9112C6.51389 28.0812 6.03272 26.2563 5.07037 22.6064L3.70942 17.4447C2.74708 13.7948 2.2659 11.9699 3.08269 10.5322C3.78922 9.28855 5.33366 9.33383 7.33366 9.33367"></path>
+                    </svg></div>
+                  <div class="font-extra-small is-soft">01//</div>
+                </div>
+                <div class="difference-card-text">
+                  <h3 class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.focusAreas[0]?.title) }]}>{entry.focusAreas[0]?.title}</h3>
+                  <p class:list={["font-regular", { "w-dyn-bind-empty": !(entry.focusAreas[0]?.text) }]}>{entry.focusAreas[0]?.text}</p>
+                </div>
+              </div>
+              <div to-top-2="" class="difference-card is-feature is-outline">
+                <div class="difference-card-top">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M28.423 9.52202L27.7649 8.37989C27.2671 7.51611 27.0183 7.08423 26.5949 6.91201C26.1714 6.73979 25.6925 6.87569 24.7347 7.14747L23.1078 7.60574C22.4963 7.74675 21.8547 7.66675 21.2965 7.37989L20.8473 7.12073C20.3685 6.81407 20.0002 6.36194 19.7963 5.83049L19.3511 4.50065C19.0583 3.62062 18.9119 3.18061 18.5634 2.92893C18.215 2.67725 17.7521 2.67725 16.8262 2.67725H15.3398C14.4141 2.67725 13.9511 2.67725 13.6026 2.92893C13.2541 3.18061 13.1078 3.62062 12.815 4.50065L12.3697 5.83049C12.1659 6.36194 11.7976 6.81407 11.3188 7.12073L10.8697 7.37989C10.3113 7.66675 9.66979 7.74675 9.05831 7.60574L7.43134 7.14747C6.47355 6.87569 5.99467 6.73979 5.57123 6.91201C5.14779 7.08423 4.89894 7.51611 4.40121 8.37989L3.7431 9.52202C3.27655 10.3317 3.04327 10.7365 3.08855 11.1675C3.13382 11.5984 3.44611 11.9457 4.07069 12.6403L5.44541 14.1772C5.78141 14.6026 6.01995 15.3439 6.01995 16.0104C6.01995 16.6772 5.78149 17.4183 5.44545 17.8438L4.07069 19.3807C3.44611 20.0754 3.13383 20.4226 3.08855 20.8536C3.04327 21.2846 3.27655 21.6894 3.7431 22.499L4.40119 23.6411C4.89891 24.5048 5.14779 24.9368 5.57123 25.109C5.99467 25.2812 6.47357 25.1454 7.43137 24.8735L9.05826 24.4152C9.66985 24.2742 10.3115 24.3543 10.8699 24.6412L11.319 24.9004C11.7977 25.2071 12.1659 25.6591 12.3697 26.1906L12.815 27.5206C13.1078 28.4006 13.2541 28.8406 13.6026 29.0923C13.9511 29.3439 14.4141 29.3439 15.3398 29.3439H16.8262C17.7521 29.3439 18.215 29.3439 18.5634 29.0923C18.9119 28.8406 19.0583 28.4006 19.3511 27.5206L19.7965 26.1906C20.0002 25.6591 20.3683 25.2071 20.8471 24.9004L21.2962 24.6412C21.8546 24.3543 22.4962 24.2742 23.1078 24.4152L24.7347 24.8735C25.6925 25.1454 26.1714 25.2812 26.5949 25.109C27.0183 24.9368 27.2671 24.5048 27.7649 23.6411L28.423 22.499C28.8895 21.6894 29.1227 21.2846 29.0775 20.8536C29.0322 20.4226 28.7199 20.0754 28.0954 19.3807L26.7206 17.8438C26.3846 17.4183 26.1461 16.6772 26.1461 16.0104C26.1461 15.3439 26.3847 14.6026 26.7206 14.1772L28.0954 12.6403C28.7199 11.9457 29.0322 11.5984 29.0775 11.1675C29.1227 10.7365 28.8895 10.3317 28.423 9.52202Z"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M20.6927 16.0002C20.6927 18.5775 18.6033 20.6668 16.026 20.6668C13.4487 20.6668 11.3594 18.5775 11.3594 16.0002C11.3594 13.4228 13.4487 11.3335 16.026 11.3335C18.6033 11.3335 20.6927 13.4228 20.6927 16.0002Z"></path>
+                    </svg></div>
+                  <div class="font-extra-small is-soft">02//</div>
+                </div>
+                <div class="difference-card-text">
+                  <h3 class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.focusAreas[1]?.title) }]}>{entry.focusAreas[1]?.title}</h3>
+                  <p class:list={["font-regular", { "w-dyn-bind-empty": !(entry.focusAreas[1]?.text) }]}>{entry.focusAreas[1]?.text}</p>
+                </div>
+              </div>
+              <div to-top-4="" class="difference-card is-feature is-outline">
+                <div class="difference-card-top">
+                  <div class="difference-icon is-plain"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                      <path stroke-width="1.5" stroke="currentColor" d="M4 25.3332C4 24.7132 4 24.4032 4.06815 24.1489C4.25308 23.4586 4.79217 22.9196 5.48236 22.7346C5.73669 22.6665 6.04668 22.6665 6.66667 22.6665H10.6667C11.2867 22.6665 11.5966 22.6665 11.851 22.7346C12.5412 22.9196 13.0803 23.4586 13.2652 24.1489C13.3333 24.4032 13.3333 24.7132 13.3333 25.3332C13.3333 25.9532 13.3333 26.2632 13.2652 26.5174C13.0803 27.2077 12.5412 27.7468 11.851 27.9317C11.5966 27.9998 11.2867 27.9998 10.6667 27.9998H6.66667C6.04668 27.9998 5.73669 27.9998 5.48236 27.9317C4.79217 27.7468 4.25308 27.2077 4.06815 26.5174C4 26.2632 4 25.9532 4 25.3332Z"></path>
+                      <path stroke-width="1.5" stroke="currentColor" d="M18.667 6.66667C18.667 6.04668 18.667 5.73669 18.7351 5.48236C18.9201 4.79217 19.4591 4.25308 20.1494 4.06815C20.4037 4 20.7137 4 21.3337 4H25.3337C25.9537 4 26.2637 4 26.5179 4.06815C27.2082 4.25308 27.7473 4.79217 27.9322 5.48236C28.0003 5.73669 28.0003 6.04668 28.0003 6.66667C28.0003 7.28665 28.0003 7.59664 27.9322 7.85097C27.7473 8.54116 27.2082 9.08025 26.5179 9.26519C26.2637 9.33333 25.9537 9.33333 25.3337 9.33333H21.3337C20.7137 9.33333 20.4037 9.33333 20.1494 9.26519C19.4591 9.08025 18.9201 8.54116 18.7351 7.85097C18.667 7.59664 18.667 7.28665 18.667 6.66667Z"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.0003 15.9998H11.3337C8.75633 15.9998 6.66699 13.9105 6.66699 11.3332C6.66699 8.75584 8.75615 6.6665 11.3335 6.6665H18.667"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M13.333 25.3333H20.6663C23.2437 25.3333 25.333 23.244 25.333 20.6667C25.333 18.0893 23.2445 16 20.6671 16H19.9997"></path>
+                      <path stroke-linejoin="round" stroke-width="1.5" stroke="currentColor" d="M14.177 13.9558C15.0363 13.0963 15.4661 12.6665 16.0001 12.6665C16.5341 12.6665 16.9638 13.0962 17.8233 13.9557L18.0446 14.177C18.9039 15.0364 19.3337 15.4661 19.3337 16.0001C19.3337 16.5341 18.9039 16.9638 18.0445 17.8232L17.8234 18.0442C16.9639 18.9036 16.5343 19.3332 16.0003 19.3332C15.4665 19.3332 15.0367 18.9036 14.1774 18.0442L13.9562 17.823C13.0967 16.9637 12.667 16.5341 12.667 16.0001C12.667 15.4661 13.0966 15.0364 13.9559 14.177L14.177 13.9558Z"></path>
+                    </svg></div>
+                  <div class="font-extra-small is-soft">03//</div>
+                </div>
+                <div class="difference-card-text">
+                  <h3 class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.focusAreas[2]?.title) }]}>{entry.focusAreas[2]?.title}</h3>
+                  <p class:list={["font-regular", { "w-dyn-bind-empty": !(entry.focusAreas[2]?.text) }]}>{entry.focusAreas[2]?.text}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf--faq--variant="bg-onyx" data-wf-component-id="5cf8e4eb-bd25-1b84-080f-c6556ff2902f" data-wf-variant-state="937ceca9-3df4-4f68-7d84-66c1097d3252" class="section is-black w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="faq-layout">
+              <div class="faq-intro">
+                <div class="faq-header w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div to-top-0="" class="font-extra-small">Common Questions</div>
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;5cf8e4eb-bd25-1b84-080f-c6556ff2902f&quot;,&quot;5cf8e4eb-bd25-1b84-080f-c6556ff29037&quot;],[&quot;29c1afec-f7d6-f4dd-cf3a-96ae792542cd&quot;]]]" class="section-heading faq">What You Should Know Before You Dive In</h2>
+                </div>
+                <div to-top-0="" class="faq-image-wrap"><img class="faq-image" src="/images/Rectangle-32-1.webp" width="1220" height="940" alt="Forklift moving boxes inside a warehouse" sizes="(max-width: 1220px) 100vw, 1220px" parallax="" loading="lazy" srcset="/images/Rectangle-32-1-p-500.webp 500w, /images/Rectangle-32-1-p-800.webp 800w, /images/Rectangle-32-1-p-1080.webp 1080w, /images/Rectangle-32-1.webp 1220w"></div>
+              </div>
+              <div class="faq-list">
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What types of industrial equipment do you offer?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">We feature equipment categories such as material handling systems, lifting equipment, conveyor solutions, and industrial machinery. Availability depends on the products offered.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What engineering services can I explore?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Explore engineering and design, manufacturing and assembly, installation and commissioning, and ongoing maintenance support, each planned around your application.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I request a solution for my specific project?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. Share your application, site conditions, and goals, and the team will review your requirements before recommending a practical direction.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">How do I request a quote for equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Use the contact form with your equipment needs, quantities, and timeline. The team will follow up to clarify details and prepare a quote.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Do you support equipment installation and integration?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We help plan site preparation, installation steps, and commissioning checks so new equipment works with your existing systems.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I get maintenance support for industrial equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We can help plan preventive maintenance, troubleshoot issues, and coordinate parts to keep your equipment reliable over time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c02065" instance="e19caf7c-7b32-5c06-f459-b66b71b938e5" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

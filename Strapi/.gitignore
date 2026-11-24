@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output & caches
+dist/
+build/
+.strapi/
+.cache/
+.tmp/
+*.log
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+.admin-credentials.local
+
+# SQLite database (recreate with `npm run seed`)
+*.db
+*.sqlite
+
+# Uploaded media (seed images live in data/uploads)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.strapi-updater.json

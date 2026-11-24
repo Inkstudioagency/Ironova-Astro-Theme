@@ -1,0 +1,149 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "Case studies shown on the Project pages, home pages and project detail pages."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "application": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "scopeItems": {
+      "type": "component",
+      "component": "shared.label",
+      "repeatable": true,
+      "max": 3
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "projectType": {
+      "type": "string"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "projects"
+    },
+    "briefFocus": {
+      "type": "string"
+    },
+    "overviewText": {
+      "type": "text"
+    },
+    "overviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "challengeHeading": {
+      "type": "string"
+    },
+    "challengeText": {
+      "type": "text"
+    },
+    "challenges": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 3
+    },
+    "challengeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "approachHeading": {
+      "type": "string"
+    },
+    "approachText": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 4
+    },
+    "approachImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "outcomeHeading": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.label-value",
+      "repeatable": true,
+      "max": 4
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

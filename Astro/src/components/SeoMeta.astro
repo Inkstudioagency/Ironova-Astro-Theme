@@ -1,0 +1,41 @@
+---
+/**
+ * SEO meta tags: title, description, canonical URL, Open Graph and Twitter cards.
+ * Defaults come from `src/config/config.json`.
+ */
+import config from "../config/config.json";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: "website" | "article";
+  noindex?: boolean;
+}
+
+const {
+  title = config.metadata.meta_title,
+  description = config.metadata.meta_description,
+  image = config.metadata.meta_image,
+  type = "website",
+  noindex = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+const imageUrl = new URL(image, Astro.site ?? Astro.url).href;
+---
+
+<title>{title}</title>
+<meta content={description} name="description" />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex" />}
+<meta content={title} property="og:title" />
+<meta content={description} property="og:description" />
+<meta content={imageUrl} property="og:image" />
+<meta content={canonical} property="og:url" />
+<meta content={config.site.title} property="og:site_name" />
+<meta property="og:type" content={type} />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<meta content={imageUrl} name="twitter:image" />
+<meta content="summary_large_image" name="twitter:card" />

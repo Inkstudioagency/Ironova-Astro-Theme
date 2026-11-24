@@ -1,0 +1,264 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CtaSection from "../components/CtaSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { byOrder, equipmentUrl, getEquipment, img } from "../lib/strapi";
+
+const equipment = await getEquipment();
+const list0 = byOrder(equipment, "desc");
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c02071" title="Equipment - Ironova" description="Explore Ironova industrial equipment for material handling, lifting, conveying and compressed air, matched to your application, site and production goals.">
+  <div class="page-wrapper">
+    <Navbar variant="without-border" instance="c6bd5e1c-f103-ea7a-11c2-1eb11ae5d346" />
+    <main class="main">
+      <section class="section is-black">
+        <div class="container">
+          <div class="equipment-hero-grid">
+            <div class="equipment-hero-text">
+              <div class="equipment-hero-head">
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;bbb7dc2b-184f-5e02-ad54-dd5f7ad95a29&quot;],[]]]" class="breadcrumb">
+                  <a href="/" class="font-extra-small is-soft is-link">Home</a>
+                  <div class="font-extra-small is-soft">/</div>
+                  <div class="font-extra-small">Equipment</div>
+                </div>
+                <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;30229c02-91d4-842d-a416-ae4d67f6396e&quot;],[]]]" class="section-heading is-large">The Right Equipment for the Work Ahead.</h1>
+              </div>
+              <div class="equipment-hero-content">
+                <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;004b44cb-6153-3d04-1d84-a0e0d4f5c951&quot;],[]]]" class="font-normal equepment">Explore industrial equipment and material handling solutions designed around your operational requirements, workspace, and project goals.</p>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;38c9de07-b9ec-33e0-cf63-5fe3695741da&quot;],[]]]" class="hero-button-wrap">
+                  <a href="/contact-v1" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                    <div class="button-text-wrap">
+                      <div class="footer-link-text is-one">Request a Quote</div>
+                      <div class="footer-link-text is-two">Request a Quote</div>
+                    </div>
+                    <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                      </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                      </svg></div>
+                  </a>
+                  <a href="/service" data-wf--primary-button--variant="glass" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="581d97c2-3e38-f9ba-75b1-b0637cce1283" class="primary-button w-variant-581d97c2-3e38-f9ba-75b1-b0637cce1283 w-inline-block">
+                    <div class="button-text-wrap">
+                      <div class="footer-link-text is-one">Explore Service</div>
+                      <div class="footer-link-text is-two">Explore Service</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;bbdd27fe-a1fa-8f3d-11e4-0f3f0c77022b&quot;],[]]]" class="equipment-hero-media"><img class="cover-image" src="/images/Rectangle-30-8.webp" width="2004" height="1947" alt="Precision CNC machine inside an industrial workshop" sizes="(max-width: 2004px) 100vw, 2004px" parallax="" loading="lazy" srcset="/images/Rectangle-30-8-p-500.webp 500w, /images/Rectangle-30-8-p-800.webp 800w, /images/Rectangle-30-8-p-1080.webp 1080w, /images/Rectangle-30-8-p-1600.webp 1600w, /images/Rectangle-30-8-p-2000.webp 2000w, /images/Rectangle-30-8.webp 2004w"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="equipment-split">
+              <div class="equipment-split-side">
+                <div to-top-0="" class="font-extra-small">Our Equipment</div>
+                <div to-top-0="" class="equipment-split-image"><img class="cover-image" src="/images/Rectangle-34.webp" width="900" height="1137" alt="Robotic equipment working on an industrial line" sizes="(max-width: 900px) 100vw, 900px" parallax="" loading="lazy" srcset="/images/Rectangle-34-p-500.webp 500w, /images/Rectangle-34-p-800.webp 800w, /images/Rectangle-34.webp 900w"></div>
+              </div>
+              <div class="equipment-split-body">
+                <p class="font-medium rebuild-text">From moving materials to supporting essential industrial processes, find equipment categories that align with your application and day-to-day operational needs.</p>
+                <div class="equipment-category-grid">
+                  <div to-top-0="" class="equipment-category-card">
+                    <div class="equipment-category-head">
+                      <div class="equipment-category-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 32 32" height="32" width="32">
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M22.666 4V20C22.666 22.5141 22.666 23.7712 23.4471 24.5523C24.2281 25.3333 25.4852 25.3333 27.9993 25.3333H29.3327"></path>
+                          <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M21.334 25.3333H26.6673"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M10.666 25.3333H15.9993"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.6667 28.0001C20.1395 28.0001 21.3333 26.8062 21.3333 25.3334C21.3333 23.8606 20.1395 22.6667 18.6667 22.6667C17.1939 22.6667 16 23.8606 16 25.3334C16 26.8062 17.1939 28.0001 18.6667 28.0001Z"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M8.00065 28.0001C9.47341 28.0001 10.6673 26.8062 10.6673 25.3334C10.6673 23.8606 9.47341 22.6667 8.00065 22.6667C6.52789 22.6667 5.33398 23.8606 5.33398 25.3334C5.33398 26.8062 6.52789 28.0001 8.00065 28.0001Z"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M22.666 25.3334V22.6667C22.666 20.1526 22.666 18.8955 21.8849 18.1145C21.1039 17.3334 19.8468 17.3334 17.3327 17.3334H12.1567C11.5098 17.3334 11.1864 17.3334 10.9127 17.2019C10.8279 17.1611 10.7477 17.1115 10.6733 17.0539C10.4333 16.8679 10.2886 16.5786 9.99935 16.0001C9.71006 15.4215 9.5654 15.1322 9.32539 14.9462C9.25104 14.8886 9.1708 14.839 9.08602 14.7982C8.8123 14.6667 8.48886 14.6667 7.84198 14.6667H7.7589C5.47775 14.6667 4.33719 14.6667 3.58522 15.3191C3.49008 15.4017 3.4009 15.4907 3.31836 15.5859C2.66602 16.3379 2.66602 17.4785 2.66602 19.7597V22.6667C2.66602 23.9238 2.66602 24.5523 3.05654 24.9429C3.44707 25.3334 4.0756 25.3334 5.33268 25.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M5.33398 14.6666V9.17731C5.33398 8.08101 5.33398 7.53288 5.49272 7.09363C5.76206 6.34827 6.349 5.76133 7.09436 5.49199C7.53361 5.33325 8.08174 5.33325 9.17804 5.33325C10.3966 5.33325 11.0059 5.33325 11.54 5.48436C12.4441 5.74017 13.2293 6.30613 13.758 7.08299C14.0701 7.54183 14.2629 8.11987 14.6483 9.27593L17.334 17.3333"></path>
+                        </svg></div>
+                      <div class="font-medium is-faq">Material Handling Equipment</div>
+                    </div>
+                    <p class="font-regular">Equipment solutions for moving, positioning, and managing materials across industrial environments</p>
+                  </div>
+                  <div to-top-2="" class="equipment-category-card">
+                    <div class="equipment-category-head">
+                      <div class="equipment-category-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 32 32" height="32" width="32">
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.6673 26.6667H5.33398"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.6673 20H5.33398"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M2 23.3333C2 25.1743 3.49239 26.6667 5.33333 26.6667C7.17427 26.6667 8.66667 25.1743 8.66667 23.3333C8.66667 21.4924 7.17427 20 5.33333 20C3.49239 20 2 21.4924 2 23.3333Z"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M15.334 23.3333C15.334 25.1743 16.8264 26.6667 18.6673 26.6667C20.5083 26.6667 22.0007 25.1743 22.0007 23.3333C22.0007 21.4924 20.5083 20 18.6673 20C16.8264 20 15.334 21.4924 15.334 23.3333Z"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M24.6673 17.3333C24.6673 18.8061 25.8612 19.9999 27.334 19.9999C28.8068 19.9999 30.0007 18.8061 30.0007 17.3333C30.0007 15.8605 28.8068 14.6666 27.334 14.6666V7.21887C27.334 6.17748 26.4897 5.33325 25.4484 5.33325C24.9483 5.33325 24.4687 5.53192 24.1151 5.88553L19.334 10.6666"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M11.334 14.6667V9.33341C11.334 8.71343 11.334 8.40344 11.4021 8.14911C11.5871 7.45892 12.1262 6.91983 12.8163 6.73489C13.0707 6.66675 13.3807 6.66675 14.0007 6.66675C15.2407 6.66675 15.8607 6.66675 16.3693 6.80304C17.7496 7.17291 18.8279 8.25111 19.1977 9.63147C19.334 10.1401 19.334 10.7601 19.334 12.0001V14.6667"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M5.33398 20.0001C5.33398 17.4859 5.33398 16.2289 6.11504 15.4478C6.89608 14.6667 8.15316 14.6667 10.6673 14.6667H19.334V20.0001"></path>
+                        </svg></div>
+                      <div class="font-medium is-faq">Lifting Systems</div>
+                    </div>
+                    <p class="font-regular">Equipment options designed to support lifting and load-handling requirements in suitable working environments.</p>
+                  </div>
+                  <div to-top-4="" class="equipment-category-card">
+                    <div class="equipment-category-head">
+                      <div class="equipment-category-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 32 32" height="32" width="32">
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M29.3327 26.6667H2.66602"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M16 26.6667V29.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M21.334 26.6667V29.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M26.666 26.6667V29.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M10.666 26.6667V29.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M5.33398 26.6667V29.3334"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.6673 21.3334H19.334C22.4615 21.3334 24.0252 21.3334 25.1024 20.5069C25.3797 20.2941 25.628 20.0458 25.8408 19.7685C26.6673 18.6913 26.6673 17.1275 26.6673 14.0001C26.6673 10.8726 26.6673 9.30893 25.8408 8.23171C25.628 7.95437 25.3797 7.70613 25.1024 7.49333C24.0252 6.66675 22.4615 6.66675 19.334 6.66675H12.6673C9.53988 6.66675 7.97617 6.66675 6.89894 7.49333C6.62161 7.70613 6.37337 7.95437 6.16057 8.23171C5.33398 9.30893 5.33398 10.8726 5.33398 14.0001C5.33398 17.1275 5.33398 18.6913 6.16057 19.7685C6.37337 20.0458 6.62161 20.2941 6.89894 20.5069C7.97617 21.3334 9.53988 21.3334 12.6673 21.3334Z"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M20 6.66675C20 4.78113 20 3.83832 19.4143 3.25253C18.8284 2.66675 17.8856 2.66675 16 2.66675C14.1144 2.66675 13.1716 2.66675 12.5858 3.25253C12 3.83832 12 4.78113 12 6.66675"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M5.33398 13.3333H26.6673"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M10.666 12V14.6667"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M21.334 12V14.6667"></path>
+                        </svg></div>
+                      <div class="font-medium is-faq">Conveyor Systems</div>
+                    </div>
+                    <p class="font-regular">Conveyor solutions for supporting the movement of materials and products through operational workflows.</p>
+                  </div>
+                  <div to-top-6="" class="equipment-category-card">
+                    <div class="equipment-category-head">
+                      <div class="equipment-category-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 32 32" height="32" width="32">
+                          <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M28.424 9.52177L27.7658 8.37964C27.2681 7.51587 27.0193 7.08399 26.5958 6.91176C26.1724 6.73955 25.6934 6.87544 24.7357 7.14723L23.1088 7.60549C22.4973 7.74651 21.8557 7.66651 21.2975 7.37964L20.8483 7.12048C20.3695 6.81383 20.0012 6.36169 19.7973 5.83024L19.3521 4.5004C19.0593 3.62038 18.9129 3.18036 18.5644 2.92868C18.216 2.677 17.753 2.677 16.8272 2.677H15.3408C14.4151 2.677 13.9521 2.677 13.6036 2.92868C13.2551 3.18036 13.1087 3.62038 12.816 4.5004L12.3707 5.83024C12.1668 6.36169 11.7986 6.81383 11.3198 7.12048L10.8706 7.37964C10.3123 7.66651 9.67077 7.74651 9.05929 7.60549L7.43232 7.14723C6.47453 6.87544 5.99565 6.73955 5.57221 6.91176C5.14877 7.08399 4.89992 7.51587 4.40218 8.37964L3.74408 9.52177C3.27753 10.3314 3.04425 10.7363 3.08953 11.1672C3.1348 11.5982 3.44709 11.9455 4.07166 12.6401L5.44638 14.177C5.78238 14.6023 6.02093 15.3437 6.02093 16.0102C6.02093 16.677 5.78246 17.4181 5.44642 17.8435L4.07166 19.3805C3.44709 20.0751 3.13481 20.4223 3.08953 20.8534C3.04425 21.2843 3.27753 21.6891 3.74408 22.4987L4.40217 23.6409C4.89989 24.5046 5.14877 24.9366 5.57221 25.1087C5.99565 25.281 6.47454 25.1451 7.43234 24.8733L9.05924 24.415C9.67082 24.2739 10.3125 24.3541 10.8709 24.641L11.32 24.9002C11.7987 25.2069 12.1668 25.6589 12.3706 26.1903L12.816 27.5203C13.1087 28.4003 13.2551 28.8403 13.6036 29.0921C13.9521 29.3437 14.4151 29.3437 15.3408 29.3437H16.8272C17.753 29.3437 18.216 29.3437 18.5644 29.0921C18.9129 28.8403 19.0593 28.4003 19.3521 27.5203L19.7975 26.1903C20.0012 25.6589 20.3693 25.2069 20.8481 24.9002L21.2972 24.641C21.8556 24.3541 22.4972 24.2739 23.1088 24.415L24.7357 24.8733C25.6934 25.1451 26.1724 25.281 26.5958 25.1087C27.0193 24.9366 27.2681 24.5046 27.7658 23.6409L28.424 22.4987C28.8905 21.6891 29.1237 21.2843 29.0785 20.8534C29.0332 20.4223 28.7209 20.0751 28.0964 19.3805L26.7216 17.8435C26.3856 17.4181 26.147 16.677 26.147 16.0102C26.147 15.3437 26.3857 14.6023 26.7216 14.177L28.0964 12.6401C28.7209 11.9455 29.0332 11.5982 29.0785 11.1672C29.1237 10.7363 28.8905 10.3314 28.424 9.52177Z"></path>
+                          <path stroke-width="1.5" stroke="currentColor" d="M20.6927 15.9999C20.6927 18.5773 18.6033 20.6666 16.026 20.6666C13.4487 20.6666 11.3594 18.5773 11.3594 15.9999C11.3594 13.4226 13.4487 11.3333 16.026 11.3333C18.6033 11.3333 20.6927 13.4226 20.6927 15.9999Z"></path>
+                        </svg></div>
+                      <div class="font-medium is-faq">Industrial Machinery</div>
+                    </div>
+                    <p class="font-regular">Machinery options for specific production, processing, and industrial application requirements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="page-section-head solution">
+              <div to-top-0="" class="font-extra-small">Featured Solutions</div>
+              <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02071&quot;,&quot;9b355137-675b-a6d8-342b-2c4fbe591c1d&quot;],[]]]" class="section-heading is-large">Explore Equipment for Your Application</h2>
+            </div>
+            <div class="equipment-collection w-dyn-list">
+              {list0.length > 0 ? (
+                <div role="list" class="equipment-list w-dyn-items">
+                {list0.map((item) => (
+                  <div role="listitem" class="w-dyn-item">
+                  <div to-top-2="" class="equipment-item-card">
+                    <a href={equipmentUrl(item)} class="equipment-card-image w-inline-block"><img {...img(item.mainImage, "", item.name)} loading="lazy" width="1950" height="1539" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                      <div class="demo">#</div>
+                    </a>
+                    <div class="equipment-card-body">
+                      <div class="equipment-card-title-link">
+                        <div class:list={["font-medium", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                      </div>
+                      <p class:list={["font-regular is-card", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                      <a href={equipmentUrl(item)} class="blog-button w-inline-block">
+                        <div class="blog-button-item">
+                          <div>View Equipment Details</div>
+                          <div class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow-icon-small arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow-icon-small arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                        <div class="button-animated-line"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  ))}
+              </div>
+                ) : (
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+                )}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf--faq--variant="base" data-wf-component-id="5cf8e4eb-bd25-1b84-080f-c6556ff2902f" data-wf-variant-state="base" class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="faq-layout">
+              <div class="faq-intro">
+                <div class="faq-header">
+                  <div to-top-0="" class="font-extra-small">Common Questions</div>
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;5cf8e4eb-bd25-1b84-080f-c6556ff2902f&quot;,&quot;5cf8e4eb-bd25-1b84-080f-c6556ff29037&quot;],[&quot;4f196dc3-7dae-bebb-80e6-d95fde587e8a&quot;]]]" class="section-heading faq">What You Should Know Before You Dive In</h2>
+                </div>
+                <div to-top-0="" class="faq-image-wrap"><img class="faq-image" src="/images/Rectangle-32-1.webp" width="1220" height="940" alt="Forklift moving boxes inside a warehouse" sizes="(max-width: 1220px) 100vw, 1220px" parallax="" loading="lazy" srcset="/images/Rectangle-32-1-p-500.webp 500w, /images/Rectangle-32-1-p-800.webp 800w, /images/Rectangle-32-1-p-1080.webp 1080w, /images/Rectangle-32-1.webp 1220w"></div>
+              </div>
+              <div class="faq-list">
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What types of industrial equipment do you offer?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">We feature equipment categories such as material handling systems, lifting equipment, conveyor solutions, and industrial machinery. Availability depends on the products offered.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What engineering services can I explore?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Explore engineering and design, manufacturing and assembly, installation and commissioning, and ongoing maintenance support, each planned around your application.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I request a solution for my specific project?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. Share your application, site conditions, and goals, and the team will review your requirements before recommending a practical direction.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">How do I request a quote for equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Use the contact form with your equipment needs, quantities, and timeline. The team will follow up to clarify details and prepare a quote.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Do you support equipment installation and integration?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We help plan site preparation, installation steps, and commissioning checks so new equipment works with your existing systems.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I get maintenance support for industrial equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We can help plan preventive maintenance, troubleshoot issues, and coordinate parts to keep your equipment reliable over time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c02071" instance="0e439378-1005-42bd-77c1-da810143fbb5" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

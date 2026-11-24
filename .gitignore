@@ -1,0 +1,14 @@
+# Local reference material (not part of the theme)
+/Template/
+/CMS/
+/SKILL.md
+
+# Dependencies, builds, secrets (see also Astro/.gitignore and Strapi/.gitignore)
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vercel
+.DS_Store
+Thumbs.db

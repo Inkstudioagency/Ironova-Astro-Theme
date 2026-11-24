@@ -1,0 +1,69 @@
+---
+/**
+ * "Have a Requirement?" call-to-action section with background video and contact form.
+ * `pageId` / `instance` keep the Webflow interaction (IX3) bindings of each page intact.
+ */
+interface Props {
+  pageId: string;
+  instance: string;
+}
+const { pageId, instance } = Astro.props;
+---
+
+<section data-wf-component-id="edfbbadb-e765-b3cc-333a-f6ab58268ba9" data-wf-variant-state="base" class="section is-media">
+        <div class="section-background">
+          <div data-poster-url="/videos/13814867_1920_1080_100fps.mp4-1_poster.0000000.jpg" data-video-urls="/videos/13814867_1920_1080_100fps.mp4-1_mp4.mp4,/videos/13814867_1920_1080_100fps.mp4-1_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="cta-video w-background-video w-background-video-atom"><video id="edfbbadb-e765-b3cc-333a-f6ab58268bab-video" autoplay="" loop="" style="background-image:url(&quot;/videos/13814867_1920_1080_100fps.mp4-1_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="/videos/13814867_1920_1080_100fps.mp4-1_mp4.mp4" data-wf-ignore="true">
+              <source src="/videos/13814867_1920_1080_100fps.mp4-1_webm.webm" data-wf-ignore="true">
+            </video><noscript>
+              <style is:inline>
+  [data-wf-bgvideo-fallback-img] {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-wf-bgvideo-fallback-img] {
+      position: absolute;
+      z-index: -100;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }</style><img data-wf-bgvideo-fallback-img="true" src="/videos/13814867_1920_1080_100fps.mp4-1_poster.0000000.jpg" alt="">
+            </noscript>
+            <div aria-live="polite"><button type="button" data-w-bg-video-control="true" aria-controls="edfbbadb-e765-b3cc-333a-f6ab58268bab-video" class="w-backgroundvideo-backgroundvideoplaypausebutton cta-video-button w-background-video--control"><span><img loading="lazy" src="/images/bg-video-pause.svg" alt="Pause video" class="hero-video-icon"></span><span hidden=""><img loading="lazy" src="/images/bg-video-play.svg" alt="Play video" class="hero-video-icon"></span></button></div>
+          </div>
+          <div class="home-hero-overlay"></div>
+          <div class="section-fade"></div>
+        </div>
+        <div class="section-gap is-large is-front">
+          <div class="container">
+            <div class="contact-wrap">
+              <div class="contact-content">
+                <div class="section-title-wrap">
+                  <div to-top-0="" class="font-extra-small">Let’s Move Your Project Forward</div>
+                  <h2 heading-rebuild="" data-wf-target={`[[["edfbbadb-e765-b3cc-333a-f6ab58268ba9","edfbbadb-e765-b3cc-333a-f6ab58268bba"],["${instance}"]]]`} class="section-heading is-narrow">Have a Requirement? Let’s Work Through It.</h2>
+                </div>
+                <p to-top-2="" class="font-normal is-side">Tell us what your operation needs and start a conversation with the Ironova team.</p>
+              </div>
+              <div to-top-4="" class="contact-form-card">
+                <div class="w-form">
+                  <form id="email-form" name="email-form" data-name="Email Form" method="get" class="contact-form" data-wf-page-id={pageId} data-wf-element-id="edfbbadb-e765-b3cc-333a-f6ab58268bc0">
+                    <div class="form-field"><label for="full-name" class="font-extra-small">Full Name</label><input class="form-input cta w-input" maxlength="256" name="Full-Name" data-name="Full Name" placeholder="Your name" type="text" id="full-name" required=""></div>
+                    <div class="form-field"><label for="work-email" class="font-extra-small">Work Email</label><input class="form-input cta w-input" maxlength="256" name="Work-Email" data-name="Work Email" placeholder="name@company.com" type="email" id="work-email" required=""></div>
+                    <div class="form-field"><label for="company" class="font-extra-small">Company</label><input class="form-input cta w-input" maxlength="256" name="Company" data-name="Company" placeholder="Company name" type="text" id="company"></div>
+                    <div class="form-field"><label for="project-needs" class="font-extra-small">What do you need?</label><textarea id="project-needs" name="Project-Needs" maxlength="5000" data-name="Project Needs" placeholder="Equipment, engineering, installation or support" class="form-input is-textarea cta w-input"></textarea></div><input type="submit" data-wait="Please wait..." class="form-submit w-button" value="Request a Quote">
+                    <p class="font-small">By submitting, you agree to be contacted about your inquiry.</p>
+                  </form>
+                  <div class="form-message w-form-done">
+                    <div>Thank you! Our team will review your request and get back to you shortly.</div>
+                  </div>
+                  <div class="form-message is-error w-form-fail">
+                    <div>Something went wrong. Please check your details and try again.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

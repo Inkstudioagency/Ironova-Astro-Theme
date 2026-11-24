@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": "Services listed in the navigation, service lists and service detail pages."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "focusAreas": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 3
+    },
+    "introLabel": {
+      "type": "string"
+    },
+    "introText": {
+      "type": "text"
+    },
+    "points": {
+      "type": "component",
+      "component": "shared.label",
+      "repeatable": true,
+      "max": 3
+    },
+    "skillsHeading": {
+      "type": "string"
+    },
+    "skillsText": {
+      "type": "text"
+    },
+    "skills": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 4
+    },
+    "skillsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "approachHeading": {
+      "type": "string"
+    },
+    "approachText": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 4
+    },
+    "approachImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "service"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

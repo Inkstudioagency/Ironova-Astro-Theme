@@ -1,0 +1,50 @@
+{
+  "name": "ironova-strapi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Strapi CMS for the Ironova Astro theme",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "@strapi/database": "5.63.0",
+    "@strapi/plugin-cloud": "5.63.0",
+    "@strapi/plugin-users-permissions": "5.63.0",
+    "@strapi/strapi": "5.63.0",
+    "better-sqlite3": "12.11.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.3",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.0.0 <=26.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "88fd77b9-e306-4a42-be2b-b4bf6c56bc2c",
+    "installId": "2d09ba8183ef57be6a9dafc117714d653b7940eecbeb7b4e79cc3f3006a9b0d3"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true,
+    "@swc/core@1.16.22": true,
+    "core-js-pure@3.51.0": true
+  }
+}

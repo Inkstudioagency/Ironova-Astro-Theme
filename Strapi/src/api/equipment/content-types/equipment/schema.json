@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipments",
+  "info": {
+    "singularName": "equipment",
+    "pluralName": "equipments",
+    "displayName": "Equipment",
+    "description": "Equipment catalogue shown on the Equipment page and equipment detail pages."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "category": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "application": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "overviewText": {
+      "type": "text"
+    },
+    "overviewParagraph": {
+      "type": "text"
+    },
+    "keyBenefits": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "component": "shared.title-text",
+      "repeatable": true,
+      "max": 6
+    },
+    "everydayTasks": {
+      "type": "richtext"
+    },
+    "specsIntro": {
+      "type": "richtext"
+    },
+    "specs": {
+      "type": "component",
+      "component": "shared.label-value",
+      "repeatable": true,
+      "max": 10
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,130 @@
+---
+/**
+ * Site navigation (top bar + mega menu). Links come from `src/config/menu.json`;
+ * the "Services" column is filled from the Strapi `services` collection.
+ *
+ * `variant` mirrors the Webflow component variants; `instance` is the Webflow
+ * component-instance id used by the page's IX3 menu-button interaction.
+ */
+import config from "../config/config.json";
+import menu from "../config/menu.json";
+import { byOrder, getServices, serviceUrl } from "../lib/strapi";
+
+type Variant = "base" | "without-border" | "bg-onyx";
+
+interface Props {
+  variant?: Variant;
+  instance: string;
+}
+
+const VARIANTS: Record<Variant, { className?: string; state: string }> = {
+  base: { state: "base" },
+  "without-border": {
+    className: "w-variant-5790f774-da2e-72f9-6493-fc47a28c6fcc",
+    state: "5790f774-da2e-72f9-6493-fc47a28c6fcc",
+  },
+  "bg-onyx": {
+    className: "w-variant-df97645e-0656-1185-cb59-ead16740948b",
+    state: "df97645e-0656-1185-cb59-ead16740948b",
+  },
+};
+
+const { variant = "base", instance } = Astro.props;
+const v = VARIANTS[variant];
+const services = byOrder(await getServices(), "desc");
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isCurrent = (url: string) => url === path;
+---
+
+<div data-animation="default" class:list={["navbar", v.className, "w-nav"]} data-easing2="ease" data-wf--navigation-var--variant={variant} data-wf-component-id="3b1dcde2-84f2-c024-e3b7-06baedc3e9dd" data-easing="ease" data-wf-variant-state={v.state} data-collapse="all" role="banner" data-duration="400">
+        <div class="top-bar">
+          <div class="font-small hide-mobile">{config.contact.tagline}</div>
+          <div class="font-extra-small hide-mobile">|</div>
+          <a href="/contact-v1" class="top-bar-link w-inline-block">
+            <div class="font-small is-white">Contact Our Team</div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="100%" class="top-bar-icon">
+              <path fill="currentColor" d="M2.66675 7.33329H10.6667V8.66663H2.66675V7.33329ZM9.33342 4.66663H10.6667V5.99996H9.33342V4.66663ZM10.6667 5.99996H12.0001V7.33329H10.6667V5.99996ZM12.0001 7.33329H13.3334V8.66663H12.0001V7.33329ZM10.6667 8.66663H12.0001V9.99996H10.6667V8.66663ZM9.33342 9.99996H10.6667V11.3333H9.33342V9.99996Z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="container w-container">
+          <div class="nav-item-wrap">
+            <a href="/" aria-current={isCurrent("/") ? "page" : undefined} class:list={["brand-link w-nav-brand", { "w--current": isCurrent("/") }]}><img width="504" height="128" alt="White text reading &#x27;Ironova&#x27; next to an abstract geometric logo with a solid orange vertical rectangle and a white polygon shape." src="/images/Frame-265.webp" loading="lazy" class="brand-logo"></a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <div class="container">
+                <div class="mega-menu">
+                  <div class="mega-menu-links">
+                    {menu.mega_menu.map((column) => (
+                    <div class="mega-menu-column">
+                      <div class="font-extra-small is-muted">{column.title}</div>
+                      <div class="mega-menu-link-list">
+                        {column.cms === "services" ? (
+                        <div class="w-dyn-list">
+                          {services.length > 0 ? (
+                          <div role="list" class="mega-menu-link-list w-dyn-items">
+                            {services.map((service) => (
+                            <div role="listitem" class="w-dyn-item">
+                              <a href={serviceUrl(service)} aria-current={isCurrent(serviceUrl(service)) ? "page" : undefined} class:list={["mega-menu-link", { "w--current": isCurrent(serviceUrl(service)) }]}>{service.name}</a>
+                            </div>
+                            ))}
+                          </div>
+                          ) : (
+                          <div class="w-dyn-empty">
+                            <div>No items found.</div>
+                          </div>
+                          )}
+                        </div>
+                        ) : (
+                          column.links?.map((link) => (
+                        <a href={link.url} aria-current={isCurrent(link.url) ? "page" : undefined} class:list={["mega-menu-link", { "w--current": isCurrent(link.url) }]}>{link.name}</a>
+                          ))
+                        )}
+                      </div>
+                    </div>
+                    ))}
+                  </div>
+                  <div class="mega-menu-card">
+                    <div class="mega-menu-card-top">
+                      <a href="/" aria-current={isCurrent("/") ? "page" : undefined} class:list={["mega-menu-logo w-inline-block", { "w--current": isCurrent("/") }]}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="mega-menu-logo-icon">
+                          <path fill="currentColor" d="M2 1.5H10V21.5H2V1.5Z"></path>
+                          <path fill-opacity="0.7" fill="currentColor" d="M12 1.5H22V9.19231L12 21.5V1.5Z"></path>
+                        </svg>
+                        <div class="font-medium">Ironova</div>
+                      </a>
+                      <div class="font-normal is-medium left">Engineered for Industry. Built for Progress.</div>
+                    </div>
+                    <div class="mega-menu-image-wrap"><img src="/images/Nav-Dropdown-Image3x.webp" loading="lazy" width="834" height="468" alt="Modern manufacturing hall with red and white industrial machines" srcset="/images/Nav-Dropdown-Image3x-p-500.webp 500w, /images/Nav-Dropdown-Image3x-p-800.webp 800w, /images/Nav-Dropdown-Image3x.webp 834w" sizes="100vw" class="mega-menu-image"></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="nav-button-wrap">
+              <div data-wf-target={`[[["3b1dcde2-84f2-c024-e3b7-06baedc3e9dd","3b1dcde2-84f2-c024-e3b7-06baedc3e9ee"],["${instance}"]]]`} class="menu-button w-nav-button">
+                <div class="menu-button-inner">
+                  <div class="menu-text">Menu</div>
+                  <div class="menu-icon-wrap">
+                    <div class="menu-divider"></div>
+                    <div class="menu-lines">
+                      <div data-wf-target={`[[["3b1dcde2-84f2-c024-e3b7-06baedc3e9dd","a2f9e9c5-4d55-785d-eee2-e6dfda6fd782"],["${instance}"]]]`} class="menu-line"></div>
+                      <div data-wf-target={`[[["3b1dcde2-84f2-c024-e3b7-06baedc3e9dd","a3baba72-884e-0991-7b2e-fabde88c7cc8"],["${instance}"]]]`} class="menu-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-button-wrapper">
+                <a href="/contact-v1" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">Request a Quote</div>
+                    <div class="footer-link-text is-two">Request a Quote</div>
+                  </div>
+                  <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

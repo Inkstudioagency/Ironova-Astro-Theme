@@ -1,0 +1,370 @@
+---
+/** CMS template page: one page per Strapi `project` entry. */
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import CtaSection from "../../components/CtaSection.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { byOrder, getProjects, img, projectUrl } from "../../lib/strapi";
+
+export async function getStaticPaths() {
+  const entries = await getProjects();
+  return entries.map((entry) => ({ params: { slug: entry.slug } }));
+}
+
+// Resolve the entry at render time (not via getStaticPaths props) so content
+// edits made in Strapi show up immediately while running `astro dev`.
+const entry = (await getProjects()).find((e) => e.slug === Astro.params.slug);
+if (!entry) return Astro.redirect("/404");
+
+const projects = await getProjects();
+const list0 = byOrder(projects).filter((p) => p.slug !== entry.slug).slice(0, 2);
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c02066" title={entry.seo?.metaTitle || `${entry.name} - Ironova`} description={entry.seo?.metaDescription || entry.shortDescription} image={img(entry.mainImage).src || undefined}>
+  <div class="page-wrapper">
+    <Navbar variant="base" instance="d98696d8-c48d-c7e7-6cf3-f626c1954062" />
+    <main class="main">
+      <section class="section is-black">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero-top">
+              <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;58b2f700-c89b-b6cb-7f5b-38643fd74e9a&quot;],[]]]" class="breadcrumb">
+                <a href="/" class="font-extra-small is-soft is-link">Home</a>
+                <div class="font-extra-small is-soft">/</div>
+                <a href="/project-v1" class="font-extra-small is-soft is-link">Projects</a>
+                <div class="font-extra-small is-soft">/</div>
+                <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(entry.name) }]}>{entry.name}</div>
+              </div>
+              <div class="project-hero-head">
+                <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;58b2f700-c89b-b6cb-7f5b-38643fd74e9c&quot;],[]]]" class:list={["section-heading is-large is-project", { "w-dyn-bind-empty": !(entry.heroTitle) }]}>{entry.heroTitle}</h1>
+                <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;58b2f700-c89b-b6cb-7f5b-38643fd74e9e&quot;],[]]]" class:list={["font-normal is-project", { "w-dyn-bind-empty": !(entry.heroText) }]}>{entry.heroText}</p>
+              </div>
+            </div>
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;58b2f700-c89b-b6cb-7f5b-38643fd74ea3&quot;],[]]]" class="project-hero-media"><img {...img(entry.mainImage, "")} loading="lazy" width="2160" height="1560" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.mainImage) }]}></div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-project">
+          <div class="container">
+            <div class="project-overview">
+              <div class="project-brief">
+                <div to-top-0="" class="font-extra-small">The Project in Brief</div>
+                <div class="project-brief-grid">
+                  <div to-top-0="" class="project-brief-card">
+                    <div class="font-extra-small">Industry</div>
+                    <p class:list={["font-small", { "w-dyn-bind-empty": !(entry.category) }]}>{entry.category}</p>
+                  </div>
+                  <div to-top-2="" class="project-brief-card">
+                    <div class="font-extra-small">Project Type</div>
+                    <p class:list={["font-small", { "w-dyn-bind-empty": !(entry.projectType) }]}>{entry.projectType}</p>
+                  </div>
+                  <div to-top-4="" class="project-brief-card">
+                    <div class="font-extra-small">Services</div>
+                    <p class:list={["font-small", { "w-dyn-bind-empty": !(entry.service?.name) }]}>{entry.service?.name}</p>
+                  </div>
+                  <div to-top-6="" class="project-brief-card">
+                    <div class="font-extra-small">Focus</div>
+                    <p class:list={["font-small", { "w-dyn-bind-empty": !(entry.briefFocus) }]}>{entry.briefFocus}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-intro">
+                <div class="project-intro-side">
+                  <div to-top-0="" class="font-extra-small is-narrow">Engineering that moves you forward</div>
+                  <div to-top-0="" class="project-intro-image"><img {...img(entry.overviewImage, "")} loading="lazy" width="1304" height="1632" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.overviewImage) }]}></div>
+                </div>
+                <div class="project-intro-content">
+                  <div to-top-2="" class="detail-intro-text">
+                    <div class:list={["detail-intro-span", { "w-dyn-bind-empty": !(entry.overviewText) }]}>{entry.overviewText}</div>
+                  </div>
+                  <div class="project-scope">
+                    <div to-top-4="" class="project-scope-list">
+                      <div class="font-extra-small">Project Scope</div>
+                      <div class="project-scope-items">
+                        <div class="project-scope-item">
+                          <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.scopeItems[0]?.label) }]}>{entry.scopeItems[0]?.label}</div>
+                        </div>
+                        <div class="project-scope-item">
+                          <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.scopeItems[1]?.label) }]}>{entry.scopeItems[1]?.label}</div>
+                        </div>
+                        <div class="project-scope-item">
+                          <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.scopeItems[2]?.label) }]}>{entry.scopeItems[2]?.label}</div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="/contact-v1" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;0369b5ff-45ea-efb0-4bc4-9c8277d8468a&quot;],[]]]" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-text-wrap">
+                        <div class="footer-link-text is-one">Request a Quote</div>
+                        <div class="footer-link-text is-two">Request a Quote</div>
+                      </div>
+                      <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                          <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                          <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="detail-split is-stretch">
+              <div class="detail-split-content is-between">
+                <div class="detail-head">
+                  <div class="detail-head-top">
+                    <div to-top-0="" class="font-extra-small">The Challenge</div>
+                    <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;7c79f4fc-8122-42d9-a81f-e06279e3f3a9&quot;],[]]]" class:list={["section-heading is-narrow", { "w-dyn-bind-empty": !(entry.challengeHeading) }]}>{entry.challengeHeading}</h2>
+                  </div>
+                  <p to-top-2="" class:list={["font-normal is-intro", { "w-dyn-bind-empty": !(entry.challengeText) }]}>{entry.challengeText}</p>
+                </div>
+                <div to-top-4="" class="detail-acc-list">
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.challenges[0]?.title) }]}>{entry.challenges[0]?.title}</div>
+                    <div class="detail-acc-body is-open">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.challenges[0]?.text) }]}>{entry.challenges[0]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.challenges[1]?.title) }]}>{entry.challenges[1]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.challenges[1]?.text) }]}>{entry.challenges[1]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.challenges[2]?.title) }]}>{entry.challenges[2]?.title}</div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.challenges[2]?.text) }]}>{entry.challenges[2]?.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div to-top-0="" class="detail-split-media is-project"><img {...img(entry.challengeImage, "")} loading="lazy" width="1860" height="2013" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.challengeImage) }]}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="detail-split is-stretch">
+              <div to-top-0="" class="detail-split-media is-large"><img {...img(entry.approachImage, "")} loading="lazy" width="1860" height="2295" class:list={["cover-image", { "w-dyn-bind-empty": !(entry.approachImage) }]}></div>
+              <div class="detail-split-content is-between">
+                <div class="detail-head">
+                  <div class="detail-head-top">
+                    <div to-top-0="" class="font-extra-small">Our Approach</div>
+                    <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;5c7b468c-0d65-1eeb-6822-a4df1a0a166f&quot;],[]]]" class:list={["section-heading is-narrow", { "w-dyn-bind-empty": !(entry.approachHeading) }]}>{entry.approachHeading}</h2>
+                  </div>
+                  <p to-top-2="" class:list={["font-normal is-approach", { "w-dyn-bind-empty": !(entry.approachText) }]}>{entry.approachText}</p>
+                </div>
+                <div to-top-4="" class="detail-acc-list">
+                  <div class="detail-acc-item">
+                    <div class="detail-step-head">
+                      <div class="font-small is-white is-number">01.</div>
+                      <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[0]?.title) }]}>{entry.steps[0]?.title}</div>
+                    </div>
+                    <div class="detail-acc-body is-open">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[0]?.text) }]}>{entry.steps[0]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class="detail-step-head">
+                      <div class="font-small is-white is-number">02.</div>
+                      <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[1]?.title) }]}>{entry.steps[1]?.title}</div>
+                    </div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[1]?.text) }]}>{entry.steps[1]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class="detail-step-head">
+                      <div class="font-small is-white is-number">03.</div>
+                      <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[2]?.title) }]}>{entry.steps[2]?.title}</div>
+                    </div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[2]?.text) }]}>{entry.steps[2]?.text}</p>
+                    </div>
+                  </div>
+                  <div class="detail-acc-item">
+                    <div class="detail-step-head">
+                      <div class="font-small is-white is-number">04.</div>
+                      <div class:list={["font-normal is-medium", { "w-dyn-bind-empty": !(entry.steps[3]?.title) }]}>{entry.steps[3]?.title}</div>
+                    </div>
+                    <div class="detail-acc-body">
+                      <p class:list={["font-regular is-faq", { "w-dyn-bind-empty": !(entry.steps[3]?.text) }]}>{entry.steps[3]?.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="project-outcome">
+              <div class="detail-head is-center">
+                <div to-top-0="" class="font-extra-small">Project Outcome</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;8de90d68-648a-bcfa-1c7e-e707570bde07&quot;],[]]]" class:list={["section-heading is-narrow", { "w-dyn-bind-empty": !(entry.outcomeHeading) }]}>{entry.outcomeHeading}</h2>
+              </div>
+              <div class="project-stats">
+                <div to-top-0="" class="project-stat">
+                  <div class:list={["font-extra-small is-soft", { "w-dyn-bind-empty": !(entry.stats[0]?.label) }]}>{entry.stats[0]?.label}</div>
+                  <div class:list={["section-heading is-large is-stat", { "w-dyn-bind-empty": !(entry.stats[0]?.value) }]}>{entry.stats[0]?.value}</div>
+                </div>
+                <div to-top-2="" class="project-stat">
+                  <div class:list={["font-extra-small is-soft", { "w-dyn-bind-empty": !(entry.stats[1]?.label) }]}>{entry.stats[1]?.label}</div>
+                  <div class:list={["section-heading is-large is-stat", { "w-dyn-bind-empty": !(entry.stats[1]?.value) }]}>{entry.stats[1]?.value}</div>
+                </div>
+                <div to-top-4="" class="project-stat">
+                  <div class:list={["font-extra-small is-soft", { "w-dyn-bind-empty": !(entry.stats[2]?.label) }]}>{entry.stats[2]?.label}</div>
+                  <div class:list={["section-heading is-large is-stat", { "w-dyn-bind-empty": !(entry.stats[2]?.value) }]}>{entry.stats[2]?.value}</div>
+                </div>
+                <div to-top-6="" class="project-stat">
+                  <div class:list={["font-extra-small is-soft", { "w-dyn-bind-empty": !(entry.stats[3]?.label) }]}>{entry.stats[3]?.label}</div>
+                  <div class:list={["section-heading is-large is-stat", { "w-dyn-bind-empty": !(entry.stats[3]?.value) }]}>{entry.stats[3]?.value}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="related-projects">
+              <div class="detail-head">
+                <div to-top-0="" class="font-extra-small">Related Projects</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c02066&quot;,&quot;9574200c-d3dc-b82e-c868-2e78da61359a&quot;],[]]]" class="section-heading is-related">Discover Other Industrial Solutions</h2>
+              </div>
+              <div class="w-dyn-list">
+                {list0.length > 0 ? (
+                  <div role="list" class="related-grid w-dyn-items">
+                  {list0.map((item) => (
+                    <div role="listitem" class="w-dyn-item">
+                    <div to-top-2="" class="blog-card is-project">
+                      <a href={projectUrl(item)} class="blog-image-link is-project w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="2160" height="1560" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                        <div class="blog-image-overlay">
+                          <div class="blog-read-tag">
+                            <p class="font-regular is-medium is-upper">Read article</p><svg fill="none" viewBox="0 0 24 24" height="24" width="24" class="slider-arrow-icon slider-arrow-icon">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="related-card-content">
+                        <div class="tag">
+                          <p class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</p>
+                        </div>
+                        <a href={projectUrl(item)} class="blog-title-link w-inline-block">
+                          <div class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                    ))}
+                </div>
+                  ) : (
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+                  )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf--faq--variant="bg-onyx" data-wf-component-id="5cf8e4eb-bd25-1b84-080f-c6556ff2902f" data-wf-variant-state="937ceca9-3df4-4f68-7d84-66c1097d3252" class="section is-black w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="faq-layout">
+              <div class="faq-intro">
+                <div class="faq-header w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div to-top-0="" class="font-extra-small">Common Questions</div>
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;5cf8e4eb-bd25-1b84-080f-c6556ff2902f&quot;,&quot;5cf8e4eb-bd25-1b84-080f-c6556ff29037&quot;],[&quot;a64b1f69-f7d2-d7a7-2c9f-de220566d91a&quot;]]]" class="section-heading faq">Here&#x27;s the scoop on Engineering and Design!</h2>
+                </div>
+                <div to-top-0="" class="faq-image-wrap"><img class="faq-image" src="/images/Rectangle-32-1.webp" width="1220" height="940" alt="Forklift moving boxes inside a warehouse" sizes="(max-width: 1220px) 100vw, 1220px" parallax="" loading="lazy" srcset="/images/Rectangle-32-1-p-500.webp 500w, /images/Rectangle-32-1-p-800.webp 800w, /images/Rectangle-32-1-p-1080.webp 1080w, /images/Rectangle-32-1.webp 1220w"></div>
+              </div>
+              <div class="faq-list">
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What does your engineering and design service include?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Depending on project scope, support may include concept development, equipment layout planning, technical design considerations, and integration planning.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can you help plan a custom equipment solution?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. Share your application, loads and site conditions, and we will outline a practical concept and equipment direction that fits your requirements.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What information should I provide before starting?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Helpful details include your application, available space, throughput targets, existing equipment, drawings or photos, and your project timeline.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can you work with existing equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We review your current equipment and systems so new layouts and specifications work with what you already have on site.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Do you support projects from planning through installation?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. Engineering and design can lead into manufacturing, installation and commissioning, with one team coordinating each stage.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item w-variant-937ceca9-3df4-4f68-7d84-66c1097d3252">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">How do I request an engineering consultation?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Use the contact form with a short description of your project. The team will follow up to clarify details and plan the next step.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c02066" instance="6dcf2fb7-0ee3-cb7d-abdd-884543cd4c86" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

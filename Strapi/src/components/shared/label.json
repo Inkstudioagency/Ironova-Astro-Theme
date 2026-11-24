@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_labels",
+  "info": {
+    "displayName": "Label",
+    "icon": "hashtag",
+    "description": "A single short label (scope items, highlights)."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,87 @@
+---
+/**
+ * Site footer. Link columns, contact details and social links are configured in
+ * `src/config/menu.json` and `src/config/config.json`.
+ */
+import config from "../config/config.json";
+import menu from "../config/menu.json";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isCurrent = (url: string) => url === path;
+const social = (name: string) => menu.social.find((s) => s.name === name)?.url ?? "#";
+---
+
+<footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-top">
+            <div to-top-0="" class="footer-brand">
+              <a href="/" aria-current={isCurrent("/") ? "page" : undefined} class:list={["footer-logo w-inline-block", { "w--current": isCurrent("/") }]}><img src="/images/Frame-265.webp" loading="lazy" width="504" height="128" alt="White text reading &#x27;Ironova&#x27; next to an abstract geometric logo with a solid orange vertical rectangle and a white polygon shape." class="brand-logo"></a>
+              <p class="font-regular">Ironova brings equipment knowledge, practical engineering, and coordinated support together to help industrial operations move forward.</p>
+            </div>
+            <div to-top-2="" class="footer-links">
+              {menu.footer.map((column) => (
+              <div class="footer-column">
+                <p class="font-extra-small is-brand">{column.title}</p>
+                <div class="footer-link-list">
+                  {column.links.map((link) => (
+                  <a href={link.url} aria-current={isCurrent(link.url) ? "page" : undefined} class:list={["footer-link w-inline-block", { "w--current": isCurrent(link.url) }]}>
+                    <p class="footer-text is-one">{link.name}</p>
+                    <p class="footer-text is-two">{link.name}</p>
+                  </a>
+                  ))}
+                </div>
+              </div>
+              ))}
+              <div class="footer-column">
+                <p class="font-extra-small is-brand">Contact</p>
+                <div class="footer-contact">
+                  <div class="footer-contact-item">
+                    <p class="font-regular is-medium">Email</p>
+                    <a href={`mailto:${config.contact.email}`} class="footer-link w-inline-block">
+                      <p class="footer-text is-one">{config.contact.email}</p>
+                      <p class="footer-text is-two">{config.contact.email}</p>
+                    </a>
+                  </div>
+                  <div class="footer-contact-item">
+                    <p class="font-regular is-medium">Phone</p>
+                    <a href={config.contact.phone_href} class="footer-link w-inline-block">
+                      <p class="footer-text is-one">{config.contact.phone}</p>
+                      <p class="footer-text is-two">{config.contact.phone}</p>
+                    </a>
+                  </div>
+                  <div class="footer-social">
+                    <a aria-label="Facebook" href={social("Facebook")} target="_blank" class="footer-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24" class="social-icon">
+                        <path stroke-linejoin="round" stroke-width="1.5" stroke="white" d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M16.9265 8.02734H13.9816C12.9378 8.02734 12.0894 8.86944 12.0817 9.91326L11.9964 21.4278M10.082 14.0027H14.8847"></path>
+                      </svg></a>
+                    <a aria-label="X" href={social("X")} target="_blank" class="footer-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24" class="social-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M4 20L10.7097 13.2903M13.2903 10.7097L20 20H15.5556L10.7097 13.2903L4 4H8.44444L13.2903 10.7097ZM20 4L13.2903 10.7097"></path>
+                      </svg></a>
+                    <a aria-label="LinkedIn" href={social("LinkedIn")} target="_blank" class="footer-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24" class="social-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M7 10V17"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z"></path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom-wrap"><img src="/images/Ironova-·-Dotted-lettering_1Ironova-·-Dotted-lettering.webp" loading="lazy" width="3998" height="667" alt="The word &#x27;IRONOVA&#x27; spelled in large uppercase letters made up of evenly spaced small black dots." srcset="/images/Ironova-·-Dotted-lettering_1-p-500.png 500w, /images/Ironova-·-Dotted-lettering_1-p-800.png 800w, /images/Ironova-·-Dotted-lettering_1-p-1080.png 1080w, /images/Ironova-·-Dotted-lettering_1Ironova-·-Dotted-lettering.webp 3998w" sizes="(max-width: 3998px) 100vw, 3998px" class="footer-wordmark">
+            <div class="footer-bottom">
+              <p class="font-regular">© Ironova. All rights reserved.</p>
+              <div class="footer-legal">
+                {menu.footer_legal.map((link) => (
+                <a href={link.url} aria-current={isCurrent(link.url) ? "page" : undefined} class:list={["footer-link w-inline-block", { "w--current": isCurrent(link.url) }]}>
+                  <p class="footer-text is-one">{link.name}</p>
+                  <p class="footer-text is-two">{link.name}</p>
+                </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>

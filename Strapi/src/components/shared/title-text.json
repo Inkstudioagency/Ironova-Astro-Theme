@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_title_texts",
+  "info": {
+    "displayName": "Title & Text",
+    "icon": "layer",
+    "description": "A short heading with supporting text (features, steps, skills, challenges)."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

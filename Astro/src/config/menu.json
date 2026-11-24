@@ -1,0 +1,77 @@
+{
+  "mega_menu": [
+    {
+      "title": "Main pages",
+      "links": [
+        { "name": "Home V1", "url": "/" },
+        { "name": "Home V2", "url": "/home-v2" },
+        { "name": "Home V3", "url": "/home-v3" },
+        { "name": "Project V1", "url": "/project-v1" },
+        { "name": "Project V2", "url": "/project-v2" },
+        { "name": "Project V3", "url": "/project-v3" }
+      ]
+    },
+    { "title": "Services", "cms": "services" },
+    {
+      "title": "Pages",
+      "links": [
+        { "name": "About", "url": "/about" },
+        { "name": "Equipment", "url": "/equipment" },
+        { "name": "Blog", "url": "/blog" },
+        { "name": "Contact V1", "url": "/contact-v1" },
+        { "name": "Contact V2", "url": "/contact-v2" },
+        { "name": "Contact V3", "url": "/contact-v3" }
+      ]
+    },
+    {
+      "title": "Utility Pages",
+      "links": [
+        { "name": "404", "url": "/404" },
+        { "name": "License", "url": "/licenses" },
+        { "name": "Change Log", "url": "/changelog" },
+        { "name": "Style Guide", "url": "/style-guide" }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "title": "Pages",
+      "links": [
+        { "name": "Home V1", "url": "/" },
+        { "name": "Home V2", "url": "/home-v2" },
+        { "name": "Home V3", "url": "/home-v3" },
+        { "name": "Services", "url": "/service" },
+        { "name": "Project V1", "url": "/project-v1" },
+        { "name": "Project V2", "url": "/project-v2" },
+        { "name": "Project V3", "url": "/project-v3" }
+      ]
+    },
+    {
+      "title": "More Pages",
+      "links": [
+        { "name": "About Ironova", "url": "/about" },
+        { "name": "Equipment", "url": "/equipment" },
+        { "name": "Blog", "url": "/blog" },
+        { "name": "Contact V1", "url": "/contact-v1" },
+        { "name": "Contact V2", "url": "/contact-v2" },
+        { "name": "Contact V3", "url": "/contact-v3" }
+      ]
+    },
+    {
+      "title": "Utility Pages",
+      "links": [
+        { "name": "Style Guide", "url": "/style-guide" },
+        { "name": "Changelog", "url": "/changelog" },
+        { "name": "Licenses", "url": "/licenses" },
+        { "name": "Password", "url": "/401" },
+        { "name": "404", "url": "/404" }
+      ]
+    }
+  ],
+  "footer_legal": [{ "name": "Instructions ", "url": "/instructions" }],
+  "social": [
+    { "name": "Facebook", "url": "https://www.facebook.com/" },
+    { "name": "X", "url": "https://x.com/" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/" }
+  ]
+}

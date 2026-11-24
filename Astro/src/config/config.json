@@ -1,0 +1,24 @@
+{
+  "site": {
+    "title": "Ironova",
+    "base_url": "https://ironova-astro-theme.vercel.app",
+    "lang": "en",
+    "logo": "/images/Frame-265.webp",
+    "logo_alt": "White text reading 'Ironova' next to an abstract geometric logo with a solid orange vertical rectangle and a white polygon shape."
+  },
+  "metadata": {
+    "meta_title": "Ironova - Industrial Equipment & Engineering Astro Theme",
+    "meta_description": "Discover industrial equipment, material handling systems, and engineering solutions from Ironova. Get practical support for planning and improving operations.",
+    "meta_image": "/images/og-image.webp",
+    "title_suffix": " - Ironova"
+  },
+  "contact": {
+    "email": "hello@example.com",
+    "phone": "(229) 555-0109",
+    "phone_href": "tel:+12295550109",
+    "tagline": "Industrial Equipment & Engineering Solutions"
+  },
+  "webflow": {
+    "site_id": "6b03d34cb4fd67e674c0208c"
+  }
+}

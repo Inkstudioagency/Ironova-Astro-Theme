@@ -1,0 +1,967 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CtaSection from "../components/CtaSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { byOrder, getProjects, getServices, img, projectUrl, serviceUrl } from "../lib/strapi";
+
+const projects = await getProjects();
+const services = await getServices();
+const list0 = byOrder(services).slice(0, 4);
+const list1 = byOrder(projects, "desc").slice(0, 1);
+const list2 = byOrder(projects, "desc").slice(1, 3);
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c0206a" title="Ironova - Industrial Engineering Astro Theme" description="Explore industrial equipment, engineering expertise, and coordinated project support designed to improve workflows and keep essential operations moving.">
+  <div class="page-wrapper">
+    <Navbar variant="without-border" instance="a868e7dd-4f6b-4eb4-83b9-5a2470372d97" />
+    <main class="main">
+      <section class="section is-black">
+        <div class="container">
+          <div class="hero-three-layout">
+            <div class="hero-three-head">
+              <div class="hero-three-title">
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;2f8cd407-9974-a23d-5364-19698c1fba97&quot;],[]]]" class="font-extra-small">Engineered for Industry</div>
+                <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;2f8cd407-9974-a23d-5364-19698c1fba99&quot;],[]]]" class="section-heading is-large is-hero">Smarter Equipment. Stronger Industrial Operations.</h1>
+              </div>
+              <div class="hero-two-content v2">
+                <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;2f8cd407-9974-a23d-5364-19698c1fba9c&quot;],[]]]" class="font-normal">Ironova provides reliable equipment and engineering support to enhance planning, streamline workflows, and maintain essential operations.</p>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;2f8cd407-9974-a23d-5364-19698c1fba9d&quot;],[]]]" class="hero-button-wrap">
+                  <a href="/contact-v1" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                    <div class="button-text-wrap">
+                      <div class="footer-link-text is-one">Request a Quote</div>
+                      <div class="footer-link-text is-two">Request a Quote</div>
+                    </div>
+                    <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                      </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                      </svg></div>
+                  </a>
+                  <a href="/service" data-wf--primary-button--variant="glass" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="581d97c2-3e38-f9ba-75b1-b0637cce1283" class="primary-button w-variant-581d97c2-3e38-f9ba-75b1-b0637cce1283 w-inline-block">
+                    <div class="button-text-wrap">
+                      <div class="footer-link-text is-one">Explore Service</div>
+                      <div class="footer-link-text is-two">Explore Service</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;2f8cd407-9974-a23d-5364-19698c1fbaba&quot;],[]]]" class="hero-three-media"><img class="cover-image" src="/images/Hero-Image-5.webp" width="2640" height="1200" alt="Industrial production line with rows of rollers in a modern factory" sizes="(max-width: 2640px) 100vw, 2640px" parallax="" loading="lazy" srcset="/images/Hero-Image-5-p-500.webp 500w, /images/Hero-Image-5-p-800.webp 800w, /images/Hero-Image-5-p-1080.webp 1080w, /images/Hero-Image-5-p-1600.webp 1600w, /images/Hero-Image-5-p-2000.webp 2000w, /images/Hero-Image-5-p-2600.webp 2600w, /images/Hero-Image-5.webp 2640w">
+              <div class="home-hero-overlay is-fade"></div>
+              <div class="hero-info-bar is-overlay">
+                <div class="hero-info-item is-stack">
+                  <div class="font-extra-small">01//</div>
+                  <p class="font-small is-white is-medium">Industrial Equipment Solutions</p>
+                </div>
+                <div class="hero-info-item v3">
+                  <div class="font-extra-small">02//</div>
+                  <p class="font-small is-white is-medium">Engineering &amp; Technical Services</p>
+                </div>
+                <div class="hero-info-item is-stack">
+                  <div class="font-extra-small">03//</div>
+                  <p class="font-small is-white is-medium">Project-Focused Support</p>
+                </div>
+                <div class="hero-info-item is-stack">
+                  <div class="font-extra-small">04//</div>
+                  <p class="font-small is-white is-medium">Built Around Your Operational Needs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="intro-three-layout">
+              <div to-top-0="" class="intro-image-wrap sticky"><img src="/images/Intro-Image.webp" loading="lazy" width="1680" height="1860" alt="Bright industrial facility with red overhead piping and rows of equipment" srcset="/images/Intro-Image-p-500.webp 500w, /images/Intro-Image-p-800.webp 800w, /images/Intro-Image-p-1080.webp 1080w, /images/Intro-Image-p-1600.webp 1600w, /images/Intro-Image.webp 1680w" sizes="(max-width: 1680px) 100vw, 1680px" class="sticky-image"></div>
+              <div class="intro-three-content">
+                <div to-top-0="" class="font-extra-small">A Practical Approach</div>
+                <div class="intro-three-text">
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;41072273-1d0c-fb29-2252-0cf4883cabf9&quot;],[]]]" class="section-heading">Understanding your needs improves decisions.</h2>
+                  <p to-top-2="" class="font-normal is-intro">Every industrial operation has its own needs. We’re all about getting to know your goals, checking out the options, and finding solutions that fit your equipment and workflow.</p>
+                </div>
+                <div to-top-2="" class="point-list">
+                  <div class="point-row">
+                    <div class="point-item">
+                      <div class="point-num">
+                        <div class="font-extra-small">01</div>
+                      </div>
+                      <div class="point-text">
+                        <h3 class="font-medium">Understand the Challenge</h3>
+                        <p class="font-regular">Identify your operational requirements, constraints, and priorities before exploring solutions.</p>
+                      </div>
+                    </div>
+                    <div class="point-item">
+                      <div class="point-num">
+                        <div class="font-extra-small">02</div>
+                      </div>
+                      <div class="point-text">
+                        <h3 class="font-medium">Find the Right Approach</h3>
+                        <p class="font-regular">Connect equipment choices and engineering decisions to your actual application.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="point-item">
+                    <div class="point-num">
+                      <div class="font-extra-small">03</div>
+                    </div>
+                    <div class="point-text">
+                      <h3 class="font-medium">Plan for the Long Term</h3>
+                      <p class="font-regular is-point">Consider installation, maintenance, and future operational needs from the beginning.</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="/about" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;7a3e8486-b93d-60c8-2b82-cc306f57b3fa&quot;],[]]]" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">Get to Know Ironova</div>
+                    <div class="footer-link-text is-two">Get to Know Ironova</div>
+                  </div>
+                  <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                      <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="industry-slider-head">
+              <div class="industry-slider-heading is-equipment">
+                <div to-top-0="" class="font-extra-small">Equipment &amp; Systems</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;504965fa-6777-13e6-e680-08cb04d9afe9&quot;],[]]]" class="section-heading">Equipment for the Work That Moves Industry Forward.</h2>
+              </div>
+              <div class="hero-two-content">
+                <p to-top-2="" class="font-normal">Explore equipment categories designed to support material movement, production workflows, and demanding industrial applications.</p>
+                <a href="/equipment" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;5897eea1-606e-7560-8a23-98822816a0a7&quot;],[]]]" data-wf--primary-button--variant="glass" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="581d97c2-3e38-f9ba-75b1-b0637cce1283" class="primary-button w-variant-581d97c2-3e38-f9ba-75b1-b0637cce1283 w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">View All Equipment</div>
+                    <div class="footer-link-text is-two">View All Equipment</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div to-top-0="" class="equipment-showcase">
+              <div class="equipment-tabs">
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e90a&quot;],[]]]" class="equipment-tab is-active">
+                  <div class="font-extra-small">01//</div>
+                  <h3 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e904&quot;],[]]]" class="font-medium is-tab is-current">Material Handling</h3>
+                  <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e909&quot;],[]]]" class="equipment-tab-icon is-current"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e914&quot;],[]]]" class="equipment-tab">
+                  <div class="font-extra-small">02//</div>
+                  <h3 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e90e&quot;],[]]]" class="font-medium is-tab">Lifting Systems</h3>
+                  <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e913&quot;],[]]]" class="equipment-tab-icon"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e91e&quot;],[]]]" class="equipment-tab">
+                  <div class="font-extra-small">03//</div>
+                  <h3 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e918&quot;],[]]]" class="font-medium is-tab">Conveyor Solutions</h3>
+                  <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e91d&quot;],[]]]" class="equipment-tab-icon"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e928&quot;],[]]]" class="equipment-tab">
+                  <div class="font-extra-small">04//</div>
+                  <h3 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e922&quot;],[]]]" class="font-medium is-tab">Industrial Machinery</h3>
+                  <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e927&quot;],[]]]" class="equipment-tab-icon"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+              </div>
+              <div class="equipment-stage">
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e943&quot;],[]]]" class="equipment-panel is-active">
+                  <div class="equipment-visual">
+                    <div class="lotie-animation-v3" data-w-id="0de4b31b-53c6-704b-f126-d020ad29a44b" data-animation-type="lottie" data-src="/documents/ironova-packaging-palletizing.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="5" data-loading="lazy"></div>
+                  </div>
+                  <div class="equipment-panel-text">
+                    <div class="equipment-panel-info">
+                      <div class="categroy-text is-counter">01 / 04</div>
+                      <h3 class="font-medium is-large">Material Handling</h3>
+                      <p class="font-regular is-panel">Equipment solutions for moving, positioning, and managing materials across industrial environments.</p>
+                    </div>
+                    <a href="/service" class="blog-button is-light w-inline-block">
+                      <div class="blog-button-item">
+                        <div>Explore Material Handling</div>
+                        <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="button-animated-line"></div>
+                    </a>
+                  </div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e95d&quot;],[]]]" class="equipment-panel">
+                  <div class="equipment-visual">
+                    <div class="lotie-animation-v3" data-w-id="4cc305f3-7f58-4b59-f4b6-6b8137cdb321" data-animation-type="lottie" data-src="/documents/ironova-lifting-systems.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="5" data-loading="lazy"></div>
+                  </div>
+                  <div class="equipment-panel-text">
+                    <div class="equipment-panel-info">
+                      <div class="categroy-text is-counter">02 / 04</div>
+                      <h3 class="font-medium is-large">Lifting Systems</h3>
+                      <p class="font-regular is-panel">Lifting equipment for safe, controlled handling of heavy loads in production, assembly, and maintenance areas.</p>
+                    </div>
+                    <a href="/service" class="blog-button is-light w-inline-block">
+                      <div class="blog-button-item">
+                        <div>Explore Lifting Systems</div>
+                        <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="button-animated-line"></div>
+                    </a>
+                  </div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e977&quot;],[]]]" class="equipment-panel">
+                  <div class="equipment-visual">
+                    <div class="lotie-animation-v3" data-w-id="329e77b5-2814-166a-8f29-960ebe4f7771" data-animation-type="lottie" data-src="/documents/ironova-material-handling_1.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="5" data-loading="lazy"></div>
+                  </div>
+                  <div class="equipment-panel-text">
+                    <div class="equipment-panel-info">
+                      <div class="categroy-text is-counter">03 / 04</div>
+                      <h3 class="font-medium is-large">Conveyor Solutions</h3>
+                      <p class="font-regular is-panel">Conveyor systems that keep products and materials moving smoothly between processes, stations, and storage.</p>
+                    </div>
+                    <a href="/service" class="blog-button is-light w-inline-block">
+                      <div class="blog-button-item">
+                        <div>Explore Conveyor Solutions</div>
+                        <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="button-animated-line"></div>
+                    </a>
+                  </div>
+                </div>
+                <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;a8e1c802-6abd-a7a5-7d6a-63c82727e991&quot;],[]]]" class="equipment-panel">
+                  <div class="equipment-visual">
+                    <div class="lotie-animation-v3" data-w-id="70337e93-82e7-3754-7bb9-d24a570827de" data-animation-type="lottie" data-src="/documents/ironova-conveyor-solutions_1.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="5" data-loading="lazy"></div>
+                  </div>
+                  <div class="equipment-panel-text">
+                    <div class="equipment-panel-info">
+                      <div class="categroy-text is-counter">04 / 04</div>
+                      <h3 class="font-medium is-large">Industrial Machinery</h3>
+                      <p class="font-regular is-panel">Machinery for production, processing, and fabrication tasks, matched to your application and operating demands.</p>
+                    </div>
+                    <a href="/service" class="blog-button is-light w-inline-block">
+                      <div class="blog-button-item">
+                        <div>Explore Industrial Machinery</div>
+                        <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                            <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="button-animated-line"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="industry-slider-head">
+              <div class="industry-slider-heading is-wide">
+                <div to-top-0="" class="font-extra-small">From Planning to Performance</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;ceca2b33-76c2-7af7-e64e-69901e811b5d&quot;],[]]]" class="section-heading is-large">Four services, one awesome partner!</h2>
+              </div>
+              <a href="/service" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;84385d7d-3317-cb26-5ad1-12d3f5c0f68c&quot;],[]]]" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                <div class="button-text-wrap">
+                  <div class="footer-link-text is-one">Explore All Services</div>
+                  <div class="footer-link-text is-two">Explore All Services</div>
+                </div>
+                <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                    <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                    <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                  </svg></div>
+              </a>
+            </div>
+          </div>
+          <div class="w-dyn-list">
+            {list0.length > 0 ? (
+              <div role="list" class="w-dyn-items">
+              {list0.map((item) => (
+                <div role="listitem" class="service-stack-item is-wide w-dyn-item">
+                <div class="service-item is-wide">
+                  <div class="service-content is-fixed">
+                    <div class="service-content-top is-wide">
+                      <div class:list={["font-extra-small is-brand is-stage", { "w-dyn-bind-empty": !(item.stage) }]}>{item.stage}</div>
+                      <div class="service-title-wrap">
+                        <div class:list={["section-heading is-medium", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                        <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                      </div>
+                      <a href={serviceUrl(item)} class="blog-button w-inline-block">
+                        <div class="blog-button-item">
+                          <div>Explore Service</div>
+                          <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                        <div class="button-animated-line"></div>
+                      </a>
+                    </div>
+                    <div class="tag-list">
+                      <div class="tag">
+                        <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.focusAreas[0]?.title) }]}>{item.focusAreas[0]?.title}</div>
+                      </div>
+                      <div class="tag">
+                        <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.focusAreas[1]?.title) }]}>{item.focusAreas[1]?.title}</div>
+                      </div>
+                      <div class="tag">
+                        <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.focusAreas[2]?.title) }]}>{item.focusAreas[2]?.title}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service-line"></div>
+                  <div class="service-image-wrap is-fill">
+                    <a href={serviceUrl(item)} class="service-image-wrapper w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="1764" height="1576" parallax="" class:list={["service-image is-tall", { "w-dyn-bind-empty": !(item.mainImage) }]}></a>
+                  </div>
+                </div>
+              </div>
+                ))}
+            </div>
+              ) : (
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+              )}
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="industry-slider-head project">
+              <div class="industry-slider-heading is-project">
+                <div to-top-0="" class="font-extra-small">Selected Projects</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;42629105-4771-5278-3737-f9658edb70c6&quot;],[]]]" class="section-heading">Transforming industrial needs into real-world plans.</h2>
+              </div>
+              <div class="hero-two-content">
+                <p to-top-2="" class="font-normal">Check out project ideas that show how picking the right gear, planning tech, and working together can tackle industrial issues.</p>
+                <a href="/project-v1" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;9393477f-ab7d-d504-becd-62d067c34143&quot;],[]]]" data-wf--primary-button--variant="glass" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="581d97c2-3e38-f9ba-75b1-b0637cce1283" class="primary-button w-variant-581d97c2-3e38-f9ba-75b1-b0637cce1283 w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="footer-link-text is-one">Explore All Projects</div>
+                    <div class="footer-link-text is-two">Explore All Projects</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-dyn-list">
+              {list1.length > 0 ? (
+                <div role="list" class="w-dyn-items">
+                {list1.map((item) => (
+                  <div role="listitem" class="w-dyn-item">
+                  <div to-top-2="" class="project-feature"><img {...img(item.mainImage, "")} loading="lazy" width="2160" height="1560" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                    <div class="project-info-card">
+                      <div class="project-card-label">
+                        <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(item.number) }]}>{item.number}</div>
+                        <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                      </div>
+                      <a href={projectUrl(item)} class="project-title-link w-inline-block">
+                        <div class:list={["section-heading is-medium", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                      </a>
+                      <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                      <div class="project-detail-list">
+                        <div class="project-detail">
+                          <div class="font-small">Application</div>
+                          <div class:list={["font-regular is-medium", { "w-dyn-bind-empty": !(item.application) }]}>{item.application}</div>
+                        </div>
+                        <div class="project-detail">
+                          <div class="font-small">Focus</div>
+                          <div class:list={["font-regular is-medium", { "w-dyn-bind-empty": !(item.focus) }]}>{item.focus}</div>
+                        </div>
+                        <div class="project-detail">
+                          <div class="font-small">Scope</div>
+                          <div class:list={["font-regular is-medium", { "w-dyn-bind-empty": !(item.scope) }]}>{item.scope}</div>
+                        </div>
+                      </div>
+                      <a href={projectUrl(item)} data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                        <div class="button-text-wrap">
+                          <div class="footer-link-text is-one">View Project</div>
+                          <div class="footer-link-text is-two">View Project</div>
+                        </div>
+                        <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                            <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                            <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  ))}
+              </div>
+                ) : (
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+                )}
+            </div>
+            <div class="w-dyn-list">
+              {list2.length > 0 ? (
+                <div role="list" class="project-mini-grid w-dyn-items">
+                {list2.map((item) => (
+                  <div role="listitem" class="w-dyn-item">
+                  <div to-top-2="" class="project-mini-card">
+                    <a href={projectUrl(item)} class="project-small-image-wrap w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="2160" height="1560" parallax="" class:list={["project-mini-image", { "w-dyn-bind-empty": !(item.mainImage) }]}></a>
+                    <div class="project-mini-text">
+                      <div class="project-mini-head">
+                        <div class="project-card-label">
+                          <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(item.number) }]}>{item.number}</div>
+                          <div class:list={["font-extra-small", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                        </div>
+                        <div class:list={["font-medium", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                        <p class:list={["font-small", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                      </div>
+                      <a href={projectUrl(item)} class="blog-button is-light w-inline-block">
+                        <div class="blog-button-item">
+                          <div>View Project</div>
+                          <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                              <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                        <div class="button-animated-line"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  ))}
+              </div>
+                ) : (
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+                )}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div to-top-0="" class="logo-row"><svg width="129" height="36" viewBox="0 0 129 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 11.5C29.1 15.7 28.6 21.9 24.6 25.2C22.9 26.6 20.9 27.3 18.9 27.4C18.2 27.4 17.7 28.0 17.7 28.7C17.7 29.4 18.3 29.9 19.0 29.9C21.5 29.8 24.1 28.9 26.2 27.1C31.3 22.8 31.8 15.1 27.4 9.9C23.1 4.7 15.4 3.9 10.2 8.2C8.2 9.9 6.8 12.3 6.3 14.8C6.1 15.4 6.6 16.1 7.2 16.2C7.9 16.4 8.6 16.0 8.7 15.3C9.1 13.3 10.2 11.5 11.8 10.1C15.9 6.7 22.0 7.3 25.5 11.5ZM20.3 20.4C21.6 19.3 21.7 17.4 20.6 16.1C19.5 14.8 17.6 14.6 16.3 15.7C15.0 16.8 14.8 18.8 15.9 20.1C17.0 21.4 18.9 21.5 20.3 20.4ZM21.3 21.8C23.3 20.2 23.7 17.2 22.0 15.0C20.3 12.8 17.3 12.4 15.3 13.9C14.3 14.7 13.8 15.7 13.6 16.8C13.6 16.8 13.6 16.9 13.6 17.0C13.5 17.6 12.9 18.1 12.2 18.1C11.1 18.0 9.9 18.3 9.0 19.0C7.0 20.6 6.6 23.6 8.3 25.8C10.0 28.0 13.0 28.4 15.1 26.8C16.0 26.1 16.6 25.1 16.8 24.0C16.8 23.9 16.8 23.9 16.8 23.8C16.8 23.1 17.4 22.6 18.1 22.7C19.2 22.8 20.4 22.5 21.3 21.8ZM19.0 25.1C20.4 25.1 21.7 24.6 22.8 23.7C26.0 21.3 26.5 16.7 24.0 13.5C21.5 10.3 16.9 9.5 13.8 12.0C12.5 12.9 11.7 14.2 11.3 15.6C10.0 15.7 8.6 16.2 7.5 17.1C4.3 19.5 3.9 24.1 6.4 27.3C8.8 30.5 13.4 31.2 16.6 28.8C17.8 27.8 18.6 26.5 19.0 25.1Z" fill="#B2B2B2"></path>
+            <path d="M42.8 25.0V11.5H45.0L51.6 21.0H51.6V11.5H54.0V25.0H51.9L45.3 15.5H45.2V25.0H42.8ZM60.6 25.2C57.6 25.2 55.8 23.3 55.8 20.1V20.1C55.8 17.0 57.6 14.9 60.5 14.9C63.3 14.9 65.1 16.9 65.1 19.9V20.6H58.1C58.1 22.4 59.1 23.4 60.6 23.4C61.8 23.4 62.6 22.8 62.8 22.1L62.8 22.1H65.0L65.0 22.2C64.6 23.7 63.2 25.2 60.6 25.2ZM60.5 16.7C59.3 16.7 58.3 17.6 58.1 19.1H62.8C62.6 17.5 61.7 16.7 60.5 16.7ZM70.0 25.2C67.8 25.2 66.5 23.8 66.5 21.5V15.1H68.9V21.1C68.9 22.5 69.5 23.3 70.9 23.3C72.2 23.3 73.1 22.3 73.1 20.9V15.1H75.4V25.0H73.1V23.5H73.0C72.5 24.5 71.5 25.2 70.0 25.2ZM77.3 25.0V15.1H79.7V16.8H79.7C80.0 15.6 80.9 14.9 82.0 14.9C82.3 14.9 82.6 14.9 82.7 15.0V17.1C82.5 17.0 82.2 17.0 81.8 17.0C80.5 17.0 79.7 17.8 79.7 19.3V25.0H77.3ZM88.0 25.2C85.0 25.2 83.2 23.3 83.2 20.1V20.0C83.2 16.9 85.1 14.9 88.0 14.9C90.9 14.9 92.8 16.8 92.8 20.0V20.1C92.8 23.3 90.9 25.2 88.0 25.2ZM88.0 23.3C89.5 23.3 90.4 22.1 90.4 20.1V20.0C90.4 18.0 89.4 16.8 88.0 16.8C86.5 16.8 85.5 18.0 85.5 20.0V20.1C85.5 22.2 86.5 23.3 88.0 23.3ZM94.5 25.0V11.5H96.9V23.0H103.1V25.0H94.5ZM105.8 13.7C105.1 13.7 104.5 13.1 104.5 12.4C104.5 11.7 105.1 11.1 105.8 11.1C106.6 11.1 107.1 11.7 107.1 12.4C107.1 13.1 106.6 13.7 105.8 13.7ZM104.7 25.0V15.1H107.0V25.0H104.7ZM109.0 25.0V15.1H111.3V16.7H111.4C111.9 15.6 112.9 14.9 114.4 14.9C116.6 14.9 117.9 16.3 117.9 18.6V25.0H115.5V19.1C115.5 17.7 114.9 16.9 113.5 16.9C112.2 16.9 111.3 17.8 111.3 19.3V25.0H109.0ZM119.8 25.0V11.5H122.2V19.2H122.2L125.9 15.1H128.6L124.7 19.4L128.8 25.0H126.1L123.0 20.8L122.2 21.6V25.0H119.8Z" fill="#B2B2B2"></path>
+          </svg><svg width="136" height="36" viewBox="0 0 136 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.4 9.7H12.1V12.0H9.8V14.3H12.1V12.0H14.4V9.7ZM23.6 12.0H21.3V9.7H23.7V12.0H25.9V14.3H23.6V12.0ZM21.3 14.3H19.0V16.6H21.3V14.3ZM19.0 19.0H21.3V21.3H19.0V19.0ZM16.7 14.3H14.4V16.6H16.7V14.3ZM14.4 19.0H16.7V21.3H14.4V19.0ZM9.7 23.7H12.1V21.4H9.7V23.7ZM23.6 23.7H25.9V21.4H23.6V23.7ZM14.4 28.3H16.7V26.0H14.4V28.3ZM19.0 28.3H21.3V26.0H19.0V28.3Z" fill="#B2B2B2"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7 5.0H12.1V7.4H16.7V5.0ZM7.5 7.4H12.1V12.0H7.5V14.3H5.1V12.0L7.5 12.0L7.5 7.4ZM28.3 7.4H23.7V12.0H28.2V14.3H30.6V12.0H28.3V7.4ZM23.6 16.7H25.9V19.0H23.6V16.7ZM12.1 16.6H9.8V19.0H12.1V16.6ZM9.8 14.3H5.1V16.6H9.8V14.3ZM30.6 14.3H25.9V16.6H30.6V14.3ZM16.7 7.4L14.4 7.4V9.7H16.7L16.7 7.4ZM21.3 7.4H19.0V9.7L16.7 9.7L16.7 12.0H19.0V9.7H21.3V7.4ZM19.0 16.6H16.7V19.0H19.0V16.6ZM23.7 5.0H19.0L19.0 7.4L23.7 7.4V5.0ZM12.1 28.3H7.4V23.7H12.1L14.4 23.7V26.0H12.1V28.3L16.7 28.3V30.6H12.1V28.3ZM23.6 28.3H28.3V23.7H23.6L21.3 23.7V26.0H23.6L23.6 28.3L19.0 28.3V30.6H23.6V28.3ZM5.1 23.7H7.4L7.4 21.4H5.1V23.7ZM28.2 23.7H30.6V21.4H28.2V23.7ZM5.1 21.4H9.8V19.0H5.1V21.4ZM25.9 21.4H30.5V19.0H25.9V21.4ZM16.7 26.0H19.0V23.7H16.7V26.0Z" fill="#B2B2B2"></path>
+            <path d="M50.2 11.0C51.2 11.0 52.1 11.2 52.9 11.6C53.7 11.9 54.2 12.5 54.6 13.1C55.0 13.8 55.2 14.5 55.2 15.4C55.2 16.3 55.0 17.0 54.6 17.7C54.2 18.3 53.7 18.8 52.9 19.2C52.1 19.6 51.2 19.8 50.2 19.8H44.4V17.3H50.0C50.7 17.3 51.3 17.1 51.7 16.8C52.1 16.5 52.3 16.0 52.3 15.4C52.3 14.8 52.1 14.3 51.7 14.0C51.3 13.7 50.7 13.5 50.0 13.5H44.7L46.0 12.1V24.2H43.1V11.0H50.2ZM56.7 14.1L58.2 14.4L59.7 14.1V24.2H56.7V14.1ZM58.2 13.1C57.7 13.1 57.2 12.9 56.9 12.7C56.6 12.4 56.4 12.0 56.4 11.6C56.4 11.1 56.6 10.7 56.9 10.5C57.2 10.2 57.7 10.0 58.2 10.0C58.7 10.0 59.2 10.2 59.5 10.5C59.8 10.7 60.0 11.1 60.0 11.6C60.0 12.0 59.8 12.4 59.5 12.7C59.2 12.9 58.7 13.1 58.2 13.1ZM60.6 24.2L65.3 18.6L65.3 19.7L60.9 14.2H64.2L67.3 18.0H66.2L69.4 14.2H72.6L68.1 19.7L67.9 18.3L72.9 24.2H69.5L66.1 20.2H67.2L63.9 24.2H60.6ZM78.7 24.5C77.5 24.5 76.4 24.3 75.5 23.8C74.6 23.4 73.9 22.8 73.3 22.0C72.8 21.2 72.5 20.3 72.5 19.2C72.5 18.2 72.8 17.2 73.3 16.5C73.8 15.7 74.5 15.1 75.4 14.6C76.3 14.2 77.3 14.0 78.4 14.0C79.6 14.0 80.6 14.2 81.4 14.7C82.2 15.2 82.9 16.0 83.3 16.9C83.8 17.8 84.0 18.9 84.0 20.2H74.9V18.2H82.4L81.3 18.9C81.2 18.3 81.1 17.8 80.8 17.4C80.6 17.0 80.3 16.7 79.9 16.5C79.5 16.2 79.0 16.1 78.4 16.1C77.8 16.1 77.3 16.2 76.9 16.5C76.4 16.7 76.1 17.1 75.9 17.5C75.6 17.9 75.5 18.4 75.5 19.0C75.5 19.7 75.7 20.3 76.0 20.8C76.3 21.3 76.7 21.6 77.3 21.9C77.9 22.2 78.6 22.3 79.4 22.3C80.2 22.3 80.9 22.2 81.7 22.0C82.4 21.7 83.1 21.4 83.7 21.0V23.0C83.1 23.5 82.3 23.8 81.4 24.1C80.6 24.4 79.7 24.5 78.7 24.5ZM85.7 10.7H88.6V24.2H85.7V10.7ZM104.3 18.5C104.3 19.3 104.1 20.1 103.8 20.8C103.5 21.5 103.1 22.2 102.6 22.7C102.0 23.3 101.4 23.7 100.5 24.0C99.7 24.3 98.8 24.5 97.7 24.5C96.7 24.5 95.8 24.3 94.9 24.0C94.0 23.7 93.2 23.3 92.5 22.7C91.9 22.1 91.3 21.4 91.0 20.5C90.6 19.7 90.4 18.7 90.4 17.6C90.4 16.6 90.6 15.6 91.0 14.7C91.3 13.9 91.9 13.2 92.6 12.6C93.2 12.0 94.0 11.6 94.9 11.2C95.8 10.9 96.8 10.8 97.9 10.8C99.3 10.8 100.5 11.0 101.5 11.4C102.6 11.9 103.4 12.5 104.0 13.3C104.7 14.0 105.1 14.9 105.2 15.9H102.2C102.1 15.4 101.9 14.9 101.5 14.5C101.1 14.1 100.6 13.8 100.0 13.6C99.4 13.4 98.7 13.3 97.9 13.3C97.0 13.3 96.2 13.5 95.5 13.8C94.8 14.1 94.3 14.6 94.0 15.3C93.6 15.9 93.4 16.7 93.4 17.6C93.4 18.6 93.6 19.4 94.0 20.0C94.4 20.7 94.9 21.2 95.6 21.5C96.3 21.9 97.2 22.0 98.2 22.0C99.1 22.0 99.9 21.9 100.6 21.6C101.3 21.3 101.9 20.9 102.3 20.3C102.7 19.8 103.0 19.1 103.0 18.4L104.3 18.5ZM98.6 19.7V17.6H105.4V24.2H103.2L102.8 18.9L103.4 19.7H98.6ZM107.0 14.2H109.9L110.5 17.8V24.2H107.6V17.5L107.0 14.2ZM115.4 14.1V16.7C115.1 16.6 114.8 16.5 114.5 16.5C114.2 16.5 113.9 16.4 113.6 16.4C113.0 16.4 112.5 16.6 112.0 16.8C111.6 17.1 111.2 17.4 110.9 18.0C110.7 18.5 110.5 19.1 110.5 19.9L109.9 19.2C110.0 18.5 110.1 17.8 110.3 17.2C110.5 16.5 110.8 16.0 111.1 15.5C111.4 15.0 111.8 14.7 112.3 14.4C112.8 14.1 113.4 14.0 114.1 14.0C114.3 14.0 114.5 14.0 114.7 14.0C115.0 14.0 115.2 14.1 115.4 14.1ZM116.7 14.1L118.2 14.4L119.7 14.1V24.2H116.7V14.1ZM118.2 13.1C117.7 13.1 117.2 12.9 116.9 12.7C116.6 12.4 116.4 12.0 116.4 11.6C116.4 11.1 116.6 10.7 116.9 10.5C117.2 10.2 117.7 10.0 118.2 10.0C118.7 10.0 119.2 10.2 119.5 10.5C119.8 10.7 120.0 11.1 120.0 11.6C120.0 12.0 119.8 12.4 119.5 12.7C119.2 12.9 118.7 13.1 118.2 13.1ZM131.0 24.2L130.6 20.5L131.2 19.3L130.6 17.8L131.4 10.7H134.4L133.5 19.0L134.1 24.2H131.0ZM131.8 19.2C131.6 20.3 131.2 21.2 130.7 22.0C130.2 22.8 129.6 23.4 128.8 23.8C128.1 24.3 127.3 24.5 126.3 24.5C125.4 24.5 124.5 24.3 123.8 23.8C123.0 23.4 122.4 22.8 122.0 22.0C121.6 21.2 121.4 20.3 121.4 19.2C121.4 18.2 121.6 17.3 122.0 16.5C122.4 15.7 123.0 15.1 123.8 14.6C124.5 14.2 125.4 14.0 126.3 14.0C127.3 14.0 128.1 14.2 128.8 14.6C129.6 15.0 130.2 15.7 130.7 16.5C131.2 17.2 131.6 18.2 131.8 19.2ZM124.4 19.2C124.4 19.8 124.5 20.3 124.7 20.8C124.9 21.2 125.3 21.6 125.7 21.8C126.1 22.1 126.6 22.2 127.2 22.2C127.7 22.2 128.2 22.1 128.7 21.8C129.2 21.6 129.6 21.2 130.0 20.8C130.4 20.3 130.7 19.8 130.9 19.2C130.7 18.7 130.4 18.1 130.0 17.7C129.6 17.2 129.2 16.9 128.7 16.6C128.2 16.4 127.7 16.2 127.2 16.2C126.6 16.2 126.1 16.4 125.7 16.6C125.3 16.9 124.9 17.2 124.7 17.7C124.5 18.1 124.4 18.7 124.4 19.2Z" fill="#B2B2B2"></path>
+          </svg><svg width="119" height="36" viewBox="0 0 119 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.9 5.0C25.0 5.0 30.7 10.8 30.7 17.8H28.4H23.9C23.9 14.5 21.2 11.9 17.9 11.9C14.6 11.9 12.0 14.5 12.0 17.8H7.5H5.1C5.1 10.8 10.9 5.0 17.9 5.0Z" fill="#B2B2B2"></path>
+            <path d="M17.9 30.6C10.9 30.6 5.1 24.9 5.1 17.8H7.5H12.0H23.9C23.9 21.1 21.2 23.8 17.9 23.8C14.6 23.8 12.0 21.1 12.0 17.8H7.5C7.5 23.6 12.1 28.3 17.9 28.3C23.7 28.3 28.4 23.6 28.4 17.8H30.7C30.7 24.9 25.0 30.6 17.9 30.6Z" fill="#B2B2B2"></path>
+            <path d="M43.2 25.0V11.1H45.9V22.8H52.0V25.0H43.2ZM60.6 20.6V14.6H63.3V25.0H60.7V23.2H60.6C60.4 23.8 60.0 24.2 59.4 24.6C58.9 25.0 58.2 25.2 57.5 25.2C56.8 25.2 56.2 25.0 55.6 24.7C55.1 24.4 54.7 23.9 54.4 23.4C54.1 22.8 54.0 22.1 53.9 21.2V14.6H56.6V20.8C56.6 21.4 56.8 21.9 57.2 22.3C57.5 22.7 58.0 22.9 58.5 22.9C58.9 22.9 59.2 22.8 59.5 22.6C59.9 22.4 60.1 22.2 60.3 21.9C60.5 21.5 60.6 21.1 60.6 20.6ZM70.4 25.2C69.3 25.2 68.4 25.0 67.7 24.6C66.9 24.1 66.3 23.5 65.9 22.7C65.5 21.8 65.3 20.9 65.3 19.8C65.3 18.8 65.5 17.8 65.9 17.0C66.3 16.2 66.9 15.6 67.7 15.1C68.4 14.7 69.3 14.4 70.4 14.4C71.3 14.4 72.0 14.6 72.7 14.9C73.4 15.2 73.9 15.7 74.3 16.3C74.7 16.9 74.9 17.5 75.0 18.3H72.4C72.3 17.8 72.1 17.4 71.8 17.1C71.4 16.7 71.0 16.6 70.4 16.6C69.9 16.6 69.5 16.7 69.2 16.9C68.8 17.2 68.5 17.6 68.3 18.1C68.1 18.5 68.0 19.1 68.0 19.8C68.0 20.5 68.1 21.1 68.3 21.6C68.5 22.1 68.8 22.4 69.2 22.7C69.5 23.0 69.9 23.1 70.4 23.1C70.8 23.1 71.1 23.0 71.4 22.9C71.6 22.7 71.9 22.5 72.0 22.3C72.2 22.0 72.3 21.7 72.4 21.3H75.0C74.9 22.1 74.7 22.8 74.3 23.4C73.9 24.0 73.4 24.4 72.7 24.7C72.1 25.1 71.3 25.2 70.4 25.2ZM81.6 25.2C80.5 25.2 79.6 25.0 78.9 24.6C78.1 24.1 77.5 23.5 77.1 22.7C76.7 21.9 76.5 21.0 76.5 19.9C76.5 18.8 76.7 17.8 77.1 17.0C77.5 16.2 78.1 15.6 78.8 15.1C79.6 14.7 80.5 14.4 81.5 14.4C82.1 14.4 82.8 14.5 83.4 14.7C83.9 15.0 84.5 15.3 84.9 15.7C85.3 16.2 85.7 16.7 85.9 17.4C86.2 18.0 86.3 18.8 86.3 19.7V20.5H77.6V18.8H83.8C83.8 18.3 83.7 17.9 83.5 17.6C83.3 17.2 83.0 17.0 82.7 16.8C82.4 16.6 82.0 16.5 81.5 16.5C81.0 16.5 80.6 16.6 80.3 16.8C79.9 17.0 79.6 17.3 79.4 17.7C79.2 18.1 79.1 18.5 79.1 18.9V20.5C79.1 21.0 79.2 21.5 79.4 21.9C79.6 22.3 79.9 22.7 80.3 22.9C80.7 23.1 81.1 23.2 81.6 23.2C82.0 23.2 82.3 23.1 82.6 23.1C82.8 23.0 83.1 22.8 83.3 22.6C83.5 22.4 83.6 22.2 83.7 21.9L86.2 22.1C86.1 22.8 85.8 23.3 85.4 23.8C85.0 24.2 84.5 24.6 83.8 24.9C83.2 25.1 82.4 25.2 81.6 25.2ZM91.0 18.9V25.0H88.3V14.6H90.9V16.4H91.0C91.2 15.8 91.6 15.3 92.1 15.0C92.7 14.6 93.3 14.4 94.1 14.4C94.8 14.4 95.5 14.6 96.0 14.9C96.5 15.2 97.0 15.7 97.3 16.2C97.6 16.8 97.7 17.5 97.7 18.4V25.0H95.0V18.8C95.0 18.1 94.9 17.6 94.5 17.2C94.2 16.9 93.7 16.7 93.1 16.7C92.7 16.7 92.3 16.8 92.0 16.9C91.7 17.1 91.4 17.4 91.3 17.7C91.1 18.1 91.0 18.5 91.0 18.9ZM102.3 25.0H99.4L104.2 11.1H107.7L112.5 25.0H109.6L106.0 14.1H105.9L102.3 25.0ZM102.2 19.6H109.6V21.7H102.2V19.6ZM117.0 11.1V25.0H114.3V11.1H117.0Z" fill="#B2B2B2"></path>
+          </svg><svg width="136" height="36" viewBox="0 0 136 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.4 9.7H12.1V12.0H9.8V14.3H12.1V12.0H14.4V9.7ZM23.6 12.0H21.3V9.7H23.7V12.0H25.9V14.3H23.6V12.0ZM21.3 14.3H19.0V16.6H21.3V14.3ZM19.0 19.0H21.3V21.3H19.0V19.0ZM16.7 14.3H14.4V16.6H16.7V14.3ZM14.4 19.0H16.7V21.3H14.4V19.0ZM9.7 23.7H12.1V21.4H9.7V23.7ZM23.6 23.7H25.9V21.4H23.6V23.7ZM14.4 28.3H16.7V26.0H14.4V28.3ZM19.0 28.3H21.3V26.0H19.0V28.3Z" fill="#B2B2B2"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7 5.0H12.1V7.4H16.7V5.0ZM7.5 7.4H12.1V12.0H7.5V14.3H5.1V12.0L7.5 12.0L7.5 7.4ZM28.3 7.4H23.7V12.0H28.2V14.3H30.6V12.0H28.3V7.4ZM23.6 16.7H25.9V19.0H23.6V16.7ZM12.1 16.6H9.8V19.0H12.1V16.6ZM9.8 14.3H5.1V16.6H9.8V14.3ZM30.6 14.3H25.9V16.6H30.6V14.3ZM16.7 7.4L14.4 7.4V9.7H16.7L16.7 7.4ZM21.3 7.4H19.0V9.7L16.7 9.7L16.7 12.0H19.0V9.7H21.3V7.4ZM19.0 16.6H16.7V19.0H19.0V16.6ZM23.7 5.0H19.0L19.0 7.4L23.7 7.4V5.0ZM12.1 28.3H7.4V23.7H12.1L14.4 23.7V26.0H12.1V28.3L16.7 28.3V30.6H12.1V28.3ZM23.6 28.3H28.3V23.7H23.6L21.3 23.7V26.0H23.6L23.6 28.3L19.0 28.3V30.6H23.6V28.3ZM5.1 23.7H7.4L7.4 21.4H5.1V23.7ZM28.2 23.7H30.6V21.4H28.2V23.7ZM5.1 21.4H9.8V19.0H5.1V21.4ZM25.9 21.4H30.5V19.0H25.9V21.4ZM16.7 26.0H19.0V23.7H16.7V26.0Z" fill="#B2B2B2"></path>
+            <path d="M50.2 11.0C51.2 11.0 52.1 11.2 52.9 11.6C53.7 11.9 54.2 12.5 54.6 13.1C55.0 13.8 55.2 14.5 55.2 15.4C55.2 16.3 55.0 17.0 54.6 17.7C54.2 18.3 53.7 18.8 52.9 19.2C52.1 19.6 51.2 19.8 50.2 19.8H44.4V17.3H50.0C50.7 17.3 51.3 17.1 51.7 16.8C52.1 16.5 52.3 16.0 52.3 15.4C52.3 14.8 52.1 14.3 51.7 14.0C51.3 13.7 50.7 13.5 50.0 13.5H44.7L46.0 12.1V24.2H43.1V11.0H50.2ZM56.7 14.1L58.2 14.4L59.7 14.1V24.2H56.7V14.1ZM58.2 13.1C57.7 13.1 57.2 12.9 56.9 12.7C56.6 12.4 56.4 12.0 56.4 11.6C56.4 11.1 56.6 10.7 56.9 10.5C57.2 10.2 57.7 10.0 58.2 10.0C58.7 10.0 59.2 10.2 59.5 10.5C59.8 10.7 60.0 11.1 60.0 11.6C60.0 12.0 59.8 12.4 59.5 12.7C59.2 12.9 58.7 13.1 58.2 13.1ZM60.6 24.2L65.3 18.6L65.3 19.7L60.9 14.2H64.2L67.3 18.0H66.2L69.4 14.2H72.6L68.1 19.7L67.9 18.3L72.9 24.2H69.5L66.1 20.2H67.2L63.9 24.2H60.6ZM78.7 24.5C77.5 24.5 76.4 24.3 75.5 23.8C74.6 23.4 73.9 22.8 73.3 22.0C72.8 21.2 72.5 20.3 72.5 19.2C72.5 18.2 72.8 17.2 73.3 16.5C73.8 15.7 74.5 15.1 75.4 14.6C76.3 14.2 77.3 14.0 78.4 14.0C79.6 14.0 80.6 14.2 81.4 14.7C82.2 15.2 82.9 16.0 83.3 16.9C83.8 17.8 84.0 18.9 84.0 20.2H74.9V18.2H82.4L81.3 18.9C81.2 18.3 81.1 17.8 80.8 17.4C80.6 17.0 80.3 16.7 79.9 16.5C79.5 16.2 79.0 16.1 78.4 16.1C77.8 16.1 77.3 16.2 76.9 16.5C76.4 16.7 76.1 17.1 75.9 17.5C75.6 17.9 75.5 18.4 75.5 19.0C75.5 19.7 75.7 20.3 76.0 20.8C76.3 21.3 76.7 21.6 77.3 21.9C77.9 22.2 78.6 22.3 79.4 22.3C80.2 22.3 80.9 22.2 81.7 22.0C82.4 21.7 83.1 21.4 83.7 21.0V23.0C83.1 23.5 82.3 23.8 81.4 24.1C80.6 24.4 79.7 24.5 78.7 24.5ZM85.7 10.7H88.6V24.2H85.7V10.7ZM104.3 18.5C104.3 19.3 104.1 20.1 103.8 20.8C103.5 21.5 103.1 22.2 102.6 22.7C102.0 23.3 101.4 23.7 100.5 24.0C99.7 24.3 98.8 24.5 97.7 24.5C96.7 24.5 95.8 24.3 94.9 24.0C94.0 23.7 93.2 23.3 92.5 22.7C91.9 22.1 91.3 21.4 91.0 20.5C90.6 19.7 90.4 18.7 90.4 17.6C90.4 16.6 90.6 15.6 91.0 14.7C91.3 13.9 91.9 13.2 92.6 12.6C93.2 12.0 94.0 11.6 94.9 11.2C95.8 10.9 96.8 10.8 97.9 10.8C99.3 10.8 100.5 11.0 101.5 11.4C102.6 11.9 103.4 12.5 104.0 13.3C104.7 14.0 105.1 14.9 105.2 15.9H102.2C102.1 15.4 101.9 14.9 101.5 14.5C101.1 14.1 100.6 13.8 100.0 13.6C99.4 13.4 98.7 13.3 97.9 13.3C97.0 13.3 96.2 13.5 95.5 13.8C94.8 14.1 94.3 14.6 94.0 15.3C93.6 15.9 93.4 16.7 93.4 17.6C93.4 18.6 93.6 19.4 94.0 20.0C94.4 20.7 94.9 21.2 95.6 21.5C96.3 21.9 97.2 22.0 98.2 22.0C99.1 22.0 99.9 21.9 100.6 21.6C101.3 21.3 101.9 20.9 102.3 20.3C102.7 19.8 103.0 19.1 103.0 18.4L104.3 18.5ZM98.6 19.7V17.6H105.4V24.2H103.2L102.8 18.9L103.4 19.7H98.6ZM107.0 14.2H109.9L110.5 17.8V24.2H107.6V17.5L107.0 14.2ZM115.4 14.1V16.7C115.1 16.6 114.8 16.5 114.5 16.5C114.2 16.5 113.9 16.4 113.6 16.4C113.0 16.4 112.5 16.6 112.0 16.8C111.6 17.1 111.2 17.4 110.9 18.0C110.7 18.5 110.5 19.1 110.5 19.9L109.9 19.2C110.0 18.5 110.1 17.8 110.3 17.2C110.5 16.5 110.8 16.0 111.1 15.5C111.4 15.0 111.8 14.7 112.3 14.4C112.8 14.1 113.4 14.0 114.1 14.0C114.3 14.0 114.5 14.0 114.7 14.0C115.0 14.0 115.2 14.1 115.4 14.1ZM116.7 14.1L118.2 14.4L119.7 14.1V24.2H116.7V14.1ZM118.2 13.1C117.7 13.1 117.2 12.9 116.9 12.7C116.6 12.4 116.4 12.0 116.4 11.6C116.4 11.1 116.6 10.7 116.9 10.5C117.2 10.2 117.7 10.0 118.2 10.0C118.7 10.0 119.2 10.2 119.5 10.5C119.8 10.7 120.0 11.1 120.0 11.6C120.0 12.0 119.8 12.4 119.5 12.7C119.2 12.9 118.7 13.1 118.2 13.1ZM131.0 24.2L130.6 20.5L131.2 19.3L130.6 17.8L131.4 10.7H134.4L133.5 19.0L134.1 24.2H131.0ZM131.8 19.2C131.6 20.3 131.2 21.2 130.7 22.0C130.2 22.8 129.6 23.4 128.8 23.8C128.1 24.3 127.3 24.5 126.3 24.5C125.4 24.5 124.5 24.3 123.8 23.8C123.0 23.4 122.4 22.8 122.0 22.0C121.6 21.2 121.4 20.3 121.4 19.2C121.4 18.2 121.6 17.3 122.0 16.5C122.4 15.7 123.0 15.1 123.8 14.6C124.5 14.2 125.4 14.0 126.3 14.0C127.3 14.0 128.1 14.2 128.8 14.6C129.6 15.0 130.2 15.7 130.7 16.5C131.2 17.2 131.6 18.2 131.8 19.2ZM124.4 19.2C124.4 19.8 124.5 20.3 124.7 20.8C124.9 21.2 125.3 21.6 125.7 21.8C126.1 22.1 126.6 22.2 127.2 22.2C127.7 22.2 128.2 22.1 128.7 21.8C129.2 21.6 129.6 21.2 130.0 20.8C130.4 20.3 130.7 19.8 130.9 19.2C130.7 18.7 130.4 18.1 130.0 17.7C129.6 17.2 129.2 16.9 128.7 16.6C128.2 16.4 127.7 16.2 127.2 16.2C126.6 16.2 126.1 16.4 125.7 16.6C125.3 16.9 124.9 17.2 124.7 17.7C124.5 18.1 124.4 18.7 124.4 19.2Z" fill="#B2B2B2"></path>
+          </svg><svg width="122" height="36" viewBox="0 0 122 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1 5.0C19.0 5.0 19.7 5.8 19.7 6.6V12.3C19.7 12.3 19.8 12.3 19.8 12.4L23.4 6.0L24.5 6.7C25.3 7.1 25.5 8.1 25.1 8.8L22.3 13.8C22.3 13.8 22.3 13.8 22.3 13.9L28.6 10.2L29.2 11.3C29.7 12.0 29.4 13.0 28.7 13.5L23.8 16.3C23.8 16.3 23.8 16.4 23.8 16.4H31.0V17.7C31.0 18.5 30.3 19.3 29.5 19.3H23.8C23.8 19.3 23.8 19.3 23.8 19.4L30.0 23.0L29.4 24.1C29.0 24.8 28.0 25.1 27.2 24.7L22.3 21.8C22.3 21.8 22.3 21.9 22.3 21.9L25.9 28.2L24.8 28.8C24.1 29.3 23.1 29.0 22.6 28.2L19.8 23.3C19.8 23.3 19.7 23.3 19.7 23.3V30.6H18.5C17.6 30.6 16.9 29.9 16.9 29.0V23.3C16.8 23.3 16.8 23.3 16.8 23.3L13.1 29.6L12.1 29.0C11.3 28.6 11.0 27.6 11.5 26.8L14.3 21.9C14.3 21.9 14.3 21.8 14.2 21.8L7.9 25.5L7.3 24.4C6.9 23.6 7.1 22.6 7.9 22.2L12.8 19.4C12.8 19.3 12.8 19.3 12.8 19.3H5.5V18.0C5.5 17.1 6.2 16.4 7.1 16.4H12.8C12.8 16.4 12.8 16.3 12.8 16.3L6.5 12.7L7.2 11.6C7.6 10.8 8.6 10.6 9.3 11.0L14.2 13.9C14.3 13.8 14.3 13.8 14.3 13.8L10.7 7.5L11.8 6.8C12.5 6.4 13.5 6.7 13.9 7.4L16.8 12.4C16.8 12.3 16.8 12.3 16.9 12.3V5.0H18.1ZM20.8 19.2L20.7 19.4C20.5 19.7 20.2 20.0 19.8 20.3L19.6 20.3C19.2 20.6 18.8 20.7 18.3 20.7H18.2C17.8 20.7 17.3 20.5 16.9 20.3L16.8 20.3C16.4 20.0 16.1 19.7 15.8 19.3L15.8 19.2C15.6 18.8 15.5 18.3 15.5 17.8C15.5 16.3 16.7 15.0 18.3 15.0C18.8 15.0 19.3 15.1 19.7 15.3L19.8 15.4C20.1 15.6 20.5 16.0 20.7 16.4L20.8 16.5C21.0 16.9 21.1 17.3 21.1 17.8V17.9C21.1 18.4 21.0 18.8 20.8 19.2Z" fill="#B2B2B2"></path>
+            <path d="M43.3 24.2V11.8H50.4C52.1 11.8 53.3 12.1 54.2 12.7C55.1 13.2 55.5 14.0 55.5 15.1C55.5 15.8 55.3 16.4 55.0 16.8C54.6 17.2 54.1 17.5 53.5 17.7C52.9 17.9 52.1 18.0 51.3 18.1L51.4 17.9C52.0 17.9 52.6 18.0 53.1 18.1C53.7 18.1 54.2 18.3 54.6 18.5C55.0 18.7 55.3 19.0 55.6 19.3C55.8 19.7 56.0 20.2 56.0 20.8C56.0 21.5 55.8 22.2 55.3 22.7C54.9 23.2 54.4 23.6 53.6 23.8C52.9 24.1 52.1 24.2 51.1 24.2H43.3ZM45.8 22.1H50.8C51.6 22.1 52.3 22.0 52.7 21.7C53.1 21.5 53.4 21.0 53.4 20.5C53.4 20.1 53.2 19.7 53.0 19.6C52.7 19.4 52.4 19.2 52.0 19.2C51.5 19.2 51.1 19.1 50.6 19.1H45.8V22.1ZM45.8 17.1H50.3C51.1 17.1 51.8 17.0 52.2 16.7C52.6 16.5 52.8 16.1 52.8 15.5C52.8 14.9 52.6 14.5 52.2 14.3C51.8 14.0 51.2 13.9 50.5 13.9H45.8V17.1ZM57.9 14.7H60.4V24.2H57.9V14.7ZM64.0 16.7C63.3 16.7 62.7 16.9 62.2 17.2C61.7 17.4 61.2 17.8 60.9 18.2C60.6 18.6 60.4 19.0 60.2 19.3L60.2 18.3C60.2 18.1 60.3 17.9 60.4 17.6C60.5 17.3 60.6 17.0 60.8 16.6C61.0 16.3 61.2 15.9 61.5 15.6C61.8 15.3 62.1 15.0 62.6 14.8C63.0 14.6 63.5 14.5 64.0 14.5V16.7ZM68.4 10.5V12.7H65.5V10.5H68.4ZM65.7 14.7H68.2V24.2H65.7V14.7ZM75.4 22.8C74.4 22.8 73.5 22.6 72.7 22.3C71.9 22.0 71.3 21.5 70.9 20.9C70.5 20.3 70.2 19.6 70.2 18.7C70.2 17.8 70.4 17.1 70.9 16.5C71.3 15.8 71.9 15.3 72.7 15.0C73.5 14.7 74.4 14.5 75.4 14.5C75.7 14.5 76.0 14.5 76.3 14.5C76.6 14.6 76.8 14.6 77.1 14.7L81.9 14.7V16.6C81.3 16.6 80.6 16.5 79.9 16.4C79.3 16.2 78.7 16.0 78.2 15.8L78.1 15.7C78.5 15.9 78.9 16.1 79.3 16.4C79.7 16.7 80.0 17.1 80.2 17.5C80.5 17.8 80.6 18.3 80.6 18.8C80.6 19.6 80.4 20.4 80.0 21.0C79.6 21.5 79.0 22.0 78.2 22.3C77.4 22.6 76.5 22.8 75.4 22.8ZM78.6 28.2V27.7C78.6 27.1 78.4 26.7 78.1 26.5C77.7 26.3 77.2 26.1 76.5 26.1H73.6C73.0 26.1 72.5 26.1 72.1 26.0C71.7 25.9 71.4 25.8 71.2 25.6C71.0 25.5 70.8 25.3 70.7 25.0C70.6 24.8 70.5 24.6 70.5 24.3C70.5 23.8 70.7 23.4 71.0 23.2C71.4 22.9 71.8 22.7 72.4 22.6C72.9 22.5 73.6 22.5 74.2 22.6L75.4 22.8C74.6 22.8 74.0 22.9 73.6 23.0C73.3 23.1 73.1 23.3 73.1 23.6C73.1 23.8 73.1 24.0 73.3 24.1C73.5 24.2 73.7 24.2 73.9 24.2H77.1C77.9 24.2 78.6 24.3 79.2 24.5C79.9 24.7 80.3 25.0 80.6 25.4C81.0 25.9 81.1 26.5 81.1 27.3V28.2H78.6ZM75.4 21.0C76.0 21.0 76.5 20.9 76.9 20.7C77.3 20.5 77.6 20.3 77.9 19.9C78.1 19.6 78.2 19.2 78.2 18.7C78.2 18.2 78.1 17.8 77.9 17.5C77.6 17.1 77.3 16.9 76.9 16.7C76.5 16.5 76.0 16.4 75.4 16.4C74.9 16.4 74.4 16.5 74.0 16.7C73.6 16.9 73.2 17.1 73.0 17.5C72.8 17.8 72.7 18.2 72.7 18.7C72.7 19.2 72.8 19.6 73.0 19.9C73.2 20.3 73.6 20.5 74.0 20.7C74.4 20.9 74.9 21.0 75.4 21.0ZM92.2 24.2V19.0C92.2 18.5 92.1 18.0 92.0 17.7C91.8 17.3 91.5 17.1 91.1 16.9C90.7 16.7 90.2 16.6 89.5 16.6C88.9 16.6 88.4 16.8 87.8 17.0C87.3 17.2 86.9 17.5 86.6 17.9C86.3 18.3 86.1 18.7 86.1 19.1L86.0 18.1C86.1 17.6 86.3 17.2 86.5 16.8C86.7 16.4 87.0 16.0 87.4 15.6C87.8 15.3 88.2 15.0 88.8 14.8C89.3 14.6 89.9 14.5 90.6 14.5C91.2 14.5 91.7 14.6 92.2 14.7C92.7 14.9 93.2 15.1 93.5 15.4C93.9 15.7 94.2 16.1 94.4 16.5C94.6 17.0 94.7 17.5 94.7 18.1V24.2H92.2ZM83.7 24.2V10.9H86.2V24.2H83.7ZM96.3 14.7H103.7V16.6H96.3V14.7ZM98.8 12.1H101.2V24.2H98.8V12.1ZM105.5 10.9H107.9V24.2H105.5V10.9ZM109.6 14.7H112.2L116.4 23.9L114.2 24.2L109.6 14.7ZM121.2 14.7L114.7 28.1H112.1L114.9 22.8L118.6 14.7H121.2Z" fill="#B2B2B2"></path>
+          </svg></div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="section-center-head is-sector">
+              <div to-top-0="" class="font-extra-small">Sectors</div>
+              <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;42fccc0b-537e-5232-164f-c71edcf25ec0&quot;],[]]]" class="section-heading is-sector">Different industries, cool challenges, and real solutions.</h2>
+              <p to-top-2="" class="font-normal is-wide">Industrial environments have different demands. Understanding the application helps shape a more suitable equipment or engineering approach.</p>
+            </div>
+            <div class="industry-panel">
+              <div class="industry-panel-half">
+                <div to-top-0="" class="industry-image-wrap"><img class="service-image is-tall" src="/images/Rectangle-16-7.webp" width="2316" height="2160" alt="Precision machine pressing a metal ring in a clean industrial setting" sizes="(max-width: 2316px) 100vw, 2316px" parallax="" loading="lazy" srcset="/images/Rectangle-16-7-p-500.webp 500w, /images/Rectangle-16-7-p-800.webp 800w, /images/Rectangle-16-7-p-1080.webp 1080w, /images/Rectangle-16-7-p-1600.webp 1600w, /images/Rectangle-16-7-p-2000.webp 2000w, /images/Rectangle-16-7.webp 2316w"></div>
+              </div>
+              <div class="service-line"></div>
+              <div class="industry-panel-half">
+                <div to-top-0="" class="font-extra-small">Industries</div>
+                <div>
+                  <div to-top-0="" class="industry-acc-item">
+                    <div class="font-medium is-large">Manufacturing</div>
+                    <div class="industry-acc-body is-open">
+                      <div class="industry-acc-inner">
+                        <p class="font-small is-industry">Support production environments with equipment and engineering solutions aligned with manufacturing workflows.</p>
+                        <a href="/service" class="blog-button is-light w-inline-block">
+                          <div class="blog-button-item">
+                            <div>Explore Service</div>
+                            <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="button-animated-line"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-2="" class="industry-acc-item">
+                    <div class="font-medium is-large is-dim">Construction</div>
+                    <div class="industry-acc-body">
+                      <div class="industry-acc-inner">
+                        <p class="font-small is-industry">Plan equipment and site requirements for construction projects, from material movement to on-site lifting.</p>
+                        <a href="/service" class="blog-button is-light w-inline-block">
+                          <div class="blog-button-item">
+                            <div>Explore Service</div>
+                            <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="button-animated-line"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="industry-acc-item">
+                    <div class="font-medium is-large is-dim">Warehousing &amp; Logistics</div>
+                    <div class="industry-acc-body">
+                      <div class="industry-acc-inner">
+                        <p class="font-small is-industry">Improve material flow and storage with handling, conveyor, and lifting equipment matched to daily operations.</p>
+                        <a href="/service" class="blog-button is-light w-inline-block">
+                          <div class="blog-button-item">
+                            <div>Explore Service</div>
+                            <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="button-animated-line"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-6="" class="industry-acc-item">
+                    <div class="font-medium is-large is-dim">Energy &amp; Utilities</div>
+                    <div class="industry-acc-body">
+                      <div class="industry-acc-inner">
+                        <p class="font-small is-industry">Support critical infrastructure with reliable equipment, careful installation planning, and ongoing maintenance.</p>
+                        <a href="/service" class="blog-button is-light w-inline-block">
+                          <div class="blog-button-item">
+                            <div>Explore Service</div>
+                            <div class="button-arrow"><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg><svg width="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                <path d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z" fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="button-animated-line"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="industry-slider-head">
+              <div class="industry-slider-heading is-project">
+                <div to-top-0="" class="font-extra-small">Our Working Process</div>
+                <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;f1f131c3-d79c-e50d-df44-904174491acd&quot;],[]]]" class="section-heading is-narrow">A Practical Approach, Start to Finish.</h2>
+              </div>
+              <div class="hero-two-content">
+                <p to-top-2="" class="font-normal">A structured process helps align your equipment requirements, technical needs, and project priorities at every stage.</p>
+              </div>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="equipment-slider is-process w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="equipment-mask is-process w-slider-mask">
+                <div class="equipment-slide w-slide">
+                  <div class="process-card"><img src="/images/Rectangle-22-2.webp" loading="lazy" width="1092" height="918" alt="Engineer reviewing project needs with a client" srcset="/images/Rectangle-22-2-p-500.webp 500w, /images/Rectangle-22-2-p-800.webp 800w, /images/Rectangle-22-2-p-1080.webp 1080w, /images/Rectangle-22-2.webp 1092w" sizes="(max-width: 1092px) 100vw, 1092px" class="process-card-image">
+                    <div class="process-card-text">
+                      <div class="font-extra-small">Step 01</div>
+                      <div class="process-card-body">
+                        <h3 class="font-medium">Discover Your Needs</h3>
+                        <p class="font-regular">Tell us about your operation, the challenges you face, and what you need to achieve</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-slide w-slide">
+                  <div class="process-card"><img src="/images/Rectangle-23-2.webp" loading="lazy" width="1092" height="918" alt="Technician walking through a production line" srcset="/images/Rectangle-23-2-p-500.webp 500w, /images/Rectangle-23-2-p-800.webp 800w, /images/Rectangle-23-2-p-1080.webp 1080w, /images/Rectangle-23-2.webp 1092w" sizes="(max-width: 1092px) 100vw, 1092px" class="process-card-image">
+                    <div class="process-card-text">
+                      <div class="font-extra-small">Step 02</div>
+                      <div class="process-card-body">
+                        <h3 class="font-medium">Plan the Solution</h3>
+                        <p class="font-regular">We assess equipment options and outline the technical requirements.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-slide w-slide">
+                  <div class="process-card"><img src="/images/Rectangle-23-3.webp" loading="lazy" width="1092" height="918" alt="Engineers coordinating equipment installation on site" srcset="/images/Rectangle-23-3-p-500.webp 500w, /images/Rectangle-23-3-p-800.webp 800w, /images/Rectangle-23-3-p-1080.webp 1080w, /images/Rectangle-23-3.webp 1092w" sizes="(max-width: 1092px) 100vw, 1092px" class="process-card-image">
+                    <div class="process-card-text">
+                      <div class="font-extra-small">Step 03</div>
+                      <div class="process-card-body">
+                        <h3 class="font-medium">Coordinate Implementation</h3>
+                        <p class="font-regular">Proceed with the agreed plan for equipment delivery and installation.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-slide w-slide">
+                  <div class="process-card"><img src="/images/Rectangle-23-4.webp" loading="lazy" width="1092" height="918" alt="Technician providing ongoing equipment support" srcset="/images/Rectangle-23-4-p-500.webp 500w, /images/Rectangle-23-4-p-800.webp 800w, /images/Rectangle-23-4-p-1080.webp 1080w, /images/Rectangle-23-4.webp 1092w" sizes="(max-width: 1092px) 100vw, 1092px" class="process-card-image">
+                    <div class="process-card-text">
+                      <div class="font-extra-small">Step 04</div>
+                      <div class="process-card-body">
+                        <h3 class="font-medium">Support What Comes Next</h3>
+                        <p class="font-regular">Plan ongoing equipment care and discuss future requirements as your operation evolves.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-arrow is-process w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="slider-arrow-icon">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M19 12H5M11 6l-6 6 6 6"></path>
+                </svg></div>
+              <div class="slider-arrow is-process is-next w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="slider-arrow-icon">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M5 12h14M13 6l6 6-6 6"></path>
+                </svg></div>
+              <div class="slider-nav-hidden w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="section-wrap">
+              <div class="deffrence-header">
+                <div class="industry-slider-heading is-project">
+                  <div to-top-0="" class="font-extra-small">THE IRONOVA DIFFERENCE</div>
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206a&quot;,&quot;034dbe9c-37c4-16e5-7911-ee5aa639a7bc&quot;],[]]]" class="section-heading">A Practical Partner for Complex Work</h2>
+                </div>
+                <div class="defference-header-right">
+                  <p to-top-2="" class="font-normal">Good industrial decisions start with clear requirements, considered recommendations, and dependable communication.</p>
+                </div>
+              </div>
+              <div class="difference-grid">
+                <div to-top-0="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M13.6296 29.3337C14.0168 29.3337 14.3963 29.2838 14.7653 29.1963C15.7108 28.9723 16.1836 28.8602 16.7584 28.1331C17.3333 27.4061 17.3333 26.6549 17.3333 25.1523V6.40651C17.3333 4.95671 17.3333 4.23181 16.5556 3.45133L16.5489 3.44477C15.7685 2.66699 15.3024 2.66699 14.3704 2.66699C11.5983 2.66699 9.2708 4.57038 8.62348 7.14151C6.02397 7.42152 4 9.62271 4 12.2966C4 13.7475 4.59591 15.0593 5.55631 16.0003C4.59591 16.9414 4 18.2531 4 19.7039C4 21.8719 5.33032 23.7289 7.21913 24.5035C8.01657 27.2923 10.5847 29.3337 13.6296 29.3337Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M17.3333 12C17.3333 14.9455 14.9455 17.3333 12 17.3333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M17.3333 16H27.3333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6667 4.33333V4.66667M25.3333 4.66667C25.3333 5.03485 25.0348 5.33333 24.6667 5.33333C24.2985 5.33333 24 5.03485 24 4.66667C24 4.29848 24.2985 4 24.6667 4C25.0348 4 25.3333 4.29848 25.3333 4.66667Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6666 4.66699V5.33366C24.6666 7.84782 24.6666 9.1049 23.8855 9.88594C23.1045 10.667 21.8474 10.667 19.3333 10.667H17.3333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6666 27.333V26.6663C24.6666 24.1522 24.6666 22.8951 23.8855 22.1141C23.1045 21.333 21.8474 21.333 19.3333 21.333H17.3333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6667 27.667V27.3337M25.3333 27.3337C25.3333 26.9655 25.0348 26.667 24.6667 26.667C24.2985 26.667 24 26.9655 24 27.3337C24 27.7018 24.2985 28.0003 24.6667 28.0003C25.0348 28.0003 25.3333 27.7018 25.3333 27.3337Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M27.3334 15.6663V15.9997M28.0001 15.9997C28.0001 16.3678 27.7015 16.6663 27.3334 16.6663C26.9653 16.6663 26.6667 16.3678 26.6667 15.9997C26.6667 15.6315 26.9653 15.333 27.3334 15.333C27.7015 15.333 28.0001 15.6315 28.0001 15.9997Z"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">01//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Application-First Thinking</div>
+                    <p class="font-regular">We begin with your operational needs rather than a one-size-fits-all equipment recommendation.</p>
+                  </div>
+                </div>
+                <div to-top-2="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-width="1.5" stroke="white" d="M2.66698 15.9328C2.62599 17.3137 8.04217 20.5608 8.55231 19.9164C9.53851 18.5283 9.62615 13.4771 8.61282 12.0864C8.13877 11.4405 2.70699 14.5852 2.66698 15.9328Z"></path>
+                        <path stroke-width="1.5" stroke="white" d="M15.9328 29.3324C17.3137 29.3734 20.5608 23.9572 19.9164 23.4471C18.5283 22.461 13.4771 22.3732 12.0864 23.3866C11.4405 23.8607 14.5852 29.2924 15.9328 29.3324Z"></path>
+                        <path stroke-width="1.5" stroke="white" d="M29.3331 15.9327C29.3742 17.3137 23.9579 20.5609 23.4478 19.9163C22.4617 18.5282 22.3741 13.4771 23.3873 12.0864C23.8614 11.4405 29.2931 14.5851 29.3331 15.9327Z"></path>
+                        <path stroke-width="1.5" stroke="white" d="M15.9328 2.66625C17.3137 2.62526 20.5608 8.04143 19.9164 8.55157C18.5283 9.53778 13.4771 9.62542 12.0864 8.61209C11.4405 8.13803 14.5852 2.70626 15.9328 2.66625Z"></path>
+                        <path stroke-width="1.5" stroke="white" d="M15.9999 18.6663C17.4727 18.6663 18.6666 17.4724 18.6666 15.9997C18.6666 14.5269 17.4727 13.333 15.9999 13.333C14.5272 13.333 13.3333 14.5269 13.3333 15.9997C13.3333 17.4724 14.5272 18.6663 15.9999 18.6663Z"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">02//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Clear Technical Guidance</div>
+                    <p class="font-regular">Understand your options, specifications, and project considerations before moving ahead.</p>
+                  </div>
+                </div>
+                <div to-top-4="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6661 27.3333C24.3552 23.4247 21.1224 20.3303 17.0774 20.0695L15.9994 20C15.6144 20.0101 15.2556 20.0237 14.917 20.0397C10.9078 20.2297 7.64062 23.4632 7.33276 27.3333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M20.3327 12.3333C20.3327 14.7265 18.3925 16.6667 15.9993 16.6667C13.6061 16.6667 11.666 14.7265 11.666 12.3333C11.666 9.94009 13.6061 8 15.9993 8C18.3925 8 20.3327 9.94009 20.3327 12.3333Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M7.33673 11.3337C6.90552 10.6601 6.65552 9.85942 6.65552 9.00033C6.65552 6.60709 8.59561 4.66699 10.9888 4.66699C11.5834 4.66699 12.1501 4.78675 12.6659 5.00346"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6617 11.3337C25.0929 10.6601 25.3429 9.85942 25.3429 9.00033C25.3429 6.60709 23.4028 4.66699 21.0096 4.66699C20.4151 4.66699 19.8484 4.78675 19.3325 5.00346"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M29.3342 23.9991C29.0943 20.9829 26.6659 17.9997 23.9993 17.333"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M2.66577 23.9991C2.90572 20.9829 5.33407 17.9997 8.00073 17.333"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">03//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Coordinated Project Support</div>
+                    <p class="font-regular">Keep equipment, service requirements, and implementation planning connected.</p>
+                  </div>
+                </div>
+                <div to-top-0="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M3.33337 5.33301V6.66634C3.33337 8.55195 3.33337 9.49477 3.91916 10.0806C4.50495 10.6663 5.44776 10.6663 7.33337 10.6663H8.66671"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M3.33228 16.0007C3.33228 22.9963 9.00334 28.6673 15.9989 28.6673C22.9945 28.6673 28.6656 22.9963 28.6656 16.0007C28.6656 9.00504 22.9945 3.33398 15.9989 3.33398C10.7751 3.33398 6.7271 6.13368 4.54777 9.68041"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M21.3333 22.6667C21.142 20.1793 19.1525 18.2101 16.6633 18.0443L16 18C15.763 18.0065 15.5422 18.0151 15.3338 18.0253C12.8666 18.1463 10.8561 20.2039 10.6666 22.6667"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M18.6667 11.9997C18.6667 13.4725 17.4728 14.6663 16 14.6663C14.5272 14.6663 13.3334 13.4725 13.3334 11.9997C13.3334 10.5269 14.5272 9.33301 16 9.33301C17.4728 9.33301 18.6667 10.5269 18.6667 11.9997Z"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">04//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Lifecycle Mindset</div>
+                    <p class="font-regular">Consider installation, maintenance, and future operating needs—not just the initial purchase.</p>
+                  </div>
+                </div>
+                <div to-top-2="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-linecap="round" stroke-width="1.5" stroke="white" d="M27.9895 14.9114V11.0407C27.9895 8.85404 27.9895 7.7607 27.4507 7.04738C26.9119 6.33404 25.6936 5.98774 23.2571 5.29513C21.5924 4.82193 20.125 4.25183 18.9526 3.73138C17.3541 3.02179 16.5547 2.66699 15.9895 2.66699C15.4242 2.66699 14.625 3.02179 13.0264 3.73138C11.854 4.25183 10.3866 4.82191 8.72194 5.29513C6.2854 5.98774 5.06713 6.33404 4.52832 7.04738C3.9895 7.7607 3.9895 8.85404 3.9895 11.0407V14.9114C3.9895 22.4117 10.7399 26.9117 14.1147 28.6929C14.9242 29.1201 15.329 29.3337 15.9895 29.3337C16.65 29.3337 17.0547 29.1201 17.8642 28.6929C21.2391 26.9117 27.9895 22.4117 27.9895 14.9114Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M11.323 15.7774C11.323 15.7774 12.4897 15.7774 13.6563 17.9997C13.6563 17.9997 17.3622 12.4441 20.6563 11.333"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">05//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Safety-Conscious Planning</div>
+                    <p class="font-regular">Account for site requirements, applicable standards, and safe operating practices.</p>
+                  </div>
+                </div>
+                <div to-top-4="" class="difference-card">
+                  <div class="difference-card-top">
+                    <div class="difference-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" class="card-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M11.3333 19.3337H20.6666M11.3333 12.667H15.9999"></path>
+                        <path stroke-linejoin="round" stroke-width="1.5" stroke="white" d="M18.8942 27.8537C24.4715 27.483 28.9142 22.9773 29.2798 17.3209C29.3513 16.2139 29.3513 15.0675 29.2798 13.9606C28.9142 8.30418 24.4715 3.79851 18.8942 3.42777C16.9914 3.30129 15.0049 3.30155 13.1059 3.42777C7.5286 3.79851 3.08596 8.30418 2.7204 13.9606C2.64886 15.0675 2.64886 16.2139 2.7204 17.3209C2.85354 19.381 3.76465 21.2885 4.83729 22.8991C5.46009 24.0267 5.04906 25.4341 4.40036 26.6634C3.93262 27.5498 3.69876 27.993 3.88653 28.3131C4.07432 28.6333 4.49376 28.6435 5.33265 28.6639C6.99164 28.7043 8.11032 28.2339 8.99832 27.5791C9.50195 27.2078 9.75377 27.0221 9.92733 27.0007C10.1009 26.9794 10.4424 27.1201 11.1254 27.4014C11.7393 27.6542 12.452 27.8102 13.1059 27.8537C15.0049 27.9799 16.9914 27.9802 18.8942 27.8537Z"></path>
+                      </svg></div>
+                    <div class="font-extra-small normal-white">06//</div>
+                  </div>
+                  <div class="difference-card-text">
+                    <div class="font-normal is-medium">Responsive Communication</div>
+                    <p class="font-regular">Know the next step, who is involved, and what information is needed to move forward.</p>
+                  </div>
+                </div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="equipment-slider is-process is-difference w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                <div class="equipment-mask is-difference w-slider-mask">
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M13.6296 29.3337C14.0168 29.3337 14.3963 29.2838 14.7653 29.1963C15.7108 28.9723 16.1836 28.8602 16.7584 28.1331C17.3333 27.4061 17.3333 26.6549 17.3333 25.1523V6.40651C17.3333 4.95671 17.3333 4.23181 16.5556 3.45133L16.5489 3.44477C15.7685 2.66699 15.3024 2.66699 14.3704 2.66699C11.5983 2.66699 9.2708 4.57038 8.62348 7.14151C6.02397 7.42152 4 9.62271 4 12.2966C4 13.7475 4.59591 15.0593 5.55631 16.0003C4.59591 16.9414 4 18.2531 4 19.7039C4 21.8719 5.33032 23.7289 7.21913 24.5035C8.01657 27.2923 10.5847 29.3337 13.6296 29.3337Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M17.3333 12C17.3333 14.9455 14.9455 17.3333 12 17.3333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M17.3333 16H27.3333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6667 4.33333V4.66667M25.3333 4.66667C25.3333 5.03485 25.0348 5.33333 24.6667 5.33333C24.2985 5.33333 24 5.03485 24 4.66667C24 4.29848 24.2985 4 24.6667 4C25.0348 4 25.3333 4.29848 25.3333 4.66667Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6666 4.66699V5.33366C24.6666 7.84782 24.6666 9.1049 23.8855 9.88594C23.1045 10.667 21.8474 10.667 19.3333 10.667H17.3333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6666 27.333V26.6663C24.6666 24.1522 24.6666 22.8951 23.8855 22.1141C23.1045 21.333 21.8474 21.333 19.3333 21.333H17.3333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6667 27.667V27.3337M25.3333 27.3337C25.3333 26.9655 25.0348 26.667 24.6667 26.667C24.2985 26.667 24 26.9655 24 27.3337C24 27.7018 24.2985 28.0003 24.6667 28.0003C25.0348 28.0003 25.3333 27.7018 25.3333 27.3337Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M27.3334 15.6663V15.9997M28.0001 15.9997C28.0001 16.3678 27.7015 16.6663 27.3334 16.6663C26.9653 16.6663 26.6667 16.3678 26.6667 15.9997C26.6667 15.6315 26.9653 15.333 27.3334 15.333C27.7015 15.333 28.0001 15.6315 28.0001 15.9997Z"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">01//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Application-First Thinking</div>
+                        <p class="font-regular">We begin with your operational needs rather than a one-size-fits-all equipment recommendation.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-width="1.5" stroke="white" d="M2.66698 15.9328C2.62599 17.3137 8.04217 20.5608 8.55231 19.9164C9.53851 18.5283 9.62615 13.4771 8.61282 12.0864C8.13877 11.4405 2.70699 14.5852 2.66698 15.9328Z"></path>
+                            <path stroke-width="1.5" stroke="white" d="M15.9328 29.3324C17.3137 29.3734 20.5608 23.9572 19.9164 23.4471C18.5283 22.461 13.4771 22.3732 12.0864 23.3866C11.4405 23.8607 14.5852 29.2924 15.9328 29.3324Z"></path>
+                            <path stroke-width="1.5" stroke="white" d="M29.3331 15.9327C29.3742 17.3137 23.9579 20.5609 23.4478 19.9163C22.4617 18.5282 22.3741 13.4771 23.3873 12.0864C23.8614 11.4405 29.2931 14.5851 29.3331 15.9327Z"></path>
+                            <path stroke-width="1.5" stroke="white" d="M15.9328 2.66625C17.3137 2.62526 20.5608 8.04143 19.9164 8.55157C18.5283 9.53778 13.4771 9.62542 12.0864 8.61209C11.4405 8.13803 14.5852 2.70626 15.9328 2.66625Z"></path>
+                            <path stroke-width="1.5" stroke="white" d="M15.9999 18.6663C17.4727 18.6663 18.6666 17.4724 18.6666 15.9997C18.6666 14.5269 17.4727 13.333 15.9999 13.333C14.5272 13.333 13.3333 14.5269 13.3333 15.9997C13.3333 17.4724 14.5272 18.6663 15.9999 18.6663Z"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">02//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Clear Technical Guidance</div>
+                        <p class="font-regular">Understand your options, specifications, and project considerations before moving ahead.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6661 27.3333C24.3552 23.4247 21.1224 20.3303 17.0774 20.0695L15.9994 20C15.6144 20.0101 15.2556 20.0237 14.917 20.0397C10.9078 20.2297 7.64062 23.4632 7.33276 27.3333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M20.3327 12.3333C20.3327 14.7265 18.3925 16.6667 15.9993 16.6667C13.6061 16.6667 11.666 14.7265 11.666 12.3333C11.666 9.94009 13.6061 8 15.9993 8C18.3925 8 20.3327 9.94009 20.3327 12.3333Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M7.33673 11.3337C6.90552 10.6601 6.65552 9.85942 6.65552 9.00033C6.65552 6.60709 8.59561 4.66699 10.9888 4.66699C11.5834 4.66699 12.1501 4.78675 12.6659 5.00346"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M24.6617 11.3337C25.0929 10.6601 25.3429 9.85942 25.3429 9.00033C25.3429 6.60709 23.4028 4.66699 21.0096 4.66699C20.4151 4.66699 19.8484 4.78675 19.3325 5.00346"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M29.3342 23.9991C29.0943 20.9829 26.6659 17.9997 23.9993 17.333"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M2.66577 23.9991C2.90572 20.9829 5.33407 17.9997 8.00073 17.333"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">03//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Coordinated Project Support</div>
+                        <p class="font-regular">Keep equipment, service requirements, and implementation planning connected.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M3.33337 5.33301V6.66634C3.33337 8.55195 3.33337 9.49477 3.91916 10.0806C4.50495 10.6663 5.44776 10.6663 7.33337 10.6663H8.66671"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M3.33228 16.0007C3.33228 22.9963 9.00334 28.6673 15.9989 28.6673C22.9945 28.6673 28.6656 22.9963 28.6656 16.0007C28.6656 9.00504 22.9945 3.33398 15.9989 3.33398C10.7751 3.33398 6.7271 6.13368 4.54777 9.68041"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M21.3333 22.6667C21.142 20.1793 19.1525 18.2101 16.6633 18.0443L16 18C15.763 18.0065 15.5422 18.0151 15.3338 18.0253C12.8666 18.1463 10.8561 20.2039 10.6666 22.6667"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M18.6667 11.9997C18.6667 13.4725 17.4728 14.6663 16 14.6663C14.5272 14.6663 13.3334 13.4725 13.3334 11.9997C13.3334 10.5269 14.5272 9.33301 16 9.33301C17.4728 9.33301 18.6667 10.5269 18.6667 11.9997Z"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">04//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Lifecycle Mindset</div>
+                        <p class="font-regular">Consider installation, maintenance, and future operating needs—not just the initial purchase.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-linecap="round" stroke-width="1.5" stroke="white" d="M27.9895 14.9114V11.0407C27.9895 8.85404 27.9895 7.7607 27.4507 7.04738C26.9119 6.33404 25.6936 5.98774 23.2571 5.29513C21.5924 4.82193 20.125 4.25183 18.9526 3.73138C17.3541 3.02179 16.5547 2.66699 15.9895 2.66699C15.4242 2.66699 14.625 3.02179 13.0264 3.73138C11.854 4.25183 10.3866 4.82191 8.72194 5.29513C6.2854 5.98774 5.06713 6.33404 4.52832 7.04738C3.9895 7.7607 3.9895 8.85404 3.9895 11.0407V14.9114C3.9895 22.4117 10.7399 26.9117 14.1147 28.6929C14.9242 29.1201 15.329 29.3337 15.9895 29.3337C16.65 29.3337 17.0547 29.1201 17.8642 28.6929C21.2391 26.9117 27.9895 22.4117 27.9895 14.9114Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M11.323 15.7774C11.323 15.7774 12.4897 15.7774 13.6563 17.9997C13.6563 17.9997 17.3622 12.4441 20.6563 11.333"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">05//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Safety-Conscious Planning</div>
+                        <p class="font-regular">Account for site requirements, applicable standards, and safe operating practices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equipment-slide w-slide">
+                    <div class="difference-card">
+                      <div class="difference-card-top">
+                        <div class="difference-icon"><svg fill="none" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg" class="card-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white" d="M11.3333 19.3337H20.6666M11.3333 12.667H15.9999"></path>
+                            <path stroke-linejoin="round" stroke-width="1.5" stroke="white" d="M18.8942 27.8537C24.4715 27.483 28.9142 22.9773 29.2798 17.3209C29.3513 16.2139 29.3513 15.0675 29.2798 13.9606C28.9142 8.30418 24.4715 3.79851 18.8942 3.42777C16.9914 3.30129 15.0049 3.30155 13.1059 3.42777C7.5286 3.79851 3.08596 8.30418 2.7204 13.9606C2.64886 15.0675 2.64886 16.2139 2.7204 17.3209C2.85354 19.381 3.76465 21.2885 4.83729 22.8991C5.46009 24.0267 5.04906 25.4341 4.40036 26.6634C3.93262 27.5498 3.69876 27.993 3.88653 28.3131C4.07432 28.6333 4.49376 28.6435 5.33265 28.6639C6.99164 28.7043 8.11032 28.2339 8.99832 27.5791C9.50195 27.2078 9.75377 27.0221 9.92733 27.0007C10.1009 26.9794 10.4424 27.1201 11.1254 27.4014C11.7393 27.6542 12.452 27.8102 13.1059 27.8537C15.0049 27.9799 16.9914 27.9802 18.8942 27.8537Z"></path>
+                          </svg></div>
+                        <div class="font-extra-small normal-white">06//</div>
+                      </div>
+                      <div class="difference-card-text">
+                        <div class="font-normal is-medium">Responsive Communication</div>
+                        <p class="font-regular">Know the next step, who is involved, and what information is needed to move forward.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-arrow is-process is-difference w-slider-arrow-left"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="slider-arrow-icon">
+                    <path fill="currentColor" d="M20 13L8 13L8 11L20 11L20 13ZM10 17L8 17L8 15L10 15L10 17ZM8 15L6 15L6 13L8 13L8 15ZM6 13L4 13L4 11L6 11L6 13ZM8 11L6 11L6 9L8 9L8 11ZM10 9L8 9L8 7L10 7L10 9Z"></path>
+                  </svg></div>
+                <div class="slider-arrow is-process is-difference-next w-slider-arrow-right"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="slider-arrow-icon">
+                    <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                  </svg></div>
+                <div class="slider-nav-hidden w-slider-nav w-round w-num"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf--faq--variant="base" data-wf-component-id="5cf8e4eb-bd25-1b84-080f-c6556ff2902f" data-wf-variant-state="base" class="section is-black">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="faq-layout">
+              <div class="faq-intro">
+                <div class="faq-header">
+                  <div to-top-0="" class="font-extra-small">Common Questions</div>
+                  <h2 heading-rebuild="" data-wf-target="[[[&quot;5cf8e4eb-bd25-1b84-080f-c6556ff2902f&quot;,&quot;5cf8e4eb-bd25-1b84-080f-c6556ff29037&quot;],[&quot;3bf0acce-9d03-40bb-65e2-373b2b359920&quot;]]]" class="section-heading faq">What You Should Know Before You Dive In</h2>
+                </div>
+                <div to-top-0="" class="faq-image-wrap"><img class="faq-image" src="/images/Rectangle-32-1.webp" width="1220" height="940" alt="Forklift moving boxes inside a warehouse" sizes="(max-width: 1220px) 100vw, 1220px" parallax="" loading="lazy" srcset="/images/Rectangle-32-1-p-500.webp 500w, /images/Rectangle-32-1-p-800.webp 800w, /images/Rectangle-32-1-p-1080.webp 1080w, /images/Rectangle-32-1.webp 1220w"></div>
+              </div>
+              <div class="faq-list">
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What types of industrial equipment do you offer?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">We feature equipment categories such as material handling systems, lifting equipment, conveyor solutions, and industrial machinery. Availability depends on the products offered.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">What engineering services can I explore?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Explore engineering and design, manufacturing and assembly, installation and commissioning, and ongoing maintenance support, each planned around your application.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I request a solution for my specific project?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. Share your application, site conditions, and goals, and the team will review your requirements before recommending a practical direction.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">How do I request a quote for equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Use the contact form with your equipment needs, quantities, and timeline. The team will follow up to clarify details and prepare a quote.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Do you support equipment installation and integration?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We help plan site preparation, installation steps, and commissioning checks so new equipment works with your existing systems.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item">
+                  <div class="faq-icon"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12 4V20M20 12H4"></path>
+                    </svg></div>
+                  <div class="faq-content">
+                    <div class="font-medium is-faq">Can I get maintenance support for industrial equipment?</div>
+                    <div class="faq-answer">
+                      <p class="font-regular is-faq">Yes. We can help plan preventive maintenance, troubleshoot issues, and coordinate parts to keep your equipment reliable over time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c0206a" instance="7d84ddb1-c1ca-453a-196f-5620e2754156" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

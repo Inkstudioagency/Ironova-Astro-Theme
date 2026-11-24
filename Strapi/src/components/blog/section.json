@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blog_sections",
+  "info": {
+    "displayName": "Article Section",
+    "icon": "file",
+    "description": "Article section: its table-of-contents label and rich-text body."
+  },
+  "options": {},
+  "attributes": {
+    "tocTitle": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

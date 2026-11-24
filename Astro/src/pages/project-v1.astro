@@ -1,0 +1,334 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CtaSection from "../components/CtaSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { byOrder, getProjects, img, projectUrl } from "../lib/strapi";
+
+const projects = await getProjects();
+const list0 = byOrder(projects);
+const list1 = byOrder(projects, "asc").filter((p) => p.category === "Logistics");
+const list2 = byOrder(projects, "asc").filter((p) => p.category === "Manufacturing");
+const list3 = byOrder(projects, "asc").filter((p) => p.category === "Construction");
+---
+
+<BaseLayout pageId="6b03d34cb4fd67e674c0206d" title="Project V1 - Ironova" description="Explore industrial engineering case studies covering material handling, production equipment integration, equipment upgrades, and construction planning.">
+  <div class="page-wrapper">
+    <Navbar variant="without-border" instance="368c9f4a-4d99-d3a7-619d-42aca34da703" />
+    <main class="main">
+      <section class="section is-black">
+        <div class="container">
+          <div class="hero-three-layout is-page">
+            <div class="page-hero-top">
+              <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;3587bd62-abe3-1a1d-03f6-4432384b63d9&quot;],[]]]" class="breadcrumb">
+                <a href="/" class="font-extra-small is-soft is-link">Home</a>
+                <div class="font-extra-small is-soft">/</div>
+                <div class="font-extra-small">Projects</div>
+              </div>
+              <div class="hero-three-head project-v1">
+                <div class="hero-three-title">
+                  <h1 data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;3587bd62-abe3-1a1d-03f6-4432384b63db&quot;],[]]]" class="section-heading is-large is-page">Practical Solutions. Measurable Project Goals.</h1>
+                </div>
+                <div class="hero-two-content is-page">
+                  <p data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;3587bd62-abe3-1a1d-03f6-4432384b63de&quot;],[]]]" class="font-normal">Explore how an equipment or engineering solution can be planned around a real operational challenge.</p>
+                  <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;3587bd62-abe3-1a1d-03f6-4432384b63df&quot;],[]]]" class="hero-button-wrap">
+                    <a href="/contact-v1" data-wf--primary-button--variant="base" data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-text-wrap">
+                        <div class="footer-link-text is-one">Discuss Your Project</div>
+                        <div class="footer-link-text is-two">Discuss Your Project</div>
+                      </div>
+                      <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                          <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" class="button-icon">
+                          <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;3587bd62-abe3-1a1d-03f6-4432384b63e6&quot;],[]]]" class="page-hero-media"><img class="cover-image" src="/images/Rectangle-30-2.webp" width="2880" height="1296" alt="Robotic arms working on an automated industrial production line" sizes="(max-width: 2880px) 100vw, 2880px" parallax="" srcset="/images/Rectangle-30-2-p-500.webp 500w, /images/Rectangle-30-2-p-800.webp 800w, /images/Rectangle-30-2-p-1080.webp 1080w, /images/Rectangle-30-2-p-1600.webp 1600w, /images/Rectangle-30-2-p-2000.webp 2000w, /images/Rectangle-30-2.webp 2880w"></div>
+      </section>
+      <section class="section is-night-dark">
+        <div class="section-gap is-large">
+          <div class="container">
+            <div class="page-section-head project">
+              <div to-top-0="" class="font-extra-small">Work in Action</div>
+              <h2 heading-rebuild="" data-wf-target="[[[&quot;6b03d34cb4fd67e674c0206d&quot;,&quot;97956f32-fce4-9e42-fcf2-df97bf59db51&quot;],[]]]" class="section-heading">Selected Case Studies.</h2>
+            </div>
+            <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="project-tabs w-tabs">
+              <div to-top-2="" class="project-tab-menu w-tab-menu">
+                <a data-w-tab="Tab 1" class="project-tab-link w-inline-block w-tab-link w--current">
+                  <div>All</div>
+                </a>
+                <a data-w-tab="Tab 2" class="project-tab-link w-inline-block w-tab-link">
+                  <div>Logistics</div>
+                </a>
+                <a data-w-tab="Tab 3" class="project-tab-link w-inline-block w-tab-link">
+                  <div>Manufacturing</div>
+                </a>
+                <a data-w-tab="Tab 4" class="project-tab-link w-inline-block w-tab-link">
+                  <div>Construction</div>
+                </a>
+              </div>
+              <div class="project-tab-content w-tab-content">
+                <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+                  <div class="w-dyn-list">
+                    {list0.length > 0 ? (
+                      <div role="list" class="case-list w-dyn-items">
+                      {list0.map((item) => (
+                        <div role="listitem" class="w-dyn-item">
+                        <div to-top-2="" class="case-row">
+                          <div class="case-info">
+                            <div class="case-tag-col">
+                              <div class="tag">
+                                <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                              </div>
+                            </div>
+                            <div class="case-content">
+                              <div class="case-text">
+                                <div class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                                <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                              </div>
+                              <div class="case-bottom">
+                                <div class="case-scope">
+                                  <div class="font-small is-white">Project Scope</div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[0]?.label) }]}>{item.scopeItems[0]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[1]?.label) }]}>{item.scopeItems[1]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[2]?.label) }]}>{item.scopeItems[2]?.label}</div>
+                                  </div>
+                                </div>
+                                <a href={projectUrl(item)} class="blog-button w-inline-block">
+                                  <div class="blog-button-item">
+                                    <div>Read Case Study</div>
+                                    <div class="button-arrow"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg></div>
+                                  </div>
+                                  <div class="button-animated-line"></div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <a id="w-node-_9eded151-14d0-961a-9df3-b6246efb905e-74c0206d" href={projectUrl(item)} class="case-image-wrap w-inline-block"><img {...img(item.mainImage, "")} width="2160" height="1560" parallax="" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                            <div class="demo">#</div>
+                          </a>
+                        </div>
+                      </div>
+                        ))}
+                    </div>
+                      ) : (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                      )}
+                  </div>
+                </div>
+                <div data-w-tab="Tab 2" class="w-tab-pane">
+                  <div class="w-dyn-list">
+                    {list1.length > 0 ? (
+                      <div role="list" class="case-list w-dyn-items">
+                      {list1.map((item) => (
+                        <div role="listitem" class="w-dyn-item">
+                        <div to-top-2="" class="case-row">
+                          <div class="case-info">
+                            <div class="case-tag-col">
+                              <div class="tag">
+                                <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                              </div>
+                            </div>
+                            <div class="case-content">
+                              <div class="case-text">
+                                <div class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                                <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                              </div>
+                              <div class="case-bottom">
+                                <div class="case-scope">
+                                  <div class="font-small is-white">Project Scope</div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[0]?.label) }]}>{item.scopeItems[0]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[1]?.label) }]}>{item.scopeItems[1]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[2]?.label) }]}>{item.scopeItems[2]?.label}</div>
+                                  </div>
+                                </div>
+                                <a href={projectUrl(item)} class="blog-button w-inline-block">
+                                  <div class="blog-button-item">
+                                    <div>Read Case Study</div>
+                                    <div class="button-arrow"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg></div>
+                                  </div>
+                                  <div class="button-animated-line"></div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <a href={projectUrl(item)} class="case-image-wrap w-inline-block"><img {...img(item.mainImage, "")} loading="lazy" width="2160" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                            <div class="demo">#</div>
+                          </a>
+                        </div>
+                      </div>
+                        ))}
+                    </div>
+                      ) : (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                      )}
+                  </div>
+                </div>
+                <div data-w-tab="Tab 3" class="w-tab-pane">
+                  <div class="w-dyn-list">
+                    {list2.length > 0 ? (
+                      <div role="list" class="case-list w-dyn-items">
+                      {list2.map((item) => (
+                        <div role="listitem" class="w-dyn-item">
+                        <div to-top-2="" class="case-row">
+                          <div class="case-info">
+                            <div class="case-tag-col">
+                              <div class="tag">
+                                <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                              </div>
+                            </div>
+                            <div class="case-content">
+                              <div class="case-text">
+                                <div class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                                <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                              </div>
+                              <div class="case-bottom">
+                                <div class="case-scope">
+                                  <div class="font-small is-white">Project Scope</div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[0]?.label) }]}>{item.scopeItems[0]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[1]?.label) }]}>{item.scopeItems[1]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[2]?.label) }]}>{item.scopeItems[2]?.label}</div>
+                                  </div>
+                                </div>
+                                <a href={projectUrl(item)} class="blog-button w-inline-block">
+                                  <div class="blog-button-item">
+                                    <div>Read Case Study</div>
+                                    <div class="button-arrow"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg></div>
+                                  </div>
+                                  <div class="button-animated-line"></div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <a href={projectUrl(item)} class="case-image-wrap w-inline-block"><img {...img(item.mainImage, "")} width="2160" height="1560" loading="lazy" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                            <div class="demo">#</div>
+                          </a>
+                        </div>
+                      </div>
+                        ))}
+                    </div>
+                      ) : (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                      )}
+                  </div>
+                </div>
+                <div data-w-tab="Tab 4" class="w-tab-pane">
+                  <div class="w-dyn-list">
+                    {list3.length > 0 ? (
+                      <div role="list" class="case-list w-dyn-items">
+                      {list3.map((item) => (
+                        <div role="listitem" class="w-dyn-item">
+                        <div to-top-2="" class="case-row">
+                          <div class="case-info">
+                            <div class="case-tag-col">
+                              <div class="tag">
+                                <div class:list={["font-regular is-tag", { "w-dyn-bind-empty": !(item.category) }]}>{item.category}</div>
+                              </div>
+                            </div>
+                            <div class="case-content">
+                              <div class="case-text">
+                                <div class:list={["font-medium is-large", { "w-dyn-bind-empty": !(item.name) }]}>{item.name}</div>
+                                <p class:list={["font-regular", { "w-dyn-bind-empty": !(item.shortDescription) }]}>{item.shortDescription}</p>
+                              </div>
+                              <div class="case-bottom">
+                                <div class="case-scope">
+                                  <div class="font-small is-white">Project Scope</div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[0]?.label) }]}>{item.scopeItems[0]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[1]?.label) }]}>{item.scopeItems[1]?.label}</div>
+                                  </div>
+                                  <div class="process-bullet is-divided">
+                                    <div class="process-bullet-dot"></div>
+                                    <div class:list={["font-small", { "w-dyn-bind-empty": !(item.scopeItems[2]?.label) }]}>{item.scopeItems[2]?.label}</div>
+                                  </div>
+                                </div>
+                                <a href={projectUrl(item)} class="blog-button w-inline-block">
+                                  <div class="blog-button-item">
+                                    <div>Read Case Study</div>
+                                    <div class="button-arrow"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="arrow-icon-small arrow-icon-small">
+                                        <path fill="currentColor" d="M4 11H16V13H4V11ZM14 7H16V9H14V7ZM16 9H18V11H16V9ZM18 11H20V13H18V11ZM16 13H18V15H16V13ZM14 15H16V17H14V15Z"></path>
+                                      </svg></div>
+                                  </div>
+                                  <div class="button-animated-line"></div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <a href={projectUrl(item)} class="case-image-wrap w-inline-block"><img {...img(item.mainImage, "")} width="2160" loading="lazy" class:list={["cover-image", { "w-dyn-bind-empty": !(item.mainImage) }]}>
+                            <div class="demo">#</div>
+                          </a>
+                        </div>
+                      </div>
+                        ))}
+                    </div>
+                      ) : (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                      )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CtaSection pageId="6b03d34cb4fd67e674c0206d" instance="d2100d82-1dbe-191c-8af1-9ac6fa717ea4" />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
