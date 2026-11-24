@@ -8,6 +8,9 @@ import menu from "../config/menu.json";
 
 const path = Astro.url.pathname.replace(/\/$/, "") || "/";
 const isCurrent = (url: string) => url === path;
+type MenuLink = { name: string; url: string };
+/** Optional links shown next to the copyright line (empty by default). */
+const legalLinks: MenuLink[] = menu.footer_legal;
 const social = (name: string) => menu.social.find((s) => s.name === name)?.url ?? "#";
 ---
 
@@ -73,7 +76,7 @@ const social = (name: string) => menu.social.find((s) => s.name === name)?.url ?
             <div class="footer-bottom">
               <p class="font-regular">© Ironova. All rights reserved.</p>
               <div class="footer-legal">
-                {menu.footer_legal.map((link) => (
+                {legalLinks.map((link) => (
                 <a href={link.url} aria-current={isCurrent(link.url) ? "page" : undefined} class:list={["footer-link w-inline-block", { "w--current": isCurrent(link.url) }]}>
                   <p class="footer-text is-one">{link.name}</p>
                   <p class="footer-text is-two">{link.name}</p>

@@ -27,8 +27,6 @@
       "title": "Utility Pages",
       "links": [
         { "name": "404", "url": "/404" },
-        { "name": "License", "url": "/licenses" },
-        { "name": "Change Log", "url": "/changelog" },
         { "name": "Style Guide", "url": "/style-guide" }
       ]
     }
@@ -61,14 +59,11 @@
       "title": "Utility Pages",
       "links": [
         { "name": "Style Guide", "url": "/style-guide" },
-        { "name": "Changelog", "url": "/changelog" },
-        { "name": "Licenses", "url": "/licenses" },
-        { "name": "Password", "url": "/401" },
         { "name": "404", "url": "/404" }
       ]
     }
   ],
-  "footer_legal": [{ "name": "Instructions ", "url": "/instructions" }],
+  "footer_legal": [],
   "social": [
     { "name": "Facebook", "url": "https://www.facebook.com/" },
     { "name": "X", "url": "https://x.com/" },
