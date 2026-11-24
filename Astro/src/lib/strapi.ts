@@ -232,7 +232,7 @@ export const getEquipment = () =>
   );
 
 // ---------------------------------------------------------------------------
-// Sorting helpers (mirror the original Webflow collection list settings)
+// Sorting helpers (mirror the original collection list settings)
 // ---------------------------------------------------------------------------
 
 type Dir = 'asc' | 'desc';

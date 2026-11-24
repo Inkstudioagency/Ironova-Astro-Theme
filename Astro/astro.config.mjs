@@ -6,6 +6,10 @@ import config from './src/config/config.json' with { type: 'json' };
 export default defineConfig({
   site: process.env.SITE_URL || config.site.base_url,
   trailingSlash: 'ignore',
+  build: {
+    // emit the global stylesheet as an external /_astro/*.css file instead of inlining it
+    inlineStylesheets: 'never',
+  },
   vite: {
     // the demo content is read from ../Strapi/data
     server: { fs: { allow: ['..'] } },

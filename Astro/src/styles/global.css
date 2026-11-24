@@ -1,0 +1,8 @@
+/*
+ * Global stylesheet processed by Astro's CSS pipeline (emitted as /_astro/*.css).
+ * The theme's design lives in /public/css; add your own global overrides here.
+ * The rule below is intentionally inert: it targets an attribute no element uses.
+ */
+[data-astro-build] {
+  color: inherit;
+}

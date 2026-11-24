@@ -1,8 +1,8 @@
 /// <reference types="astro/client" />
 
 /**
- * Custom attributes used by the original Webflow markup. They are read by the
- * Webflow IX3 runtime (webflow.js) to attach scroll/entrance interactions.
+ * Custom attributes used by the theme markup. They are read by the
+ * IX3 interaction runtime (public/js/site.js) to attach scroll/entrance interactions.
  */
 declare namespace astroHTML.JSX {
   interface HTMLAttributes {

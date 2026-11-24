@@ -47,8 +47,8 @@ is a server-only secret and is never sent to the browser.
 
 ```text
 ├── public/
-│   ├── css/          # Original theme stylesheets (normalize, webflow, ironova)
-│   ├── js/           # Interaction runtime (webflow.js)
+│   ├── css/          # Theme stylesheets (normalize, base, ironova)
+│   ├── js/           # Interaction runtime (site.js) + vendor libraries (jQuery, GSAP)
 │   ├── fonts/  images/  videos/  documents/  (Lottie JSON)
 ├── src/
 │   ├── components/
@@ -93,14 +93,17 @@ immediately.
 ## Customisation notes
 
 - The page markup and class names come from the original design system in
-  `public/css/ironova-astro-theme.webflow.css`. Reuse the existing classes (see `/style-guide`)
+  `public/css/ironova.css`. Reuse the existing classes (see `/style-guide`)
   so new sections match the theme.
-- Each page passes its `pageId` to `BaseLayout`. The interaction runtime (`public/js/webflow.js`)
+- Each page passes its `pageId` to `BaseLayout`. The interaction runtime (`public/js/site.js`)
   uses this id, together with the `data-wf-*` and animation attributes (`to-top-0`, `parallax`,
   `heading-rebuild`, …), to attach the page's animations. Keep those attributes when editing
   markup if you want the animations to keep working.
-- Forms are front-end only. Connect them to your form backend (Formspree, Netlify Forms, a
-  serverless function…) by setting the form `action`/`method`.
+- Forms are front-end only. A form without an `action` shows its success message and sends no
+  data. To receive submissions, set the form's `action`/`method` to your form backend
+  (Formspree, Netlify Forms, a serverless function…).
+- `src/styles/global.css` is processed by Astro and emitted as `/_astro/*.css`. Put your own global
+  CSS overrides there.
 
 ## Deployment
 
